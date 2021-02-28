@@ -42,11 +42,9 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Europe/Paris
-      - AUTO_UPDATE=true #optional
-      - RUN_OPTS=<run options here> #optional
     volumes:
-      - /home/tp_torrent/torrent_tp/jackett:/config
-      - /home/tp_torrent/torrent_tp/jackett:/downloads
+      - /home/tp_torrent/torrent_tp/jackett/config:/config
+      - /home/tp_torrent/torrent_tp/jackett/downloads:/downloads
     ports:
       - 9117:9117
     restart: unless-stopped

@@ -1322,3 +1322,146 @@ RequestUri: http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torz
 2021-2-28 13:44:01.0|Info|WebHostController|  http://*:7878
 2021-2-28 13:44:01.2|Info|RadarrBootstrapper|Starting Web Server
 2021-2-28 13:44:02.8|Info|CommandExecutor|Starting 2 threads for tasks.
+2021-2-28 13:51:13.5|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-2-28 13:51:14.2|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-2-28 13:51:14.3|Info|Router|Application mode: Interactive
+2021-2-28 13:51:14.5|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-2-28 13:51:14.9|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-2-28 13:51:15.1|Info|WebHostController|Listening on the following URLs:
+2021-2-28 13:51:15.1|Info|WebHostController|  http://*:7878
+2021-2-28 13:51:15.4|Info|RadarrBootstrapper|Starting Web Server
+2021-2-28 13:51:16.5|Info|CommandExecutor|Starting 2 threads for tasks.
+2021-2-28 13:58:31.6|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-2-28 13:58:32.3|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-2-28 13:58:32.4|Info|Router|Application mode: Interactive
+2021-2-28 13:58:32.6|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-2-28 13:58:33.0|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-2-28 13:58:33.6|Info|WebHostController|Listening on the following URLs:
+2021-2-28 13:58:33.6|Info|WebHostController|  http://*:7878
+2021-2-28 13:58:34.2|Info|RadarrBootstrapper|Starting Web Server
+2021-2-28 13:58:36.5|Info|CommandExecutor|Starting 2 threads for tasks.
+2021-2-28 14:01:14.0|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-2-28 14:01:14.8|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-2-28 14:01:14.9|Info|Router|Application mode: Interactive
+2021-2-28 14:01:15.0|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-2-28 14:01:15.2|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-2-28 14:01:15.5|Info|WebHostController|Listening on the following URLs:
+2021-2-28 14:01:15.5|Info|WebHostController|  http://*:7878
+2021-2-28 14:01:15.7|Info|RadarrBootstrapper|Starting Web Server
+2021-2-28 14:01:18.0|Info|CommandExecutor|Starting 2 threads for tasks.
+2021-2-28 14:03:06.2|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-2-28 14:03:06.7|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-2-28 14:03:06.9|Info|Router|Application mode: Interactive
+2021-2-28 14:03:07.0|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-2-28 14:03:07.2|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-2-28 14:03:07.6|Info|WebHostController|Listening on the following URLs:
+2021-2-28 14:03:07.6|Info|WebHostController|  http://*:7878
+2021-2-28 14:03:08.0|Info|RadarrBootstrapper|Starting Web Server
+2021-2-28 14:03:10.8|Info|CommandExecutor|Starting 2 threads for tasks.
+2021-2-28 14:07:45.9|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-2-28 14:07:46.8|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-2-28 14:07:47.1|Info|Router|Application mode: Interactive
+2021-2-28 14:07:47.3|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-2-28 14:07:47.9|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-2-28 14:07:48.4|Info|WebHostController|Listening on the following URLs:
+2021-2-28 14:07:48.4|Info|WebHostController|  http://*:7878
+2021-2-28 14:07:48.9|Info|RadarrBootstrapper|Starting Web Server
+2021-2-28 14:07:52.3|Info|CommandExecutor|Starting 2 threads for tasks.
+2021-2-28 14:13:15.3|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-2-28 14:13:16.5|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-2-28 14:13:16.7|Info|Router|Application mode: Interactive
+2021-2-28 14:13:16.9|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-2-28 14:13:17.4|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-2-28 14:13:18.1|Info|WebHostController|Listening on the following URLs:
+2021-2-28 14:13:18.1|Info|WebHostController|  http://*:7878
+2021-2-28 14:13:18.4|Info|RadarrBootstrapper|Starting Web Server
+2021-2-28 14:13:19.8|Info|CommandExecutor|Starting 2 threads for tasks.
+2021-2-28 14:20:17.2|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-2-28 14:20:17.9|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-2-28 14:20:18.0|Info|Router|Application mode: Interactive
+2021-2-28 14:20:18.2|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-2-28 14:20:18.7|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-2-28 14:20:19.4|Info|WebHostController|Listening on the following URLs:
+2021-2-28 14:20:19.4|Info|WebHostController|  http://*:7878
+2021-2-28 14:20:19.8|Info|RadarrBootstrapper|Starting Web Server
+2021-2-28 14:20:22.9|Info|CommandExecutor|Starting 2 threads for tasks.
+2021-2-28 14:23:44.7|Info|NzbSearchService|Searching 2 indexers for [The Lord of the Rings: The Two Towers]
+2021-2-28 14:23:46.8|Error|NewznabCapabilitiesProvider|Failed to determine newznab api capabilities for http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/, using the defaults instead till Radarr restarts
+
+[v3.0.2.4552] NzbDrone.Core.Indexers.Exceptions.ApiKeyException: Invalid API Key
+   at NzbDrone.Core.Indexers.Newznab.NewznabRssParser.CheckError(XDocument xdoc, IndexerResponse indexerResponse) in D:\a\1\s\src\NzbDrone.Core\Indexers\Newznab\NewznabRssParser.cs:line 43
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.ParseCapabilities(HttpResponse response) in D:\a\1\s\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:line 99
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities(NewznabSettings indexerSettings) in D:\a\1\s\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:line 67
+RequestUri: http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed) OK;ContentType: application/xml;ContentLength: 89;ContentSample: <?xml version="1.0" encoding="UTF-8"?>
+<error code="100" description="Invalid API Key" />
+
+2021-2-28 14:23:46.8|Error|NewznabCapabilitiesProvider|Failed to determine newznab api capabilities for http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/, using the defaults instead till Radarr restarts
+
+[v3.0.2.4552] NzbDrone.Core.Indexers.Exceptions.ApiKeyException: Invalid API Key
+   at NzbDrone.Core.Indexers.Newznab.NewznabRssParser.CheckError(XDocument xdoc, IndexerResponse indexerResponse) in D:\a\1\s\src\NzbDrone.Core\Indexers\Newznab\NewznabRssParser.cs:line 43
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.ParseCapabilities(HttpResponse response) in D:\a\1\s\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:line 99
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities(NewznabSettings indexerSettings) in D:\a\1\s\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:line 67
+RequestUri: http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed) OK;ContentType: application/xml;ContentLength: 89;ContentSample: <?xml version="1.0" encoding="UTF-8"?>
+<error code="100" description="Invalid API Key" />
+
+2021-2-28 14:23:47.8|Warn|Torznab|Invalid API Key for Jackett indexer http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=movie&cat=2000,112696,5000&extended=1&apikey=(removed)&offset=0&limit=100&imdbid=0167261
+2021-2-28 14:23:48.9|Warn|Torznab|Invalid API Key for jackett indexer 2 http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=movie&cat=2000,5000&extended=1&apikey=(removed)&offset=0&limit=100&imdbid=0167261
+2021-2-28 14:23:48.9|Info|DownloadDecisionMaker|No results found
+2021-2-28 14:38:06.6|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-2-28 14:38:07.8|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-2-28 14:38:08.1|Info|Router|Application mode: Interactive
+2021-2-28 14:38:08.6|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-2-28 14:38:10.0|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-2-28 14:38:11.1|Info|WebHostController|Listening on the following URLs:
+2021-2-28 14:38:11.1|Info|WebHostController|  http://*:7878
+2021-2-28 14:38:11.9|Info|RadarrBootstrapper|Starting Web Server
+2021-2-28 14:38:16.0|Info|CommandExecutor|Starting 2 threads for tasks.
+2021-2-28 14:39:03.2|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-2-28 14:39:04.0|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-2-28 14:39:04.2|Info|Router|Application mode: Interactive
+2021-2-28 14:39:04.6|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-2-28 14:39:04.9|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-2-28 14:39:05.2|Info|WebHostController|Listening on the following URLs:
+2021-2-28 14:39:05.2|Info|WebHostController|  http://*:7878
+2021-2-28 14:39:05.5|Info|RadarrBootstrapper|Starting Web Server
+2021-2-28 14:39:07.0|Info|CommandExecutor|Starting 2 threads for tasks.
+2021-2-28 14:42:07.3|Info|RssSyncService|Starting RSS Sync
+2021-2-28 14:42:08.4|Error|NewznabCapabilitiesProvider|Failed to determine newznab api capabilities for http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/, using the defaults instead till Radarr restarts
+
+[v3.0.2.4552] NzbDrone.Core.Indexers.Exceptions.ApiKeyException: Invalid API Key
+   at NzbDrone.Core.Indexers.Newznab.NewznabRssParser.CheckError(XDocument xdoc, IndexerResponse indexerResponse) in D:\a\1\s\src\NzbDrone.Core\Indexers\Newznab\NewznabRssParser.cs:line 43
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.ParseCapabilities(HttpResponse response) in D:\a\1\s\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:line 99
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities(NewznabSettings indexerSettings) in D:\a\1\s\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:line 67
+RequestUri: http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed) OK;ContentType: application/xml;ContentLength: 89;ContentSample: <?xml version="1.0" encoding="UTF-8"?>
+<error code="100" description="Invalid API Key" />
+
+2021-2-28 14:42:08.4|Error|NewznabCapabilitiesProvider|Failed to determine newznab api capabilities for http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/, using the defaults instead till Radarr restarts
+
+[v3.0.2.4552] NzbDrone.Core.Indexers.Exceptions.ApiKeyException: Invalid API Key
+   at NzbDrone.Core.Indexers.Newznab.NewznabRssParser.CheckError(XDocument xdoc, IndexerResponse indexerResponse) in D:\a\1\s\src\NzbDrone.Core\Indexers\Newznab\NewznabRssParser.cs:line 43
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.ParseCapabilities(HttpResponse response) in D:\a\1\s\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:line 99
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities(NewznabSettings indexerSettings) in D:\a\1\s\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:line 67
+RequestUri: http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed) OK;ContentType: application/xml;ContentLength: 89;ContentSample: <?xml version="1.0" encoding="UTF-8"?>
+<error code="100" description="Invalid API Key" />
+
+2021-2-28 14:42:08.5|Warn|Torznab|Invalid API Key for jackett indexer 2 http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=movie&cat=2000,5000&extended=1&apikey=(removed)&offset=0&limit=100
+2021-2-28 14:42:10.5|Warn|Torznab|Invalid API Key for Jackett indexer http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=movie&cat=2000,112696,5000&extended=1&apikey=(removed)&offset=0&limit=100
+2021-2-28 14:42:10.5|Info|DownloadDecisionMaker|No results found
+2021-2-28 14:42:10.6|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2021-2-28 14:43:13.7|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-2-28 14:43:15.2|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-2-28 14:43:15.6|Info|Router|Application mode: Interactive
+2021-2-28 14:43:15.8|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-2-28 14:43:16.6|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-2-28 14:43:17.5|Info|WebHostController|Listening on the following URLs:
+2021-2-28 14:43:17.5|Info|WebHostController|  http://*:7878
+2021-2-28 14:43:18.3|Info|RadarrBootstrapper|Starting Web Server
+2021-2-28 14:45:09.9|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-2-28 14:45:10.7|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-2-28 14:45:10.9|Info|Router|Application mode: Interactive
+2021-2-28 14:45:11.1|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-2-28 14:45:11.7|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-2-28 14:45:12.0|Info|WebHostController|Listening on the following URLs:
+2021-2-28 14:45:12.0|Info|WebHostController|  http://*:7878
+2021-2-28 14:45:12.3|Info|RadarrBootstrapper|Starting Web Server
+2021-2-28 14:45:13.8|Info|CommandExecutor|Starting 2 threads for tasks.

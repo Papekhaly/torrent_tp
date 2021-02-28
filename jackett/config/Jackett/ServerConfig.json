@@ -1,9 +1,9 @@
 {
   "Port": 9117,
   "AllowExternal": true,
-  "APIKey": "vhfl41xlwg6cd1741ehtyyb2ryn7w627",
-  "AdminPassword": "540dfdfae819c05711141723bbea0546102a177284be5bb4149fed00ebaf85b819f6880a44a66bd3722b59eb74d0f9a51532d4268bc5d5001638045294bf9d63",
-  "InstanceId": "4e77hxt724xen6661i28fnaambrsahxk1y0i4tukhpoxw9ktzth7wutbu7xpbmr6",
+  "APIKey": "xmgb4ykw18xfwdovjgaowinrq3rbdpjj",
+  "AdminPassword": "c5926d5302022afd72d57a006d59fee9bd9e3401e27436f82d5325bff5d3b40f9bae7eb7aeb3c5c9ed7af0c0f615554e22480cbd8129a3e1f94ce37ba9ceb824",
+  "InstanceId": "m5qztwkajxcigqp2o6m1eqofqfk0zrn5v32evcf1q1398zsl82srps6ga6oz21lo",
   "BlackholeDir": "",
   "UpdateDisabled": false,
   "UpdatePrerelease": false,
