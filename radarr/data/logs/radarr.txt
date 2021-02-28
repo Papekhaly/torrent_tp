@@ -1265,4 +1265,60 @@ database or disk is full
 [v3.0.2.4552] code = Full (13), message = System.Data.SQLite.SQLiteException (0x800007FF): database or disk is full
 database or disk is full
    at System.Data.SQLite.SQLite3.Reset(SQLiteStatement stmt)
-   at System.Data.SQLite.SQLite3.Step(SQ
+   at System.Data.SQLite.SQLite3.Step(SQ2021-2-28 13:41:12.4|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-2-28 13:41:13.6|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-2-28 13:41:13.7|Info|Router|Application mode: Interactive
+2021-2-28 13:41:13.9|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-2-28 13:41:15.1|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-2-28 13:41:15.7|Info|WebHostController|Listening on the following URLs:
+2021-2-28 13:41:15.7|Info|WebHostController|  http://*:7878
+2021-2-28 13:41:16.2|Info|RadarrBootstrapper|Starting Web Server
+2021-2-28 13:41:21.5|Info|CommandExecutor|Starting 2 threads for tasks.
+2021-2-28 13:41:51.8|Info|RssSyncService|Starting RSS Sync
+2021-2-28 13:41:54.1|Error|Torznab|An error occurred while processing indexer feed. http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=movie&cat=2000,112696,5000&extended=1&apikey=(removed)&offset=0&limit=100
+
+[v3.0.2.4552] NzbDrone.Core.Indexers.Torznab.TorznabException: Torznab error detected: Jackett.Common.IndexerException: Exception (oxtorrent): Name or service not known
+ ---> System.Net.Http.HttpRequestException: Name or service not known (wvw.oxtorrent.ws:443)
+ ---> System.Net.Sockets.SocketException (0xFFFDFFFF): Name or service not known
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|283_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.DefaultConnectAsync(SocketsHttpConnectionContext context, CancellationToken cancellationToken)
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at FlareSolverrSharp.ClearanceHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.SendAsyncCore(HttpRequestMessage request, HttpCompletionOption completionOption, Boolean async, Boolean emitTelemetryStartStop, CancellationToken cancellationToken)
+   at Jackett.Common.Utils.Clients.HttpWebClient2.Run(WebRequest webRequest) in /home/vsts/work/1/s/src/Jackett.Common/Utils/Clients/HttpWebClient2.cs:line 170
+   at Jackett.Common.Utils.Clients.WebClient.GetResultAsync(WebRequest request) in /home/vsts/work/1/s/src/Jackett.Common/Utils/Clients/WebClient.cs:line 184
+   at Jackett.Common.Indexers.BaseWebIndexer.RequestWithCookiesAsync(String url, String cookieOverride, RequestType method, String referer, IEnumerable`1 data, Dictionary`2 headers, String rawbody, Nullable`1 emulateBrowser) in /home/vsts/work/1/s/src/Jackett.Common/Indexers/BaseIndexer.cs:line 492
+   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in /home/vsts/work/1/s/src/Jackett.Common/Indexers/CardigannIndexer.cs:line 1271
+   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in /home/vsts/work/1/s/src/Jackett.Common/Indexers/BaseIndexer.cs:line 380
+   --- End of inner exception stack trace ---
+   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in /home/vsts/work/1/s/src/Jackett.Common/Indexers/BaseIndexer.cs:line 388
+   at Jackett.Common.Indexers.BaseWebIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in /home/vsts/work/1/s/src/Jackett.Common/Indexers/BaseIndexer.cs:line 656
+   at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in /home/vsts/work/1/s/src/Jackett.Server/Controllers/ResultsController.cs:line 392
+   at NzbDrone.Core.Indexers.Torznab.TorznabRssParser.PreProcess(IndexerResponse indexerResponse) in D:\a\1\s\src\NzbDrone.Core\Indexers\Torznab\TorznabRssParser.cs:line 48
+   at NzbDrone.Core.Indexers.RssParser.ParseResponse(IndexerResponse indexerResponse) in D:\a\1\s\src\NzbDrone.Core\Indexers\RssParser.cs:line 55
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchPage(IndexerRequest request, IParseIndexerResponse parser) in D:\a\1\s\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:line 285
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchReleases(Func`2 pageableRequestChainSelector, Boolean isRecent) in D:\a\1\s\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:line 125
+RequestUri: http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=movie&cat=2000,112696,5000&extended=1&apikey=(removed)&offset=0&limit=100;StatusCode: OK;ContentType: application/xml; charset=utf-8;ContentLength: 4090;ContentSample: <?xml version="1.0" encoding="UTF-8"?>
+<error code="900" description="Jackett.Common.IndexerException: Exception (oxtorrent): Name or service not known&#xA; ---&gt; System.Net.Http.HttpRequestException: Name or service not known (wvw.oxtorrent.ws:443)&#xA; ---&gt; System.Net.Sockets.SocketException (0xFFFDFFFF): Name or service not known&#xA;   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)&#xA;   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)&#xA;   at System.Net.Sockets.Socket.&lt;ConnectAsync&gt;g__WaitForConnectWithCancellation|283_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.DefaultConnectAsync(SocketsHttpConnectionContext context, CancellationToken cancellationToken)&#xA;   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)&#xA;   --- End of inner exception stack trace ---&#xA;   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)&#xA;   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)&#xA;   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)&#xA;   at FlareSolverrSharp.ClearanceHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpClient.SendAsyncCore(HttpRequestMessage request, HttpCompletionOption completionOption, Boolean async, Boolean emitTelemetryStartStop, CancellationToken cancellationToken)&#xA;   at Jackett.Common.Utils.Clients.HttpWebClient2.Run(WebRequest webRequest) in /home/vsts/work/1/s/src/Jackett.Common/Utils/Clients/HttpWebClient2.cs:line 170&#xA;   at Jackett.Common.Utils.Clients.WebClient.GetResultAsync(WebRequest request) in /home/vsts/work/1/s/src/Jackett.Common/Utils/Clients/WebClient.cs:line 184&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.RequestWithCookiesAsync(String url, String cookieOverride, RequestType method, String referer, IEnumerable`1 data, Dictionary`2 headers, String rawbody, Nullable`1 emulateBrowser) in /home/vsts/work/1/s/src/Jackett.Common/Indexers/BaseIndexer.cs:line 492&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in /home/vsts/work/1/s/src/Jackett.Common/Indexers/CardigannIndexer.cs:line 1271&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in /home/vsts/work/1/s/src/Jackett.Common/Indexers/BaseIndexer.cs:line 380&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in /home/vsts/work/1/s/src/Jackett.Common/Indexers/BaseIndexer.cs:line 388&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in /home/vsts/work/1/s/src/Jackett.Common/Indexers/BaseIndexer.cs:line 656&#xA;   at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in /home/vsts/work/1/s/src/Jackett.Server/Controllers/ResultsController.cs:line 392" />;FeedUrl: http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=movie&cat=2000,112696,5000&extended=1&apikey=(removed)&offset=0&limit=100
+
+2021-2-28 13:41:57.5|Info|DownloadDecisionMaker|Processing 25 releases
+2021-2-28 13:41:57.7|Info|RssSyncService|RSS Sync Completed. Reports found: 25, Reports grabbed: 0
+2021-2-28 13:43:59.6|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-2-28 13:44:00.0|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-2-28 13:44:00.1|Info|Router|Application mode: Interactive
+2021-2-28 13:44:00.3|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-2-28 13:44:00.6|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-2-28 13:44:01.0|Info|WebHostController|Listening on the following URLs:
+2021-2-28 13:44:01.0|Info|WebHostController|  http://*:7878
+2021-2-28 13:44:01.2|Info|RadarrBootstrapper|Starting Web Server
+2021-2-28 13:44:02.8|Info|CommandExecutor|Starting 2 threads for tasks.

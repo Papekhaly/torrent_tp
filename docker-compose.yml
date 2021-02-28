@@ -11,9 +11,9 @@ services:
       - PASS=Passw0rd90@
       - WHITELIST=
     volumes:
-      - /home/tp_torrent/transmission/config:/config
+      - /home/tp_torrent/torrent_tp/transmission/config:/config
       - /home/tp_torrent/torrent_tp/commun_folder/downloads:/downloads
-      - /home/tp_torrent/transmission/watch:/watch
+      - /home/tp_torrent/torrent_tp/transmission/watch:/watch
     ports:
       - 9091:9091
       - 51413:51413
@@ -28,8 +28,8 @@ services:
       - PGID=0
       - TZ=Europe/Paris
     volumes:
-      - /home/tp_torrent/sonarr/data:/config
-      - /home/tp_torrent/sonarr/tvseries:/tv
+      - /home/tp_torrent/torrent_tp/sonarr/data:/config
+      - /home/tp_torrent/torrent_tp/sonarr/tvseries:/tv
       - /home/tp_torrent/torrent_tp/commun_folder/downloads:/downloads
     ports:
       - 8989:8989
@@ -45,8 +45,8 @@ services:
       - AUTO_UPDATE=true #optional
       - RUN_OPTS=<run options here> #optional
     volumes:
-      - /home/tp_torrent/jackett:/config
-      - /home/tp_torrent/jackett:/downloads
+      - /home/tp_torrent/torrent_tp/jackett:/config
+      - /home/tp_torrent/torrent_tp/jackett:/downloads
     ports:
       - 9117:9117
     restart: unless-stopped
@@ -59,8 +59,8 @@ services:
       - PGID=0
       - TZ=Europe/Paris
     volumes:
-      - /home/tp_torrent/radarr/data:/config
-      - /home/tp_torrent/radarr/movies:/movies
+      - /home/tp_torrent/torrent_tp/radarr/data:/config
+      - /home/tp_torrent/torrent_tp/radarr/movies:/movies
       - /home/tp_torrent/torrent_tp/commun_folder/downloads:/downloads
     ports:
       - 7878:7878
@@ -75,9 +75,9 @@ services:
       - TZ=Europe/Paris
       - JELLYFIN_PublishedServerUrl=192.168.186.128 #optional
     volumes:
-      - /home/tp_torrent/jellyfin/library:/config
-      - /home/tp_torrent/sonarr/tvseries:/data/tvshows
-      - /home/tp_torrent/radarr/movies:/config/data/root/default/Movies
+      - /home/tp_torrent/torrent_tp/jellyfin/library:/config
+      - /home/tp_torrent/torrent_tp/sonarr/tvseries:/data/tvshows
+      - /home/tp_torrent/torrent_tp/radarr/movies:/config/data/root/default/Movies
     ports:
       - 8096:8096
       - 8920:8920 #optional

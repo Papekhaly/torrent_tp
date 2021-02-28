@@ -1398,3 +1398,56 @@ database or disk is full
 
 21-2-28 12:59:10.5|Info|DownloadDecisionMaker|Processing 25 releases
 21-2-28 12:59:10.7|Info|RssSyncService|RSS Sync Completed. Reports found: 25, Reports grabbed: 0
+21-2-28 13:41:21.0|Info|Bootstrap|Starting Sonarr - /app/sonarr/bin/NzbDrone.exe - Version 2.0.0.5344
+21-2-28 13:41:23.1|Info|AppFolderInfo|Data directory is being overridden to [/config]
+21-2-28 13:41:24.0|Info|Router|Application mode: Interactive
+21-2-28 13:41:24.9|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-2-28 13:41:25.8|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-2-28 13:41:25.9|Info|OwinHostController|Listening on the following URLs:
+21-2-28 13:41:25.9|Info|OwinHostController|  http://*:8989/
+21-2-28 13:41:26.5|Info|NancyBootstrapper|Starting Web Server
+21-2-28 13:41:59.2|Info|RssSyncService|Starting RSS Sync
+21-2-28 13:42:01.3|Error|Torznab|An error occurred while processing feed. http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=tvsearch&cat=2000,5000,112696&extended=1&apikey=(removed)&offset=0&limit=100
+
+[v2.0.0.5344] NzbDrone.Core.Indexers.Torznab.TorznabException: Torznab error detected: Jackett.Common.IndexerException: Exception (oxtorrent): Name or service not known
+ ---> System.Net.Http.HttpRequestException: Name or service not known (wvw.oxtorrent.ws:443)
+ ---> System.Net.Sockets.SocketException (0xFFFDFFFF): Name or service not known
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|283_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.DefaultConnectAsync(SocketsHttpConnectionContext context, CancellationToken cancellationToken)
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at FlareSolverrSharp.ClearanceHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.SendAsyncCore(HttpRequestMessage request, HttpCompletionOption completionOption, Boolean async, Boolean emitTelemetryStartStop, CancellationToken cancellationToken)
+   at Jackett.Common.Utils.Clients.HttpWebClient2.Run(WebRequest webRequest) in /home/vsts/work/1/s/src/Jackett.Common/Utils/Clients/HttpWebClient2.cs:line 170
+   at Jackett.Common.Utils.Clients.WebClient.GetResultAsync(WebRequest request) in /home/vsts/work/1/s/src/Jackett.Common/Utils/Clients/WebClient.cs:line 184
+   at Jackett.Common.Indexers.BaseWebIndexer.RequestWithCookiesAsync(String url, String cookieOverride, RequestType method, String referer, IEnumerable`1 data, Dictionary`2 headers, String rawbody, Nullable`1 emulateBrowser) in /home/vsts/work/1/s/src/Jackett.Common/Indexers/BaseIndexer.cs:line 492
+   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in /home/vsts/work/1/s/src/Jackett.Common/Indexers/CardigannIndexer.cs:line 1271
+   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in /home/vsts/work/1/s/src/Jackett.Common/Indexers/BaseIndexer.cs:line 380
+   --- End of inner exception stack trace ---
+   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in /home/vsts/work/1/s/src/Jackett.Common/Indexers/BaseIndexer.cs:line 388
+   at Jackett.Common.Indexers.BaseWebIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in /home/vsts/work/1/s/src/Jackett.Common/Indexers/BaseIndexer.cs:line 656
+   at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in /home/vsts/work/1/s/src/Jackett.Server/Controllers/ResultsController.cs:line 392
+  at NzbDrone.Core.Indexers.Torznab.TorznabRssParser.PreProcess (NzbDrone.Core.Indexers.IndexerResponse indexerResponse) [0x000b6] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Indexers\Torznab\TorznabRssParser.cs:42 
+  at NzbDrone.Core.Indexers.RssParser.ParseResponse (NzbDrone.Core.Indexers.IndexerResponse indexerResponse) [0x0000d] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Indexers\RssParser.cs:55 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].FetchPage (NzbDrone.Core.Indexers.IndexerRequest request, NzbDrone.Core.Indexers.IParseIndexerResponse parser) [0x00050] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:308 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].FetchReleases (System.Func`2[T,TResult] pageableRequestChainSelector, System.Boolean isRecent) [0x000a0] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:143 
+
+21-2-28 13:42:02.1|Info|DownloadDecisionMaker|Processing 25 releases
+21-2-28 13:42:02.3|Info|RssSyncService|RSS Sync Completed. Reports found: 25, Reports grabbed: 0
+21-2-28 13:44:03.0|Info|Bootstrap|Starting Sonarr - /app/sonarr/bin/NzbDrone.exe - Version 2.0.0.5344
+21-2-28 13:44:04.6|Info|AppFolderInfo|Data directory is being overridden to [/config]
+21-2-28 13:44:04.9|Info|Router|Application mode: Interactive
+21-2-28 13:44:05.2|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-2-28 13:44:05.6|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-2-28 13:44:05.6|Info|OwinHostController|Listening on the following URLs:
+21-2-28 13:44:05.6|Info|OwinHostController|  http://*:8989/
+21-2-28 13:44:05.9|Info|NancyBootstrapper|Starting Web Server
