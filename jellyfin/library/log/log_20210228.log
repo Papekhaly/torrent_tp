@@ -1,0 +1,153 @@
+[2021-02-28 12:24:58.208 +01:00] [INF] [1] Main: Jellyfin version: "10.6.4"
+[2021-02-28 12:24:58.367 +01:00] [INF] [1] Main: Environment Variables: ["[JELLYFIN_CACHE_DIR, /config/cache]", "[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_DATA_DIR, /config/data]", "[JELLYFIN_CONFIG_DIR, /config]", "[JELLYFIN_PublishedServerUrl, 192.168.186.128]"]
+[2021-02-28 12:24:58.712 +01:00] [INF] [1] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg", "--webdir=/usr/share/jellyfin/web"]
+[2021-02-28 12:24:58.714 +01:00] [INF] [1] Main: Operating system: "Linux"
+[2021-02-28 12:24:58.714 +01:00] [INF] [1] Main: Architecture: X64
+[2021-02-28 12:24:58.716 +01:00] [INF] [1] Main: 64-Bit Process: True
+[2021-02-28 12:24:58.716 +01:00] [INF] [1] Main: User Interactive: True
+[2021-02-28 12:24:58.716 +01:00] [INF] [1] Main: Processor count: 1
+[2021-02-28 12:24:58.717 +01:00] [INF] [1] Main: Program data path: "/config/data"
+[2021-02-28 12:24:58.717 +01:00] [INF] [1] Main: Web resources path: "/usr/share/jellyfin/web"
+[2021-02-28 12:24:58.717 +01:00] [INF] [1] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2021-02-28 12:25:03.864 +01:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2021-02-28 12:25:04.162 +01:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2021-02-28 12:25:21.095 +01:00] [INF] [1] Main: Kestrel listening on all interfaces
+[2021-02-28 12:25:21.959 +01:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.Repositories.EphemeralXmlRepository: Using an in-memory repository. Keys will not be persisted to storage.
+[2021-02-28 12:25:21.960 +01:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+[2021-02-28 12:25:22.152 +01:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: No XML encryptor configured. Key {7c91f5c0-5ce8-48f4-9869-19e32c0867f4} may be persisted to storage in unencrypted form.
+[2021-02-28 12:25:22.573 +01:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Running startup tasks
+[2021-02-28 12:25:23.116 +01:00] [INF] [1] Emby.Server.Implementations.ScheduledTasks.TaskManager: Daily trigger for "Extract Chapter Images" set to fire at 03/01/2021 02:00, which is 13:34:36.8841598 from now.
+[2021-02-28 12:25:26.463 +01:00] [INF] [5] Emby.Server.Implementations.ScheduledTasks.TaskManager: "StartupTrigger" fired for task: "Update Plugins"
+[2021-02-28 12:25:26.464 +01:00] [INF] [5] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queueing task "PluginUpdateTask"
+[2021-02-28 12:25:26.468 +01:00] [INF] [4] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Update Plugins"
+[2021-02-28 12:25:26.588 +01:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Found ffmpeg version "4.3.1"
+[2021-02-28 12:25:27.485 +01:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "decoders": ["h264", "h264_qsv", "h264_cuvid", "hevc", "hevc_qsv", "hevc_cuvid", "mpeg2video", "mpeg2_qsv", "mpeg2_cuvid", "mpeg4", "mpeg4_cuvid", "msmpeg4", "vc1_qsv", "vc1_cuvid", "vp8_cuvid", "vp8_qsv", "vp9_cuvid", "vp9_qsv", "aac", "ac3", "mp3"]
+[2021-02-28 12:25:27.779 +01:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "encoders": ["libx264", "h264_amf", "h264_nvenc", "h264_qsv", "h264_v4l2m2m", "h264_vaapi", "libx265", "hevc_amf", "hevc_nvenc", "hevc_qsv", "hevc_vaapi", "mpeg4", "msmpeg4", "libvpx", "libvpx-vp9", "aac", "ac3", "libmp3lame", "libopus", "libvorbis", "srt"]
+[2021-02-28 12:25:27.897 +01:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available hwaccel types: ["vdpau", "cuda", "vaapi", "qsv", "drm", "opencl"]
+[2021-02-28 12:25:27.897 +01:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: FFmpeg: SetByArgument: "/usr/lib/jellyfin-ffmpeg/ffmpeg"
+[2021-02-28 12:25:27.899 +01:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: ServerId: "753f6d88a1d848d9baa37829e283d355"
+[2021-02-28 12:25:30.940 +01:00] [INF] [5] Emby.Dlna.Main.DlnaEntryPoint: Registering publisher for "urn:schemas-upnp-org:device:MediaServer:1" on "172.19.0.2"
+[2021-02-28 12:25:30.965 +01:00] [INF] [5] Emby.Server.Implementations.ApplicationHost: Executed all pre-startup entry points in 0:00:03.0461467
+[2021-02-28 12:25:30.966 +01:00] [INF] [5] Emby.Server.Implementations.ApplicationHost: Core startup complete
+[2021-02-28 12:25:31.108 +01:00] [INF] [5] Emby.Server.Implementations.IO.LibraryMonitor: Skipping realtime monitor for "/data/movies" because the path does not exist
+[2021-02-28 12:25:31.322 +01:00] [INF] [5] Emby.Server.Implementations.ApplicationHost: Executed all post-startup entry points in 0:00:00.3560602
+[2021-02-28 12:25:31.329 +01:00] [INF] [5] Main: Startup complete 0:00:37.0905535
+[2021-02-28 12:25:31.914 +01:00] [INF] [4] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Update Plugins" Completed after 0 minute(s) and 5 seconds
+[2021-02-28 12:25:33.163 +01:00] [INF] [4] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2021-02-28 12:26:23.111 +01:00] [INF] [10] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Download missing subtitles"
+[2021-02-28 12:26:23.112 +01:00] [INF] [10] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queueing task "SubtitleScheduledTask"
+[2021-02-28 12:26:23.113 +01:00] [INF] [19] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Download missing subtitles"
+[2021-02-28 12:26:23.120 +01:00] [INF] [19] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Download missing subtitles" Completed after 0 minute(s) and 0 seconds
+[2021-02-28 12:26:23.173 +01:00] [INF] [19] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2021-02-28 12:26:23.458 +01:00] [INF] [19] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Update Plugins"
+[2021-02-28 12:26:23.459 +01:00] [INF] [19] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queueing task "PluginUpdateTask"
+[2021-02-28 12:26:23.459 +01:00] [INF] [20] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Update Plugins"
+[2021-02-28 12:26:23.467 +01:00] [INF] [20] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Scan Media Library"
+[2021-02-28 12:26:23.467 +01:00] [INF] [20] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queueing task "RefreshMediaLibraryTask"
+[2021-02-28 12:26:23.468 +01:00] [INF] [20] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Scan Media Library"
+[2021-02-28 12:26:23.467 +01:00] [INF] [19] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Clean Cache Directory"
+[2021-02-28 12:26:23.471 +01:00] [INF] [19] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queueing task "DeleteCacheFileTask"
+[2021-02-28 12:26:23.472 +01:00] [INF] [19] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Clean Cache Directory"
+[2021-02-28 12:26:23.467 +01:00] [INF] [21] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Clean Log Directory"
+[2021-02-28 12:26:23.466 +01:00] [INF] [10] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Update Plugins" Completed after 0 minute(s) and 0 seconds
+[2021-02-28 12:26:23.475 +01:00] [INF] [21] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queueing task "DeleteLogFileTask"
+[2021-02-28 12:26:23.476 +01:00] [INF] [21] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Clean Log Directory"
+[2021-02-28 12:26:23.485 +01:00] [INF] [21] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Clean Log Directory" Completed after 0 minute(s) and 0 seconds
+[2021-02-28 12:26:23.491 +01:00] [INF] [20] Emby.Server.Implementations.Library.LibraryManager: Validating media library
+[2021-02-28 12:26:23.492 +01:00] [INF] [19] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Clean Cache Directory" Completed after 0 minute(s) and 0 seconds
+[2021-02-28 12:26:23.505 +01:00] [INF] [10] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2021-02-28 12:26:23.534 +01:00] [INF] [21] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2021-02-28 12:26:23.558 +01:00] [INF] [19] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2021-02-28 12:26:23.558 +01:00] [INF] [10] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Refresh Guide"
+[2021-02-28 12:26:23.559 +01:00] [INF] [10] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queueing task "RefreshChannelsScheduledTask"
+[2021-02-28 12:26:23.559 +01:00] [INF] [10] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Refresh Guide"
+[2021-02-28 12:26:23.567 +01:00] [INF] [21] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "TasksRefreshChannels"
+[2021-02-28 12:26:23.567 +01:00] [INF] [21] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queueing task "RefreshChannelsScheduledTask"
+[2021-02-28 12:26:23.567 +01:00] [INF] [21] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "TasksRefreshChannels"
+[2021-02-28 12:26:23.598 +01:00] [INF] [21] Emby.Server.Implementations.ScheduledTasks.TaskManager: "TasksRefreshChannels" Completed after 0 minute(s) and 0 seconds
+[2021-02-28 12:26:23.629 +01:00] [INF] [21] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2021-02-28 12:26:23.973 +01:00] [INF] [20] Emby.Server.Implementations.Library.LibraryManager: Removing item, Type: "Folder", Name: "movies", Path: "/data/movies", Id: 429cfa5c-1648-e89c-5f69-6f08e19b138f
+[2021-02-28 12:26:24.483 +01:00] [INF] [20] MediaBrowser.Providers.Manager.ProviderManager: OnRefreshStart "f27caa37e5142225cceded48f6553502"
+[2021-02-28 12:26:24.502 +01:00] [INF] [20] MediaBrowser.Providers.Manager.ProviderManager: OnRefreshStart "1071671e7bffa0532e930debee501d2e"
+[2021-02-28 12:26:24.544 +01:00] [INF] [20] MediaBrowser.Providers.Manager.ProviderManager: OnRefreshComplete "1071671e7bffa0532e930debee501d2e"
+[2021-02-28 12:26:24.591 +01:00] [INF] [20] MediaBrowser.Providers.Manager.ProviderManager: OnRefreshComplete "f27caa37e5142225cceded48f6553502"
+[2021-02-28 12:26:24.677 +01:00] [INF] [20] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Scan Media Library" Completed after 0 minute(s) and 1 seconds
+[2021-02-28 12:26:24.681 +01:00] [INF] [21] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory /config/data/root/default/Movies/The Lord of the Rings The Two Towers (2002)
+[2021-02-28 12:26:24.704 +01:00] [INF] [20] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2021-02-28 12:26:26.669 +01:00] [INF] [20] Emby.Server.Implementations.LiveTv.LiveTvManager: Refreshing guide with 7 days of guide data
+[2021-02-28 12:26:26.678 +01:00] [INF] [20] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Refresh Guide" Completed after 0 minute(s) and 3 seconds
+[2021-02-28 12:26:26.692 +01:00] [INF] [20] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2021-02-28 12:41:42.771 +01:00] [WRN] [15] Microsoft.AspNetCore.Server.Kestrel: Heartbeat took longer than "00:00:01" at "02/28/2021 11:41:41 +00:00". This could be caused by thread pool starvation.
+[2021-02-28 12:47:25.018 +01:00] [INF] [1] Main: Jellyfin version: "10.6.4"
+[2021-02-28 12:47:25.831 +01:00] [INF] [1] Main: Environment Variables: ["[JELLYFIN_CONFIG_DIR, /config]", "[JELLYFIN_PublishedServerUrl, 192.168.186.128]", "[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_CACHE_DIR, /config/cache]", "[JELLYFIN_DATA_DIR, /config/data]"]
+[2021-02-28 12:47:25.904 +01:00] [INF] [1] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg", "--webdir=/usr/share/jellyfin/web"]
+[2021-02-28 12:47:25.906 +01:00] [INF] [1] Main: Operating system: "Linux"
+[2021-02-28 12:47:25.908 +01:00] [INF] [1] Main: Archit[2021-02-28 12:57:58.122 +01:00] [INF] [1] Main: Jellyfin version: "10.6.4"
+[2021-02-28 12:57:58.154 +01:00] [INF] [1] Main: Environment Variables: ["[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_CACHE_DIR, /config/cache]", "[JELLYFIN_CONFIG_DIR, /config]", "[JELLYFIN_PublishedServerUrl, 192.168.186.128]", "[JELLYFIN_DATA_DIR, /config/data]"]
+[2021-02-28 12:57:58.162 +01:00] [INF] [1] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg", "--webdir=/usr/share/jellyfin/web"]
+[2021-02-28 12:57:58.163 +01:00] [INF] [1] Main: Operating system: "Linux"
+[2021-02-28 12:57:58.163 +01:00] [INF] [1] Main: Architecture: X64
+[2021-02-28 12:57:58.164 +01:00] [INF] [1] Main: 64-Bit Process: True
+[2021-02-28 12:57:58.164 +01:00] [INF] [1] Main: User Interactive: True
+[2021-02-28 12:57:58.164 +01:00] [INF] [1] Main: Processor count: 1
+[2021-02-28 12:57:58.164 +01:00] [INF] [1] Main: Program data path: "/config/data"
+[2021-02-28 12:57:58.165 +01:00] [INF] [1] Main: Web resources path: "/usr/share/jellyfin/web"
+[2021-02-28 12:57:58.165 +01:00] [INF] [1] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2021-02-28 12:57:58.339 +01:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2021-02-28 12:57:58.349 +01:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2021-02-28 12:58:00.090 +01:00] [INF] [1] Main: Kestrel listening on all interfaces
+[2021-02-28 12:58:00.406 +01:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.Repositories.EphemeralXmlRepository: Using an in-memory repository. Keys will not be persisted to storage.
+[2021-02-28 12:58:00.406 +01:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+[2021-02-28 12:58:00.450 +01:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: No XML encryptor configured. Key {5ac28caa-21c6-47b7-b296-f883b644f040} may be persisted to storage in unencrypted form.
+[2021-02-28 12:58:00.562 +01:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Running startup tasks
+[2021-02-28 12:58:00.798 +01:00] [INF] [1] Emby.Server.Implementations.ScheduledTasks.TaskManager: Daily trigger for "Extract Chapter Images" set to fire at 03/01/2021 02:00, which is 13:01:59.2019775 from now.
+[2021-02-28 12:58:02.062 +01:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Found ffmpeg version "4.3.1"
+[2021-02-28 12:58:02.170 +01:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "decoders": ["h264", "h264_qsv", "h264_cuvid", "hevc", "hevc_qsv", "hevc_cuvid", "mpeg2video", "mpeg2_qsv", "mpeg2_cuvid", "mpeg4", "mpeg4_cuvid", "msmpeg4", "vc1_qsv", "vc1_cuvid", "vp8_cuvid", "vp8_qsv", "vp9_cuvid", "vp9_qsv", "aac", "ac3", "mp3"]
+[2021-02-28 12:58:02.183 +01:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "encoders": ["libx264", "h264_amf", "h264_nvenc", "h264_qsv", "h264_v4l2m2m", "h264_vaapi", "libx265", "hevc_amf", "hevc_nvenc", "hevc_qsv", "hevc_vaapi", "mpeg4", "msmpeg4", "libvpx", "libvpx-vp9", "aac", "ac3", "libmp3lame", "libopus", "libvorbis", "srt"]
+[2021-02-28 12:58:02.195 +01:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available hwaccel types: ["vdpau", "cuda", "vaapi", "qsv", "drm", "opencl"]
+[2021-02-28 12:58:02.195 +01:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: FFmpeg: SetByArgument: "/usr/lib/jellyfin-ffmpeg/ffmpeg"
+[2021-02-28 12:58:02.221 +01:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: ServerId: "753f6d88a1d848d9baa37829e283d355"
+[2021-02-28 12:58:02.655 +01:00] [INF] [5] Emby.Dlna.Main.DlnaEntryPoint: Registering publisher for "urn:schemas-upnp-org:device:MediaServer:1" on "172.19.0.3"
+[2021-02-28 12:58:02.676 +01:00] [INF] [5] Emby.Server.Implementations.ApplicationHost: Executed all pre-startup entry points in 0:00:00.4443804
+[2021-02-28 12:58:02.676 +01:00] [INF] [5] Emby.Server.Implementations.ApplicationHost: Core startup complete
+[2021-02-28 12:58:02.804 +01:00] [INF] [13] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory /config/data/root/default/Movies/The Lord of the Rings The Two Towers (2002)
+[2021-02-28 12:58:02.816 +01:00] [INF] [5] Emby.Server.Implementations.ApplicationHost: Executed all post-startup entry points in 0:00:00.1394217
+[2021-02-28 12:58:02.817 +01:00] [INF] [5] Main: Startup complete 0:00:04.8568211
+[2021-02-28 12:58:03.957 +01:00] [INF] [5] Emby.Server.Implementations.ScheduledTasks.TaskManager: "StartupTrigger" fired for task: "Update Plugins"
+[2021-02-28 12:58:03.959 +01:00] [INF] [5] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queueing task "PluginUpdateTask"
+[2021-02-28 12:58:03.962 +01:00] [INF] [13] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Update Plugins"
+[2021-02-28 12:58:05.219 +01:00] [INF] [5] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Update Plugins" Completed after 0 minute(s) and 1 seconds
+[2021-02-28 12:58:05.976 +01:00] [INF] [5] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2021-02-28 13:06:38.526 +01:00] [INF] [2] Main: Received a SIGTERM signal, shutting down
+[2021-02-28 13:06:40.180 +01:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "CoreAppHost"
+[2021-02-28 13:06:40.343 +01:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "ActivityLogWebSocketListener"
+[2021-02-28 13:06:40.505 +01:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "SessionInfoWebSocketListener"
+[2021-02-28 13:06:40.510 +01:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "ScheduledTasksWebSocketListener"
+[2021-02-28 13:06:40.513 +01:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "SessionWebSocketListener"
+[2021-02-28 13:06:40.531 +01:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "EmbyTV"
+[2021-02-28 13:06:40.664 +01:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "ApiEntryPoint"
+[2021-02-28 13:06:40.687 +01:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "ServerEntryPoint"
+[2021-02-28 13:06:40.688 +01:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "EntryPoint"
+[2021-02-28 13:06:40.688 +01:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "LibraryMonitorStartup"
+[2021-02-28 13:06:40.688 +01:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "ExternalPortForwarding"
+[2021-02-28 13:06:40.763 +01:00] [INF] [2] Emby.Server.Implementations.EntryPoints.ExternalPortForwarding: Stopping NAT discovery
+[2021-02-28 13:06:40.954 +01:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "LibraryChangedNotifier"
+[2021-02-28 13:06:41.039 +01:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "RecordingNotifier"
+[2021-02-28 13:06:41.042 +01:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "ServerEventNotifier"
+[2021-02-28 13:06:41.046 +01:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "StartupWizard"
+[2021-02-28 13:06:41.046 +01:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "UdpServerEntryPoint"
+[2021-02-28 13:06:41.065 +01:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "UserDataChangeNotifier"
+[2021-02-28 13:06:41.066 +01:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "ActivityLogEntryPoint"
+[2021-02-28 13:06:41.213 +01:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "DlnaEntryPoint"
+[2021-02-28 13:06:41.214 +01:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: Disposing SsdpDevicePublisher
+[2021-02-28 13:06:41.321 +01:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: Disposing PlayToManager
+[2021-02-28 13:06:41.322 +01:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: Disposing DeviceDiscovery
+[2021-02-28 13:06:41.323 +01:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: Disposing SsdpCommunicationsServer
+[2021-02-28 13:06:41.323 +01:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing _BroadcastListenSocket
+[2021-02-28 13:06:41.325 +01:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" Disposing 3 sendSockets
+[2021-02-28 13:06:41.474 +01:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing sendSocket from "0.0.0.0"
+[2021-02-28 13:06:41.475 +01:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing sendSocket from "127.0.0.1"
+[2021-02-28 13:06:41.475 +01:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing sendSocket from "172.19.0.3"
+[2021-02-28 13:06:41.543 +01:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "NotificationEntryPoint"
+[2021-02-28 13:06:41.575 +01:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "EntryPoint"
+[2021-02-28 13:06:41.577 +01:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "DeviceAccessEntryPoint"

@@ -1,0 +1,42 @@
+[2021-02-12 09:21:20.258 +01:00] [INF] [17] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Refresh People"
+[2021-02-12 09:21:20.257 +01:00] [INF] [26] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Download missing subtitles"
+[2021-02-12 09:21:20.332 +01:00] [INF] [17] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queueing task "PeopleValidationTask"
+[2021-02-12 09:21:20.371 +01:00] [INF] [26] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queueing task "SubtitleScheduledTask"
+[2021-02-12 09:21:20.307 +01:00] [INF] [44] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Scan Media Library"
+[2021-02-12 09:21:20.381 +01:00] [INF] [44] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queueing task "RefreshMediaLibraryTask"
+[2021-02-12 09:21:20.381 +01:00] [INF] [26] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Clean Cache Directory"
+[2021-02-12 09:21:20.382 +01:00] [INF] [26] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queueing task "DeleteCacheFileTask"
+[2021-02-12 09:21:20.382 +01:00] [INF] [26] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Clean Cache Directory"
+[2021-02-12 09:21:20.383 +01:00] [INF] [17] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Clean Log Directory"
+[2021-02-12 09:21:20.383 +01:00] [INF] [17] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queueing task "DeleteLogFileTask"
+[2021-02-12 09:21:20.383 +01:00] [INF] [17] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Clean Log Directory"
+[2021-02-12 09:21:20.412 +01:00] [INF] [44] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Refresh Guide"
+[2021-02-12 09:21:20.412 +01:00] [INF] [44] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queueing task "RefreshChannelsScheduledTask"
+[2021-02-12 09:21:20.412 +01:00] [INF] [44] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Refresh Guide"
+[2021-02-12 09:21:20.648 +01:00] [INF] [17] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Clean Log Directory" Completed after 0 minute(s) and 0 seconds
+[2021-02-12 09:21:20.752 +01:00] [INF] [26] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Clean Cache Directory" Completed after 0 minute(s) and 0 seconds
+[2021-02-12 09:21:20.996 +01:00] [INF] [44] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "TasksRefreshChannels"
+[2021-02-12 09:21:20.997 +01:00] [INF] [44] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queueing task "RefreshChannelsScheduledTask"
+[2021-02-12 09:21:20.997 +01:00] [INF] [44] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "TasksRefreshChannels"
+[2021-02-12 09:21:21.062 +01:00] [INF] [44] Emby.Server.Implementations.ScheduledTasks.TaskManager: "TasksRefreshChannels" Completed after 0 minute(s) and 0 seconds
+[2021-02-12 09:21:21.251 +01:00] [INF] [17] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2021-02-12 09:21:21.520 +01:00] [INF] [44] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2021-02-12 09:21:21.521 +01:00] [INF] [26] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2021-02-12 09:21:21.522 +01:00] [INF] [17] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Refresh People"
+[2021-02-12 09:21:21.592 +01:00] [INF] [44] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Download missing subtitles"
+[2021-02-12 09:21:21.597 +01:00] [INF] [26] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Scan Media Library"
+[2021-02-12 09:21:21.610 +01:00] [INF] [26] Emby.Server.Implementations.Library.LibraryManager: Validating media library
+[2021-02-12 09:21:21.630 +01:00] [INF] [17] Emby.Server.Implementations.Library.LibraryManager: People validation complete
+[2021-02-12 09:21:21.631 +01:00] [INF] [17] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Refresh People" Completed after 0 minute(s) and 0 seconds
+[2021-02-12 09:21:21.663 +01:00] [INF] [44] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Download missing subtitles" Completed after 0 minute(s) and 0 seconds
+[2021-02-12 09:21:21.678 +01:00] [INF] [44] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2021-02-12 09:21:21.697 +01:00] [INF] [17] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2021-02-12 09:21:22.202 +01:00] [INF] [26] MediaBrowser.Providers.Manager.ProviderManager: OnRefreshStart "f27caa37e5142225cceded48f6553502"
+[2021-02-12 09:21:22.220 +01:00] [INF] [26] MediaBrowser.Providers.Manager.ProviderManager: OnRefreshStart "1071671e7bffa0532e930debee501d2e"
+[2021-02-12 09:21:22.231 +01:00] [INF] [26] MediaBrowser.Providers.Manager.ProviderManager: OnRefreshComplete "1071671e7bffa0532e930debee501d2e"
+[2021-02-12 09:21:22.247 +01:00] [INF] [26] MediaBrowser.Providers.Manager.ProviderManager: OnRefreshComplete "f27caa37e5142225cceded48f6553502"
+[2021-02-12 09:21:22.286 +01:00] [INF] [26] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Scan Media Library" Completed after 0 minute(s) and 0 seconds
+[2021-02-12 09:21:22.290 +01:00] [INF] [26] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2021-02-12 09:21:24.058 +01:00] [INF] [26] Emby.Server.Implementations.LiveTv.LiveTvManager: Refreshing guide with 7 days of guide data
+[2021-02-12 09:21:24.078 +01:00] [INF] [26] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Refresh Guide" Completed after 0 minute(s) and 3 seconds
+[2021-02-12 09:21:24.087 +01:00] [INF] [26] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks

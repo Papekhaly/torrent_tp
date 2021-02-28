@@ -1,0 +1,97 @@
+version: "2.1"
+services:
+  transmission:
+    image: ghcr.io/linuxserver/transmission
+    container_name: transmission
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Paris
+      - USER=teamUser
+      - PASS=Passw0rd90@
+      - WHITELIST=
+    volumes:
+      - /home/tp_torrent/transmission/config:/config
+      - /home/tp_torrent/torrent_tp/commun_folder/downloads:/downloads
+      - /home/tp_torrent/transmission/watch:/watch
+    ports:
+      - 9091:9091
+      - 51413:51413
+      - 51413:51413/udp
+    restart: unless-stopped
+
+  sonarr:
+    image: ghcr.io/linuxserver/sonarr
+    container_name: sonarr
+    environment:
+      - PUID=0
+      - PGID=0
+      - TZ=Europe/Paris
+    volumes:
+      - /home/tp_torrent/sonarr/data:/config
+      - /home/tp_torrent/sonarr/tvseries:/tv
+      - /home/tp_torrent/torrent_tp/commun_folder/downloads:/downloads
+    ports:
+      - 8989:8989
+    restart: unless-stopped
+ 
+  jackett:
+    image: ghcr.io/linuxserver/jackett
+    container_name: jackett
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Paris
+      - AUTO_UPDATE=true #optional
+      - RUN_OPTS=<run options here> #optional
+    volumes:
+      - /home/tp_torrent/jackett:/config
+      - /home/tp_torrent/jackett:/downloads
+    ports:
+      - 9117:9117
+    restart: unless-stopped
+
+  radarr:
+    image: ghcr.io/linuxserver/radarr
+    container_name: radarr
+    environment:
+      - PUID=0
+      - PGID=0
+      - TZ=Europe/Paris
+    volumes:
+      - /home/tp_torrent/radarr/data:/config
+      - /home/tp_torrent/radarr/movies:/movies
+      - /home/tp_torrent/torrent_tp/commun_folder/downloads:/downloads
+    ports:
+      - 7878:7878
+    restart: unless-stopped
+
+  jellyfin:
+    image: ghcr.io/linuxserver/jellyfin
+    container_name: jellyfin
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Paris
+      - JELLYFIN_PublishedServerUrl=192.168.186.128 #optional
+    volumes:
+      - /home/tp_torrent/jellyfin/library:/config
+      - /home/tp_torrent/sonarr/tvseries:/data/tvshows
+      - /home/tp_torrent/radarr/movies:/config/data/root/default/Movies
+    ports:
+      - 8096:8096
+      - 8920:8920 #optional
+      - 7359:7359/udp #optional
+      - 1901:1901/udp #optional
+    restart: unless-stopped
+
+  flaresolverr: 
+    image: ghcr.io/flaresolverr/flaresolverr:latest
+    container_name: flaresolverr
+    environment:
+      - LOG_LEVEL=${LOG_LEVEL:-info}
+      - LOG_HTML=${LOG_HTML:-false}
+      - CAPTCHA_SOLVER=${CAPTCHA_SOLVER:-none}
+    ports:
+      - "${PORT:-8191}:8191"
+    restart: unless-stopped
