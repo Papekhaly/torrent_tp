@@ -1,5 +1,34 @@
 version: "2.1"
 services:
+  
+  bazarr:
+    image: ghcr.io/linuxserver/bazarr
+    container_name: bazarr
+    environment:
+      - PUID=0
+      - PGID=0
+      - TZ=Europe/London
+    volumes:
+      - /home/tp_torrent/torrent_tp/bazarr/data:/config
+      - /home/tp_torrent/torrent_tp/commun_folder:/movies
+      - /home/tp_torrent/torrent_tp/commun_folder:/tv
+    ports:
+      - 6767:6767
+    restart: unless-stopped
+
+  portainer:
+    container_name: portainer
+    image: portainer/portainer-ce:latest
+    restart: unless-stopped
+    command: -H unix:///var/run/docker.sock
+    ports:
+      - 9000:9000
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - /home/tp_torrent/torrent_tp/dataportainer:/data
+
   transmission:
     image: ghcr.io/linuxserver/transmission
     container_name: transmission
@@ -93,3 +122,14 @@ services:
     ports:
       - "${PORT:-8191}:8191"
     restart: unless-stopped
+
+  watchtower:
+    image: containrrr/watchtower
+    container_name: watchtower
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /home/tp_torrent/torrent_tp/.docker/config.json:/config.json
+    command: --interval 60
+    restart: unless-stopped
+
+  
