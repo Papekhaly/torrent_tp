@@ -1718,3 +1718,303 @@ database or disk is full
   at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems () [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:35 
   at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads (NzbDrone.Core.Download.IDownloadClient downloadClient) [0x0000c] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:89 
 
+21-3-4 14:58:47.7|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Transmission
+
+[v2.0.0.5344] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings ---> System.Net.WebException: Error: ConnectFailure (No route to host): 'http://192.168.186.129:9091/transmission/rpc' ---> System.Net.WebException: Error: ConnectFailure (No route to host) ---> System.Net.Sockets.SocketException: No route to host
+  at System.Net.Sockets.SocketAsyncResult.CheckIfThrowDelayedException () [0x00014] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.Socket.EndConnect (System.IAsyncResult asyncResult) [0x0002c] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.SocketTaskExtensions+<>c.<ConnectAsync>b__2_1 (System.IAsyncResult asyncResult) [0x00006] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Threading.Tasks.TaskFactory`1[TResult].FromAsyncCoreLogic (System.IAsyncResult iar, System.Func`2[T,TResult] endFunction, System.Action`1[T] endAction, System.Threading.Tasks.Task`1[TResult] promise, System.Boolean requiresSynchronization) [0x00019] in <254335e8c4aa42e3923a8ba0d5ce8650>:0 
+--- End of stack trace from previous location where exception was thrown ---
+
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x0019b] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+   --- End of inner exception stack trace ---
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x00217] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebConnection.InitConnection (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x000cc] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebOperation.Run () [0x0009a] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebCompletionSource`1[T].WaitForCompletion () [0x00094] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0011b] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:82 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x001ca] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:113 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000b5] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:53 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:121 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:57 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient (NzbDrone.Common.Http.HttpRequestBuilder requestBuilder, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings, System.Boolean reauthenticate) [0x0004f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:218 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0001f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:255 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00138] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:307 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (System.Collections.Generic.IEnumerable`1[T] hashStrings, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0009e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:187 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:157 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:43 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems () [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:35 
+  at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads (NzbDrone.Core.Download.IDownloadClient downloadClient) [0x0000c] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:89 
+
+21-3-4 15:00:17.8|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Transmission
+
+[v2.0.0.5344] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings ---> System.Net.WebException: Error: ConnectFailure (No route to host): 'http://192.168.186.129:9091/transmission/rpc' ---> System.Net.WebException: Error: ConnectFailure (No route to host) ---> System.Net.Sockets.SocketException: No route to host
+  at System.Net.Sockets.SocketAsyncResult.CheckIfThrowDelayedException () [0x00014] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.Socket.EndConnect (System.IAsyncResult asyncResult) [0x0002c] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.SocketTaskExtensions+<>c.<ConnectAsync>b__2_1 (System.IAsyncResult asyncResult) [0x00006] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Threading.Tasks.TaskFactory`1[TResult].FromAsyncCoreLogic (System.IAsyncResult iar, System.Func`2[T,TResult] endFunction, System.Action`1[T] endAction, System.Threading.Tasks.Task`1[TResult] promise, System.Boolean requiresSynchronization) [0x00019] in <254335e8c4aa42e3923a8ba0d5ce8650>:0 
+--- End of stack trace from previous location where exception was thrown ---
+
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x0019b] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+   --- End of inner exception stack trace ---
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x00217] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebConnection.InitConnection (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x000cc] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebOperation.Run () [0x0009a] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebCompletionSource`1[T].WaitForCompletion () [0x00094] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0011b] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:82 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x001ca] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:113 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000b5] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:53 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:121 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:57 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient (NzbDrone.Common.Http.HttpRequestBuilder requestBuilder, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings, System.Boolean reauthenticate) [0x0004f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:218 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0001f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:255 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00138] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:307 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (System.Collections.Generic.IEnumerable`1[T] hashStrings, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0009e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:187 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:157 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:43 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems () [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:35 
+  at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads (NzbDrone.Core.Download.IDownloadClient downloadClient) [0x0000c] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:89 
+
+21-3-4 15:01:47.9|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Transmission
+
+[v2.0.0.5344] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings ---> System.Net.WebException: Error: ConnectFailure (No route to host): 'http://192.168.186.129:9091/transmission/rpc' ---> System.Net.WebException: Error: ConnectFailure (No route to host) ---> System.Net.Sockets.SocketException: No route to host
+  at System.Net.Sockets.SocketAsyncResult.CheckIfThrowDelayedException () [0x00014] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.Socket.EndConnect (System.IAsyncResult asyncResult) [0x0002c] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.SocketTaskExtensions+<>c.<ConnectAsync>b__2_1 (System.IAsyncResult asyncResult) [0x00006] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Threading.Tasks.TaskFactory`1[TResult].FromAsyncCoreLogic (System.IAsyncResult iar, System.Func`2[T,TResult] endFunction, System.Action`1[T] endAction, System.Threading.Tasks.Task`1[TResult] promise, System.Boolean requiresSynchronization) [0x00019] in <254335e8c4aa42e3923a8ba0d5ce8650>:0 
+--- End of stack trace from previous location where exception was thrown ---
+
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x0019b] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+   --- End of inner exception stack trace ---
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x00217] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebConnection.InitConnection (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x000cc] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebOperation.Run () [0x0009a] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebCompletionSource`1[T].WaitForCompletion () [0x00094] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0011b] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:82 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x001ca] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:113 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000b5] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:53 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:121 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:57 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient (NzbDrone.Common.Http.HttpRequestBuilder requestBuilder, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings, System.Boolean reauthenticate) [0x0004f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:218 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0001f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:255 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00138] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:307 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (System.Collections.Generic.IEnumerable`1[T] hashStrings, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0009e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:187 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:157 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:43 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems () [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:35 
+  at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads (NzbDrone.Core.Download.IDownloadClient downloadClient) [0x0000c] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:89 
+
+21-3-4 15:08:18.1|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Transmission
+
+[v2.0.0.5344] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings ---> System.Net.WebException: Error: ConnectFailure (No route to host): 'http://192.168.186.129:9091/transmission/rpc' ---> System.Net.WebException: Error: ConnectFailure (No route to host) ---> System.Net.Sockets.SocketException: No route to host
+  at System.Net.Sockets.SocketAsyncResult.CheckIfThrowDelayedException () [0x00014] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.Socket.EndConnect (System.IAsyncResult asyncResult) [0x0002c] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.SocketTaskExtensions+<>c.<ConnectAsync>b__2_1 (System.IAsyncResult asyncResult) [0x00006] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Threading.Tasks.TaskFactory`1[TResult].FromAsyncCoreLogic (System.IAsyncResult iar, System.Func`2[T,TResult] endFunction, System.Action`1[T] endAction, System.Threading.Tasks.Task`1[TResult] promise, System.Boolean requiresSynchronization) [0x00019] in <254335e8c4aa42e3923a8ba0d5ce8650>:0 
+--- End of stack trace from previous location where exception was thrown ---
+
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x0019b] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+   --- End of inner exception stack trace ---
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x00217] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebConnection.InitConnection (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x000cc] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebOperation.Run () [0x0009a] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebCompletionSource`1[T].WaitForCompletion () [0x00094] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0011b] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:82 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x001ca] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:113 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000b5] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:53 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:121 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:57 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient (NzbDrone.Common.Http.HttpRequestBuilder requestBuilder, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings, System.Boolean reauthenticate) [0x0004f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:218 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0001f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:255 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00138] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:307 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (System.Collections.Generic.IEnumerable`1[T] hashStrings, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0009e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:187 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:157 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:43 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems () [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:35 
+  at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads (NzbDrone.Core.Download.IDownloadClient downloadClient) [0x0000c] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:89 
+
+21-3-4 15:11:15.2|Info|RssSyncService|Starting RSS Sync
+21-3-4 15:11:18.3|Warn|Torznab|Jackett indexer  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+21-3-4 15:11:18.3|Warn|Torznab|jackett indexer 2  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+21-3-4 15:11:18.3|Info|DownloadDecisionMaker|No results found
+21-3-4 15:11:18.3|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+21-3-4 15:13:48.3|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Transmission
+
+[v2.0.0.5344] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings ---> System.Net.WebException: Error: ConnectFailure (No route to host): 'http://192.168.186.129:9091/transmission/rpc' ---> System.Net.WebException: Error: ConnectFailure (No route to host) ---> System.Net.Sockets.SocketException: No route to host
+  at System.Net.Sockets.SocketAsyncResult.CheckIfThrowDelayedException () [0x00014] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.Socket.EndConnect (System.IAsyncResult asyncResult) [0x0002c] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.SocketTaskExtensions+<>c.<ConnectAsync>b__2_1 (System.IAsyncResult asyncResult) [0x00006] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Threading.Tasks.TaskFactory`1[TResult].FromAsyncCoreLogic (System.IAsyncResult iar, System.Func`2[T,TResult] endFunction, System.Action`1[T] endAction, System.Threading.Tasks.Task`1[TResult] promise, System.Boolean requiresSynchronization) [0x00019] in <254335e8c4aa42e3923a8ba0d5ce8650>:0 
+--- End of stack trace from previous location where exception was thrown ---
+
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x0019b] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+   --- End of inner exception stack trace ---
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x00217] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebConnection.InitConnection (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x000cc] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebOperation.Run () [0x0009a] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebCompletionSource`1[T].WaitForCompletion () [0x00094] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0011b] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:82 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x001ca] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:113 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000b5] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:53 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:121 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:57 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient (NzbDrone.Common.Http.HttpRequestBuilder requestBuilder, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings, System.Boolean reauthenticate) [0x0004f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:218 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0001f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:255 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00138] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:307 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (System.Collections.Generic.IEnumerable`1[T] hashStrings, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0009e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:187 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:157 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:43 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems () [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:35 
+  at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads (NzbDrone.Core.Download.IDownloadClient downloadClient) [0x0000c] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:89 
+
+21-3-4 15:26:45.6|Info|RssSyncService|Starting RSS Sync
+21-3-4 15:26:48.8|Warn|Torznab|jackett indexer 2  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+21-3-4 15:26:48.8|Warn|Torznab|Jackett indexer  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+21-3-4 15:26:48.8|Info|DownloadDecisionMaker|No results found
+21-3-4 15:26:48.8|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+21-3-4 15:29:18.7|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Transmission
+
+[v2.0.0.5344] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings ---> System.Net.WebException: Error: ConnectFailure (No route to host): 'http://192.168.186.129:9091/transmission/rpc' ---> System.Net.WebException: Error: ConnectFailure (No route to host) ---> System.Net.Sockets.SocketException: No route to host
+  at System.Net.Sockets.SocketAsyncResult.CheckIfThrowDelayedException () [0x00014] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.Socket.EndConnect (System.IAsyncResult asyncResult) [0x0002c] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.SocketTaskExtensions+<>c.<ConnectAsync>b__2_1 (System.IAsyncResult asyncResult) [0x00006] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Threading.Tasks.TaskFactory`1[TResult].FromAsyncCoreLogic (System.IAsyncResult iar, System.Func`2[T,TResult] endFunction, System.Action`1[T] endAction, System.Threading.Tasks.Task`1[TResult] promise, System.Boolean requiresSynchronization) [0x00019] in <254335e8c4aa42e3923a8ba0d5ce8650>:0 
+--- End of stack trace from previous location where exception was thrown ---
+
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x0019b] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+   --- End of inner exception stack trace ---
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x00217] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebConnection.InitConnection (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x000cc] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebOperation.Run () [0x0009a] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebCompletionSource`1[T].WaitForCompletion () [0x00094] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0011b] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:82 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x001ca] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:113 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000b5] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:53 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:121 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:57 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient (NzbDrone.Common.Http.HttpRequestBuilder requestBuilder, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings, System.Boolean reauthenticate) [0x0004f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:218 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0001f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:255 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00138] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:307 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (System.Collections.Generic.IEnumerable`1[T] hashStrings, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0009e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:187 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:157 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:43 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems () [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:35 
+  at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads (NzbDrone.Core.Download.IDownloadClient downloadClient) [0x0000c] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:89 
+
+21-3-11 08:56:15.4|Info|Bootstrap|Starting Sonarr - /app/sonarr/bin/NzbDrone.exe - Version 2.0.0.5344
+21-3-11 08:56:21.1|Info|AppFolderInfo|Data directory is being overridden to [/config]
+21-3-11 08:56:21.6|Info|Router|Application mode: Interactive
+21-3-11 08:56:23.3|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-11 08:56:27.1|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-11 08:56:28.0|Info|OwinHostController|Listening on the following URLs:
+21-3-11 08:56:28.0|Info|OwinHostController|  http://*:8989/
+21-3-11 08:56:29.9|Info|NancyBootstrapper|Starting Web Server
+21-3-11 08:57:06.5|Info|SceneMappingService|Updating Scene mappings
+21-3-11 08:57:09.4|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Transmission
+
+[v2.0.0.5344] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings ---> System.Net.WebException: Error: ConnectFailure (No route to host): 'http://192.168.186.129:9091/transmission/rpc' ---> System.Net.WebException: Error: ConnectFailure (No route to host) ---> System.Net.Sockets.SocketException: No route to host
+  at System.Net.Sockets.SocketAsyncResult.CheckIfThrowDelayedException () [0x00014] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.Socket.EndConnect (System.IAsyncResult asyncResult) [0x0002c] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.SocketTaskExtensions+<>c.<ConnectAsync>b__2_1 (System.IAsyncResult asyncResult) [0x00006] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Threading.Tasks.TaskFactory`1[TResult].FromAsyncCoreLogic (System.IAsyncResult iar, System.Func`2[T,TResult] endFunction, System.Action`1[T] endAction, System.Threading.Tasks.Task`1[TResult] promise, System.Boolean requiresSynchronization) [0x00019] in <254335e8c4aa42e3923a8ba0d5ce8650>:0 
+--- End of stack trace from previous location where exception was thrown ---
+
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x0019b] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+   --- End of inner exception stack trace ---
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x00217] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebConnection.InitConnection (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x000cc] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebOperation.Run () [0x0009a] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebCompletionSource`1[T].WaitForCompletion () [0x00094] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0011b] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:82 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x001ca] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:113 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000b5] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:53 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:121 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:57 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient (NzbDrone.Common.Http.HttpRequestBuilder requestBuilder, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings, System.Boolean reauthenticate) [0x0004f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:218 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0001f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:255 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00138] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:307 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (System.Collections.Generic.IEnumerable`1[T] hashStrings, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0009e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:187 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:157 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:43 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems () [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:35 
+  at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads (NzbDrone.Core.Download.IDownloadClient downloadClient) [0x0000c] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:89 
+
+21-3-11 08:57:09.9|Info|RefreshSeriesService|Skipping refresh of series: Lovely Complex
+21-3-11 08:57:10.0|Warn|DiskScanService|Series' root folder (/tv) is empty.
+21-3-11 08:57:10.0|Info|RefreshSeriesService|Updating Info for Resident Alien
+21-3-11 08:57:12.5|Info|HousekeepingService|Running housecleaning tasks
+21-3-11 08:57:13.3|Info|RefreshEpisodeService|Starting episode info refresh for: [368166][Resident Alien]
+21-3-11 08:57:13.5|Info|Database|Vacuuming Log database
+21-3-11 08:57:13.6|Info|Database|Log database compressed
+21-3-11 08:57:13.6|Info|RefreshEpisodeService|Finished episode refresh for series: [368166][Resident Alien].
+21-3-11 08:57:13.7|Info|Database|Vacuuming Main database
+21-3-11 08:57:13.7|Info|RssSyncService|Starting RSS Sync
+21-3-11 08:57:13.7|Warn|DiskScanService|Series' root folder (/tv) is empty.
+21-3-11 08:57:13.9|Info|Database|Main database compressed
+21-3-11 08:57:15.1|Info|MetadataService|Series folder does not exist, skipping metadata creation
+21-3-11 08:57:15.5|Warn|Torznab|jackett indexer 2  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+21-3-11 08:57:15.6|Warn|Torznab|Jackett indexer  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+21-3-11 08:57:15.6|Info|DownloadDecisionMaker|No results found
+21-3-11 08:57:15.7|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+21-3-11 09:03:10.0|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Transmission
+
+[v2.0.0.5344] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings ---> System.Net.WebException: Error: ConnectFailure (No route to host): 'http://192.168.186.129:9091/transmission/rpc' ---> System.Net.WebException: Error: ConnectFailure (No route to host) ---> System.Net.Sockets.SocketException: No route to host
+  at System.Net.Sockets.SocketAsyncResult.CheckIfThrowDelayedException () [0x00014] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.Socket.EndConnect (System.IAsyncResult asyncResult) [0x0002c] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.SocketTaskExtensions+<>c.<ConnectAsync>b__2_1 (System.IAsyncResult asyncResult) [0x00006] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Threading.Tasks.TaskFactory`1[TResult].FromAsyncCoreLogic (System.IAsyncResult iar, System.Func`2[T,TResult] endFunction, System.Action`1[T] endAction, System.Threading.Tasks.Task`1[TResult] promise, System.Boolean requiresSynchronization) [0x00019] in <254335e8c4aa42e3923a8ba0d5ce8650>:0 
+--- End of stack trace from previous location where exception was thrown ---
+
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x0019b] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+   --- End of inner exception stack trace ---
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x00217] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebConnection.InitConnection (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x000cc] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebOperation.Run () [0x0009a] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebCompletionSource`1[T].WaitForCompletion () [0x00094] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0011b] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:82 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x001ca] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:113 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000b5] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:53 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:121 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:57 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient (NzbDrone.Common.Http.HttpRequestBuilder requestBuilder, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings, System.Boolean reauthenticate) [0x0004f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:218 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0001f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:255 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00138] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:307 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (System.Collections.Generic.IEnumerable`1[T] hashStrings, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0009e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:187 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:157 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:43 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems () [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:35 
+  at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads (NzbDrone.Core.Download.IDownloadClient downloadClient) [0x0000c] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:89 
+

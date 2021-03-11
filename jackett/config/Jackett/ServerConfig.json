@@ -11,7 +11,7 @@
   "CacheEnabled": true,
   "CacheTtl": 2100,
   "CacheMaxResultsPerIndexer": 1000,
-  "FlareSolverrUrl": "http://192.168.186.129:8191/",
+  "FlareSolverrUrl": "http://192.168.186.130:8191/",
   "OmdbApiKey": "",
   "OmdbApiUrl": "",
   "ProxyType": -1,
