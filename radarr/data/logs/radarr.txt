@@ -1871,3 +1871,322 @@ RequestUri: http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/to
    at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads(IDownloadClient downloadClient) in D:\a\1\s\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:line 89
 
 
+2021-3-11 09:09:18.3|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Tranmission_dowload
+
+[v3.0.2.4552] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings
+ ---> System.Net.WebException: No route to host No route to host: 'http://192.168.186.129:9091/transmission/rpc'
+ ---> System.Net.WebException: No route to host No route to host
+ ---> System.Net.Http.HttpRequestException: No route to host
+ ---> System.Net.Sockets.SocketException (113): No route to host
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at System.Net.HttpWebRequest.SendRequest()
+   at System.Net.HttpWebRequest.GetResponse()
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 81
+   --- End of inner exception stack trace ---
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 111
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequest(HttpRequest request, CookieContainer cookieContainer) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 123
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 57
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient(HttpRequestBuilder requestBuilder, TransmissionSettings settings, Boolean reauthenticate) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 222
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 261
+   --- End of inner exception stack trace ---
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 316
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(IEnumerable`1 hashStrings, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 191
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 155
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 43
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems() in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:line 38
+   at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads(IDownloadClient downloadClient) in D:\a\1\s\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:line 89
+
+
+2021-3-11 09:15:18.4|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Tranmission_dowload
+
+[v3.0.2.4552] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings
+ ---> System.Net.WebException: No route to host No route to host: 'http://192.168.186.129:9091/transmission/rpc'
+ ---> System.Net.WebException: No route to host No route to host
+ ---> System.Net.Http.HttpRequestException: No route to host
+ ---> System.Net.Sockets.SocketException (113): No route to host
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at System.Net.HttpWebRequest.SendRequest()
+   at System.Net.HttpWebRequest.GetResponse()
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 81
+   --- End of inner exception stack trace ---
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 111
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequest(HttpRequest request, CookieContainer cookieContainer) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 123
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 57
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient(HttpRequestBuilder requestBuilder, TransmissionSettings settings, Boolean reauthenticate) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 222
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 261
+   --- End of inner exception stack trace ---
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 316
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(IEnumerable`1 hashStrings, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 191
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 155
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 43
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems() in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:line 38
+   at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads(IDownloadClient downloadClient) in D:\a\1\s\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:line 89
+
+
+2021-3-11 09:57:46.1|Info|RssSyncService|Starting RSS Sync
+2021-3-11 09:57:49.6|Warn|Torznab|jackett indexer 2  No route to host No route to host: 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+2021-3-11 09:57:49.6|Warn|Torznab|Jackett indexer  No route to host No route to host: 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+2021-3-11 09:57:49.6|Info|DownloadDecisionMaker|No results found
+2021-3-11 09:57:49.6|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2021-3-11 10:16:59.8|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-3-11 10:17:00.5|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-3-11 10:17:00.9|Info|Router|Application mode: Interactive
+2021-3-11 10:17:01.2|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-3-11 10:17:02.0|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-3-11 10:17:02.8|Info|WebHostController|Listening on the following URLs:
+2021-3-11 10:17:02.8|Info|WebHostController|  http://*:7878
+2021-3-11 10:17:03.3|Info|RadarrBootstrapper|Starting Web Server
+2021-3-11 10:17:06.2|Info|CommandExecutor|Starting 2 threads for tasks.
+2021-3-11 10:17:39.7|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Tranmission_dowload
+
+[v3.0.2.4552] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings
+ ---> System.Net.WebException: No route to host No route to host: 'http://192.168.186.129:9091/transmission/rpc'
+ ---> System.Net.WebException: No route to host No route to host
+ ---> System.Net.Http.HttpRequestException: No route to host
+ ---> System.Net.Sockets.SocketException (113): No route to host
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at System.Net.HttpWebRequest.SendRequest()
+   at System.Net.HttpWebRequest.GetResponse()
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 81
+   --- End of inner exception stack trace ---
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 111
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequest(HttpRequest request, CookieContainer cookieContainer) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 123
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 57
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient(HttpRequestBuilder requestBuilder, TransmissionSettings settings, Boolean reauthenticate) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 222
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 261
+   --- End of inner exception stack trace ---
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 316
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(IEnumerable`1 hashStrings, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 191
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 155
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 43
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems() in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:line 38
+   at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads(IDownloadClient downloadClient) in D:\a\1\s\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:line 89
+
+
+2021-3-11 10:23:39.8|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Tranmission_dowload
+
+[v3.0.2.4552] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings
+ ---> System.Net.WebException: No route to host No route to host: 'http://192.168.186.129:9091/transmission/rpc'
+ ---> System.Net.WebException: No route to host No route to host
+ ---> System.Net.Http.HttpRequestException: No route to host
+ ---> System.Net.Sockets.SocketException (113): No route to host
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at System.Net.HttpWebRequest.SendRequest()
+   at System.Net.HttpWebRequest.GetResponse()
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 81
+   --- End of inner exception stack trace ---
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 111
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequest(HttpRequest request, CookieContainer cookieContainer) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 123
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 57
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient(HttpRequestBuilder requestBuilder, TransmissionSettings settings, Boolean reauthenticate) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 222
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 261
+   --- End of inner exception stack trace ---
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 316
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(IEnumerable`1 hashStrings, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 191
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 155
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 43
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems() in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:line 38
+   at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads(IDownloadClient downloadClient) in D:\a\1\s\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:line 89
+
+
+2021-3-11 10:29:39.9|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Tranmission_dowload
+
+[v3.0.2.4552] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings
+ ---> System.Net.WebException: No route to host No route to host: 'http://192.168.186.129:9091/transmission/rpc'
+ ---> System.Net.WebException: No route to host No route to host
+ ---> System.Net.Http.HttpRequestException: No route to host
+ ---> System.Net.Sockets.SocketException (113): No route to host
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at System.Net.HttpWebRequest.SendRequest()
+   at System.Net.HttpWebRequest.GetResponse()
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 81
+   --- End of inner exception stack trace ---
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 111
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequest(HttpRequest request, CookieContainer cookieContainer) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 123
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 57
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient(HttpRequestBuilder requestBuilder, TransmissionSettings settings, Boolean reauthenticate) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 222
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 261
+   --- End of inner exception stack trace ---
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 316
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(IEnumerable`1 hashStrings, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 191
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 155
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 43
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems() in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:line 38
+   at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads(IDownloadClient downloadClient) in D:\a\1\s\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:line 89
+
+
+2021-3-11 10:35:10.0|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Tranmission_dowload
+
+[v3.0.2.4552] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings
+ ---> System.Net.WebException: No route to host No route to host: 'http://192.168.186.129:9091/transmission/rpc'
+ ---> System.Net.WebException: No route to host No route to host
+ ---> System.Net.Http.HttpRequestException: No route to host
+ ---> System.Net.Sockets.SocketException (113): No route to host
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at System.Net.HttpWebRequest.SendRequest()
+   at System.Net.HttpWebRequest.GetResponse()
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 81
+   --- End of inner exception stack trace ---
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 111
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequest(HttpRequest request, CookieContainer cookieContainer) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 123
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 57
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient(HttpRequestBuilder requestBuilder, TransmissionSettings settings, Boolean reauthenticate) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 222
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 261
+   --- End of inner exception stack trace ---
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 316
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(IEnumerable`1 hashStrings, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 191
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 155
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 43
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems() in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:line 38
+   at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads(IDownloadClient downloadClient) in D:\a\1\s\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:line 89
+
+
+2021-3-11 10:58:07.9|Info|RssSyncService|Starting RSS Sync
+2021-3-11 10:58:11.9|Warn|Torznab|Jackett indexer  No route to host No route to host: 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+2021-3-11 10:58:11.9|Warn|Torznab|jackett indexer 2  No route to host No route to host: 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+2021-3-11 10:58:12.3|Info|DownloadDecisionMaker|No results found
+2021-3-11 10:58:12.4|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2021-3-11 11:44:03.1|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-3-11 11:44:03.9|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-3-11 11:44:04.1|Info|Router|Application mode: Interactive
+2021-3-11 11:44:04.2|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-3-11 11:44:04.6|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-3-11 11:44:05.2|Info|WebHostController|Listening on the following URLs:
+2021-3-11 11:44:05.2|Info|WebHostController|  http://*:7878
+2021-3-11 11:44:06.1|Info|RadarrBootstrapper|Starting Web Server
+2021-3-11 11:44:11.4|Info|CommandExecutor|Starting 2 threads for tasks.
+2021-3-11 11:58:42.3|Info|RssSyncService|Starting RSS Sync
+2021-3-11 11:58:45.7|Warn|Torznab|jackett indexer 2  No route to host No route to host: 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+2021-3-11 11:58:45.8|Warn|Torznab|Jackett indexer  No route to host No route to host: 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+2021-3-11 11:58:45.8|Info|DownloadDecisionMaker|No results found
+2021-3-11 11:58:45.8|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2021-3-11 12:59:13.2|Info|RssSyncService|Starting RSS Sync
+2021-3-11 12:59:16.5|Warn|Torznab|jackett indexer 2  No route to host No route to host: 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+2021-3-11 12:59:16.6|Warn|Torznab|Jackett indexer  No route to host No route to host: 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+2021-3-11 12:59:16.6|Info|DownloadDecisionMaker|No results found
+2021-3-11 12:59:16.6|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2021-3-11 13:03:36.4|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-3-11 13:03:37.2|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-3-11 13:03:37.6|Info|Router|Application mode: Interactive
+2021-3-11 13:03:37.8|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-3-11 13:03:38.4|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-3-11 13:03:39.3|Info|WebHostController|Listening on the following URLs:
+2021-3-11 13:03:39.3|Info|WebHostController|  http://*:7878
+2021-3-11 13:03:39.8|Info|RadarrBootstrapper|Starting Web Server
+2021-3-11 13:03:42.5|Info|CommandExecutor|Starting 2 threads for tasks.
+2021-3-11 13:35:16.4|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Tranmission_dowload
+
+[v3.0.2.4552] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings
+ ---> System.Net.WebException: No route to host No route to host: 'http://192.168.186.129:9091/transmission/rpc'
+ ---> System.Net.WebException: No route to host No route to host
+ ---> System.Net.Http.HttpRequestException: No route to host
+ ---> System.Net.Sockets.SocketException (113): No route to host
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at System.Net.HttpWebRequest.SendRequest()
+   at System.Net.HttpWebRequest.GetResponse()
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 81
+   --- End of inner exception stack trace ---
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 111
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequest(HttpRequest request, CookieContainer cookieContainer) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 123
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 57
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient(HttpRequestBuilder requestBuilder, TransmissionSettings settings, Boolean reauthenticate) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 222
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 261
+   --- End of inner exception stack trace ---
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 316
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(IEnumerable`1 hashStrings, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 191
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 155
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 43
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems() in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:line 38
+   at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads(IDownloadClient downloadClient) in D:\a\1\s\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:line 89
+
+
+2021-3-11 14:04:50.7|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-3-11 14:04:52.4|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-3-11 14:04:52.8|Info|Router|Application mode: Interactive
+2021-3-11 14:04:53.2|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-3-11 14:04:54.2|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-3-11 14:04:58.2|Info|WebHostController|Listening on the following URLs:
+2021-3-11 14:04:58.2|Info|WebHostController|  http://*:7878
+2021-3-11 14:04:59.0|Info|RadarrBootstrapper|Starting Web Server
+2021-3-11 14:05:07.5|Info|CommandExecutor|Starting 2 threads for tasks.
+2021-3-11 14:05:37.9|Info|RssSyncService|Starting RSS Sync
+2021-3-11 14:05:41.3|Warn|Torznab|Jackett indexer  No route to host No route to host: 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+2021-3-11 14:05:41.3|Warn|Torznab|jackett indexer 2  No route to host No route to host: 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+2021-3-11 14:05:41.3|Info|DownloadDecisionMaker|No results found
+2021-3-11 14:05:41.4|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2021-3-11 14:55:38.7|Info|BackupService|Starting Backup
+2021-3-11 15:06:08.9|Info|RssSyncService|Starting RSS Sync
+2021-3-11 15:06:12.1|Warn|Torznab|Jackett indexer  No route to host No route to host: 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+2021-3-11 15:06:12.1|Warn|Torznab|jackett indexer 2  No route to host No route to host: 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+2021-3-11 15:06:12.1|Info|DownloadDecisionMaker|No results found
+2021-3-11 15:06:12.1|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
