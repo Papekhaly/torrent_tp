@@ -1,9 +1,3 @@
-# A ajouter dans /etc/crontab
-
-#00 09 * * * /path/to/docker-compose
-
----
-
 #!/bin/sh
 
 set -e
@@ -13,7 +7,14 @@ set -e
 sleep 10
 /usr/local/bin/docker-compose -f /path/to/docker-compose restart >> /var/log/containers/docker-compose-update.log 2>&1
 
----
+#---
+
+# A ajouter dans /etc/crontab
+
+#00 09 * * * /path/to/docker-compose
+#Tourne tous les jours à 9h
+
+#---
 
 # A faire sur le répertoire qui contient le docker-compose
 #$ sudo chmod 755 folder
