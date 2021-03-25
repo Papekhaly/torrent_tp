@@ -38,33 +38,35 @@ services:
     labels:
     #### Labels define the behavior and rules of the traefik proxy for this container ####
       - "traefik.enable=true" # <== Enable traefik on itself to view dashboard and assign subdomain to view it
-      - "traefik.http.routers.api.rule=Host(`dockermodule21.ddns.net`)" # <== Setting the domain for the dashboard
+      - "traefik.http.routers.api.rule=Host(`192.168.186.131`)" # <== Setting the domain for the dashboard
       - "traefik.http.routers.api.service=api@internal" # <== Enabling the api to be a service to access
 
 
   bazarr:
     image: ghcr.io/linuxserver/bazarr
     container_name: bazarr
+   
     environment:
       - PUID=0
       - PGID=0
-      - TZ=Europe/London
+      - TZ=Europe/Paris
     volumes:
       - /home/tp_torrent/torrent_tp/bazarr/data:/config
       - /home/tp_torrent/torrent_tp/commun_folder:/movies
       - /home/tp_torrent/torrent_tp/commun_folder:/tv
-    #ports:
-     # - 6767:6767
+   # ports:
+    #  - 6767:6767
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.bazarr.entrypoints=web"
-      - "traefik.http.routers.bazarr.rule=PathPrefix(`/bazarr{regex:$$|/.*}`)"
-      - "traefik.http.routers.bazarr.middlewares=bazarr-prefix"
+      - "traefik.http.routers.bazarr_back.middlewares=bazarr-prefix"
       - "traefik.http.middlewares.bazarr-prefix.stripprefix.prefixes=/bazarr"
-      - "traefik.http.routers.bazarr.service=bazarr"
-      - "traefik.http.services.bazarr.loadbalancer.server.port=6767"
-    
 
+      - "traefik.http.routers.bazarr.rule=PathPrefix(`/bazarr{regex:$$|/.*}`)"
+     
+      - "traefik.http.routers.bazarr_back.tls=true" 
+      - "traefik.http.routers.bazarr_back.entrypoints=web"
+      - "traefik.http.routers.bazarr_back.service=bazarr_back"
+      - "traefik.http.services.bazarr_back.loadbalancer.server.port=6767"
     networks:
       - mynet
     restart: unless-stopped
@@ -74,9 +76,9 @@ services:
     image: portainer/portainer-ce:latest
     restart: unless-stopped
     command: -H unix:///var/run/docker.sock
-    #ports:
+   # ports:
      # - 9000:9000
-
+     # - 8000:8000
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - /etc/localtime:/etc/localtime:ro
@@ -113,14 +115,20 @@ services:
       - /home/tp_torrent/torrent_tp/transmission/config:/config
       - /home/tp_torrent/torrent_tp/commun_folder/downloads:/downloads
       - /home/tp_torrent/torrent_tp/transmission/watch:/watch
-    ports:
-      - 9091:9091
-      - 51413:51413
-      - 51413:51413/udp
+    #ports:
+    #  - 9091:9091
+    #  - 51413:51413
+    #  - 51413:51413/udp
+    labels:
+       - "traefik.enable=true"
+       - "traefik.http.routers.transmission.rule=PathPrefix(`/transmission{regex:$$|/.*}`)"
+       - "traefik.http.routers.client_torrents.entrypoints=web"
+       - "traefik.http.routers.client_torrents.tls=true"
+       - "traefik.http.services.client_torrents.loadbalancer.server.port=9091"
     restart: unless-stopped
     networks:
       - mynet
-
+  
   sonarr:
     image: ghcr.io/linuxserver/sonarr
     container_name: sonarr
@@ -132,9 +140,19 @@ services:
       - /home/tp_torrent/torrent_tp/sonarr/data:/config
       - /home/tp_torrent/torrent_tp/sonarr/tvseries:/tv
       - /home/tp_torrent/torrent_tp/commun_folder/downloads:/downloads
-    ports:
-      - 8989:8989
+    
+#    ports:
+#      - 8989:8989
     restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.sonarr.rule=PathPrefix(`/sonarr{regex:$$|/.*}`)"
+     
+      - "traefik.http.routers.sonarr_back.tls=true"
+      - "traefik.http.routers.sonarr_back.entrypoints=web"
+      - "traefik.http.routers.sonarr_back.service=sonarr_back"
+      - "traefik.http.services.sonarr_back.loadbalancer.server.port=8989"
+
     networks:
       - mynet
 
@@ -148,9 +166,17 @@ services:
     volumes:
       - /home/tp_torrent/torrent_tp/jackett/config:/config
       - /home/tp_torrent/torrent_tp/jackett/downloads:/downloads
-    ports:
-      - 9117:9117
+    #ports:
+     # - 9117:9117
     restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.jackett.rule=PathPrefix(`/jackett{regex:$$|/.*}`)"
+
+      - "traefik.http.routers.jackett_back.tls=true"
+      - "traefik.http.routers.jackett_back.entrypoints=web"
+      - "traefik.http.routers.jackett_back.service=jackett_back"
+      - "traefik.http.services.jackett_back.loadbalancer.server.port=9117"
     networks:
       - mynet
 
@@ -165,9 +191,17 @@ services:
       - /home/tp_torrent/torrent_tp/radarr/data:/config
       - /home/tp_torrent/torrent_tp/radarr/movies:/movies
       - /home/tp_torrent/torrent_tp/commun_folder/downloads:/downloads
-    ports:
-      - 7878:7878
+    #ports:
+    #  - 7878:7878
     restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.radarr.rule=PathPrefix(`/radarr{regex:$$|/.*}`)"
+
+      - "traefik.http.routers.radarr_back.tls=true"
+      - "traefik.http.routers.radarr_back.entrypoints=web"
+      - "traefik.http.routers.radarr_back.service=radarr_back"
+      - "traefik.http.services.radarr_back.loadbalancer.server.port=7878"
     networks:
       - mynet
 
@@ -178,17 +212,24 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Europe/Paris
-      - JELLYFIN_PublishedServerUrl=192.168.186.128 #optional
     volumes:
       - /home/tp_torrent/torrent_tp/jellyfin/library:/config
       - /home/tp_torrent/torrent_tp/sonarr/tvseries:/data/tvshows
-      - /home/tp_torrent/torrent_tp/radarr/movies:/config/data/root/default/Movies
+      - /home/tp_torrent/torrent_tp/radarr/movies:/data/Movies
     ports:
       - 8096:8096
-      - 8920:8920 #optional
-      - 7359:7359/udp #optional
-      - 1901:1901/udp #optional
+      #- 8920:8920 #optional
+      #- 7359:7359/udp #optional
+     # - 1901:1901/udp #optional
     restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.jellyfin.rule=PathPrefix(`/jellyfin{regex:$$|/.*}`)"
+
+      - "traefik.http.routers.jellyfin_back.tls=true"
+      - "traefik.http.routers.jellyfin_back.entrypoints=web"
+      - "traefik.http.routers.jellyfin_back.service=jellyfin_back"
+      - "traefik.http.services.jellyfin_back.loadbalancer.server.port=8096"
     networks:
       - mynet
 
@@ -221,3 +262,4 @@ services:
   
 networks:
   mynet:
+    external: true

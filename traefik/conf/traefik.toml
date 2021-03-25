@@ -9,9 +9,8 @@
   debug = false
   insecure = true
 
-[docker]
+[providers.docker]
 endpoint = "unix:///var/run/docker.sock"
-domain = "dockermodule21.ddns.net"
 watch = true
 exposedbydefault = false
 

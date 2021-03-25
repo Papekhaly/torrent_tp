@@ -2334,3 +2334,874 @@ database or disk is full
 21-3-11 15:07:26.9|Warn|Torznab|jackett indexer 2  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
 21-3-11 15:07:26.9|Info|DownloadDecisionMaker|No results found
 21-3-11 15:07:26.9|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+21-3-11 15:22:54.1|Info|RssSyncService|Starting RSS Sync
+21-3-11 15:22:57.2|Warn|Torznab|Jackett indexer  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+21-3-11 15:22:57.2|Warn|Torznab|jackett indexer 2  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+21-3-11 15:22:57.2|Info|DownloadDecisionMaker|No results found
+21-3-11 15:22:57.2|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+21-3-11 15:31:19.1|Info|Bootstrap|Starting Sonarr - /app/sonarr/bin/NzbDrone.exe - Version 2.0.0.5344
+21-3-11 15:31:21.2|Info|AppFolderInfo|Data directory is being overridden to [/config]
+21-3-11 15:31:21.5|Info|Router|Application mode: Interactive
+21-3-11 15:31:22.1|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-11 15:31:22.9|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-11 15:31:23.1|Info|OwinHostController|Listening on the following URLs:
+21-3-11 15:31:23.1|Info|OwinHostController|  http://*:8989/
+21-3-11 15:31:23.7|Info|NancyBootstrapper|Starting Web Server
+21-3-11 15:33:03.3|Info|Bootstrap|Starting Sonarr - /app/sonarr/bin/NzbDrone.exe - Version 2.0.0.5344
+21-3-11 15:33:06.7|Info|AppFolderInfo|Data directory is being overridden to [/config]
+21-3-11 15:33:07.3|Info|Router|Application mode: Interactive
+21-3-11 15:33:08.1|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-11 15:33:08.5|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-11 15:33:08.7|Info|OwinHostController|Listening on the following URLs:
+21-3-11 15:33:08.7|Info|OwinHostController|  http://*:8989/
+21-3-11 15:33:09.2|Info|NancyBootstrapper|Starting Web Server
+21-3-11 15:38:13.1|Info|RssSyncService|Starting RSS Sync
+21-3-11 15:38:16.4|Warn|Torznab|Jackett indexer  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+21-3-11 15:38:16.4|Warn|Torznab|jackett indexer 2  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+21-3-11 15:38:16.5|Info|DownloadDecisionMaker|No results found
+21-3-11 15:38:16.5|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+21-3-11 15:53:43.5|Info|RssSyncService|Starting RSS Sync
+21-3-11 15:53:46.6|Warn|Torznab|Jackett indexer  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+21-3-11 15:53:46.6|Warn|Torznab|jackett indexer 2  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+21-3-11 15:53:46.6|Info|DownloadDecisionMaker|No results found
+21-3-11 15:53:46.6|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+21-3-11 16:01:26.1|Info|Bootstrap|Starting Sonarr - /app/sonarr/bin/NzbDrone.exe - Version 2.0.0.5344
+21-3-11 16:01:27.9|Info|AppFolderInfo|Data directory is being overridden to [/config]
+21-3-11 16:01:28.5|Info|Router|Application mode: Interactive
+21-3-11 16:01:29.3|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-11 16:01:30.3|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-11 16:01:30.4|Info|OwinHostController|Listening on the following URLs:
+21-3-11 16:01:30.4|Info|OwinHostController|  http://*:8989/
+21-3-11 16:01:31.1|Info|NancyBootstrapper|Starting Web Server
+21-3-11 16:09:05.1|Info|RssSyncService|Starting RSS Sync
+21-3-11 16:09:08.3|Warn|Torznab|jackett indexer 2  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+21-3-11 16:09:08.3|Warn|Torznab|Jackett indexer  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+21-3-11 16:09:08.3|Info|DownloadDecisionMaker|No results found
+21-3-11 16:09:08.3|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+21-3-11 16:12:40.0|Info|Bootstrap|Starting Sonarr - /app/sonarr/bin/NzbDrone.exe - Version 2.0.0.5344
+21-3-11 16:12:44.3|Info|AppFolderInfo|Data directory is being overridden to [/config]
+21-3-11 16:12:45.1|Info|Router|Application mode: Interactive
+21-3-11 16:12:46.6|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-11 16:12:47.9|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-11 16:12:48.1|Info|OwinHostController|Listening on the following URLs:
+21-3-11 16:12:48.1|Info|OwinHostController|  http://*:8989/
+21-3-11 16:12:49.1|Info|NancyBootstrapper|Starting Web Server
+21-3-11 16:23:28.2|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Transmission
+
+[v2.0.0.5344] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings ---> System.Net.WebException: Error: ConnectFailure (No route to host): 'http://192.168.186.129:9091/transmission/rpc' ---> System.Net.WebException: Error: ConnectFailure (No route to host) ---> System.Net.Sockets.SocketException: No route to host
+  at System.Net.Sockets.SocketAsyncResult.CheckIfThrowDelayedException () [0x00014] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.Socket.EndConnect (System.IAsyncResult asyncResult) [0x0002c] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.SocketTaskExtensions+<>c.<ConnectAsync>b__2_1 (System.IAsyncResult asyncResult) [0x00006] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Threading.Tasks.TaskFactory`1[TResult].FromAsyncCoreLogic (System.IAsyncResult iar, System.Func`2[T,TResult] endFunction, System.Action`1[T] endAction, System.Threading.Tasks.Task`1[TResult] promise, System.Boolean requiresSynchronization) [0x00019] in <254335e8c4aa42e3923a8ba0d5ce8650>:0 
+--- End of stack trace from previous location where exception was thrown ---
+
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x0019b] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+   --- End of inner exception stack trace ---
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x00217] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebConnection.InitConnection (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x000cc] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebOperation.Run () [0x0009a] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebCompletionSource`1[T].WaitForCompletion () [0x00094] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0011b] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:82 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x001ca] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:113 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000b5] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:53 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:121 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:57 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient (NzbDrone.Common.Http.HttpRequestBuilder requestBuilder, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings, System.Boolean reauthenticate) [0x0004f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:218 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0001f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:255 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00138] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:307 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (System.Collections.Generic.IEnumerable`1[T] hashStrings, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0009e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:187 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:157 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:43 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems () [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:35 
+  at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads (NzbDrone.Core.Download.IDownloadClient downloadClient) [0x0000c] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:89 
+
+21-3-11 16:24:25.2|Info|RssSyncService|Starting RSS Sync
+21-3-11 16:24:28.4|Warn|Torznab|Jackett indexer  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+21-3-11 16:24:28.4|Warn|Torznab|jackett indexer 2  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+21-3-11 16:24:28.4|Info|DownloadDecisionMaker|No results found
+21-3-11 16:24:28.4|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+21-3-11 16:28:58.4|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Transmission
+
+[v2.0.0.5344] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings ---> System.Net.WebException: Error: ConnectFailure (No route to host): 'http://192.168.186.129:9091/transmission/rpc' ---> System.Net.WebException: Error: ConnectFailure (No route to host) ---> System.Net.Sockets.SocketException: No route to host
+  at System.Net.Sockets.SocketAsyncResult.CheckIfThrowDelayedException () [0x00014] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.Socket.EndConnect (System.IAsyncResult asyncResult) [0x0002c] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.SocketTaskExtensions+<>c.<ConnectAsync>b__2_1 (System.IAsyncResult asyncResult) [0x00006] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Threading.Tasks.TaskFactory`1[TResult].FromAsyncCoreLogic (System.IAsyncResult iar, System.Func`2[T,TResult] endFunction, System.Action`1[T] endAction, System.Threading.Tasks.Task`1[TResult] promise, System.Boolean requiresSynchronization) [0x00019] in <254335e8c4aa42e3923a8ba0d5ce8650>:0 
+--- End of stack trace from previous location where exception was thrown ---
+
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x0019b] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+   --- End of inner exception stack trace ---
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x00217] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebConnection.InitConnection (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x000cc] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebOperation.Run () [0x0009a] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebCompletionSource`1[T].WaitForCompletion () [0x00094] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0011b] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:82 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x001ca] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:113 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000b5] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:53 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:121 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:57 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient (NzbDrone.Common.Http.HttpRequestBuilder requestBuilder, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings, System.Boolean reauthenticate) [0x0004f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:218 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0001f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:255 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00138] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:307 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (System.Collections.Generic.IEnumerable`1[T] hashStrings, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0009e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:187 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:157 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:43 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems () [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:35 
+  at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads (NzbDrone.Core.Download.IDownloadClient downloadClient) [0x0000c] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:89 
+
+21-3-11 16:39:55.6|Info|RssSyncService|Starting RSS Sync
+21-3-11 16:39:58.8|Warn|Torznab|jackett indexer 2  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+21-3-11 16:39:58.8|Warn|Torznab|Jackett indexer  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+21-3-11 16:39:58.8|Info|DownloadDecisionMaker|No results found
+21-3-11 16:39:58.8|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+21-3-11 16:46:35.2|Info|Bootstrap|Starting Sonarr - /app/sonarr/bin/NzbDrone.exe - Version 2.0.0.5344
+21-3-11 16:46:37.4|Info|AppFolderInfo|Data directory is being overridden to [/config]
+21-3-11 16:46:37.8|Info|Router|Application mode: Interactive
+21-3-11 16:46:38.4|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-11 16:46:39.5|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-11 16:46:39.7|Info|OwinHostController|Listening on the following URLs:
+21-3-11 16:46:39.7|Info|OwinHostController|  http://*:8989/
+21-3-11 16:46:40.4|Info|NancyBootstrapper|Starting Web Server
+21-3-11 16:55:13.7|Info|RssSyncService|Starting RSS Sync
+21-3-11 16:55:16.9|Warn|Torznab|Jackett indexer  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+21-3-11 16:55:16.9|Warn|Torznab|jackett indexer 2  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+21-3-11 16:55:16.9|Info|DownloadDecisionMaker|No results found
+21-3-11 16:55:17.0|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+21-3-11 17:03:55.8|Info|Bootstrap|Starting Sonarr - /app/sonarr/bin/NzbDrone.exe - Version 2.0.0.5344
+21-3-11 17:03:58.0|Info|AppFolderInfo|Data directory is being overridden to [/config]
+21-3-11 17:03:58.5|Info|Router|Application mode: Interactive
+21-3-11 17:03:59.6|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-11 17:04:00.9|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-11 17:04:01.0|Info|OwinHostController|Listening on the following URLs:
+21-3-11 17:04:01.0|Info|OwinHostController|  http://*:8989/
+21-3-11 17:04:01.8|Info|NancyBootstrapper|Starting Web Server
+21-3-11 17:10:35.0|Info|RssSyncService|Starting RSS Sync
+21-3-11 17:10:38.1|Warn|Torznab|jackett indexer 2  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+21-3-11 17:10:38.1|Warn|Torznab|Jackett indexer  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+21-3-11 17:10:38.2|Info|DownloadDecisionMaker|No results found
+21-3-11 17:10:38.2|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+21-3-11 17:14:33.9|Info|Bootstrap|Starting Sonarr - /app/sonarr/bin/NzbDrone.exe - Version 2.0.0.5344
+21-3-11 17:14:35.2|Info|AppFolderInfo|Data directory is being overridden to [/config]
+21-3-11 17:14:35.5|Info|Router|Application mode: Interactive
+21-3-11 17:14:35.8|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-11 17:14:36.2|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-11 17:14:36.3|Info|OwinHostController|Listening on the following URLs:
+21-3-11 17:14:36.3|Info|OwinHostController|  http://*:8989/
+21-3-11 17:14:36.7|Info|NancyBootstrapper|Starting Web Server
+21-3-11 17:17:51.7|Info|Bootstrap|Starting Sonarr - /app/sonarr/bin/NzbDrone.exe - Version 2.0.0.5344
+21-3-11 17:17:53.0|Info|AppFolderInfo|Data directory is being overridden to [/config]
+21-3-11 17:17:53.2|Info|Router|Application mode: Interactive
+21-3-11 17:17:53.6|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-11 17:17:53.9|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-11 17:17:54.0|Info|OwinHostController|Listening on the following URLs:
+21-3-11 17:17:54.0|Info|OwinHostController|  http://*:8989/
+21-3-11 17:17:54.3|Info|NancyBootstrapper|Starting Web Server
+21-3-11 17:19:36.5|Info|Bootstrap|Starting Sonarr - /app/sonarr/bin/NzbDrone.exe - Version 2.0.0.5344
+21-3-11 17:19:38.0|Info|AppFolderInfo|Data directory is being overridden to [/config]
+21-3-11 17:19:38.2|Info|Router|Application mode: Interactive
+21-3-11 17:19:38.5|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-11 17:19:38.8|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-11 17:19:38.9|Info|OwinHostController|Listening on the following URLs:
+21-3-11 17:19:38.9|Info|OwinHostController|  http://*:8989/sonarr/
+21-3-11 17:19:38.9|Info|OwinHostController|  http://*:8989/
+21-3-11 17:19:39.2|Info|NancyBootstrapper|Starting Web Server
+21-3-11 17:22:26.2|Info|Bootstrap|Starting Sonarr - /app/sonarr/bin/NzbDrone.exe - Version 2.0.0.5344
+21-3-11 17:22:27.3|Info|AppFolderInfo|Data directory is being overridden to [/config]
+21-3-11 17:22:27.6|Info|Router|Application mode: Interactive
+21-3-11 17:22:27.9|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-11 17:22:28.2|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-11 17:22:28.3|Info|OwinHostController|Listening on the following URLs:
+21-3-11 17:22:28.3|Info|OwinHostController|  http://*:8989/sonarr/
+21-3-11 17:22:28.3|Info|OwinHostController|  http://*:8989/
+21-3-11 17:22:28.6|Info|NancyBootstrapper|Starting Web Server
+21-3-11 17:26:00.5|Info|RssSyncService|Starting RSS Sync
+21-3-11 17:26:03.8|Warn|Torznab|jackett indexer 2  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+21-3-11 17:26:03.8|Warn|Torznab|Jackett indexer  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+21-3-11 17:26:03.8|Info|DownloadDecisionMaker|No results found
+21-3-11 17:26:03.9|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+21-3-18 08:58:03.8|Info|Bootstrap|Starting Sonarr - /app/sonarr/bin/NzbDrone.exe - Version 2.0.0.5344
+21-3-18 08:58:10.4|Info|AppFolderInfo|Data directory is being overridden to [/config]
+21-3-18 08:58:11.3|Info|Router|Application mode: Interactive
+21-3-18 08:58:12.7|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-18 08:58:14.6|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-18 08:58:15.7|Info|OwinHostController|Listening on the following URLs:
+21-3-18 08:58:15.8|Info|OwinHostController|  http://*:8989/sonarr/
+21-3-18 08:58:15.8|Info|OwinHostController|  http://*:8989/
+21-3-18 08:58:18.5|Info|NancyBootstrapper|Starting Web Server
+21-3-18 08:58:54.2|Info|SceneMappingService|Updating Scene mappings
+21-3-18 08:58:57.8|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Transmission
+
+[v2.0.0.5344] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings ---> System.Net.WebException: Error: ConnectFailure (No route to host): 'http://192.168.186.129:9091/transmission/rpc' ---> System.Net.WebException: Error: ConnectFailure (No route to host) ---> System.Net.Sockets.SocketException: No route to host
+  at System.Net.Sockets.SocketAsyncResult.CheckIfThrowDelayedException () [0x00014] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.Socket.EndConnect (System.IAsyncResult asyncResult) [0x0002c] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.SocketTaskExtensions+<>c.<ConnectAsync>b__2_1 (System.IAsyncResult asyncResult) [0x00006] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Threading.Tasks.TaskFactory`1[TResult].FromAsyncCoreLogic (System.IAsyncResult iar, System.Func`2[T,TResult] endFunction, System.Action`1[T] endAction, System.Threading.Tasks.Task`1[TResult] promise, System.Boolean requiresSynchronization) [0x00019] in <254335e8c4aa42e3923a8ba0d5ce8650>:0 
+--- End of stack trace from previous location where exception was thrown ---
+
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x0019b] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+   --- End of inner exception stack trace ---
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x00217] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebConnection.InitConnection (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x000cc] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebOperation.Run () [0x0009a] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebCompletionSource`1[T].WaitForCompletion () [0x00094] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0011b] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:82 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x001ca] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:113 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000b5] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:53 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:121 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:57 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient (NzbDrone.Common.Http.HttpRequestBuilder requestBuilder, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings, System.Boolean reauthenticate) [0x0004f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:218 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0001f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:255 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00138] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:307 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (System.Collections.Generic.IEnumerable`1[T] hashStrings, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0009e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:187 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:157 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:43 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems () [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:35 
+  at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads (NzbDrone.Core.Download.IDownloadClient downloadClient) [0x0000c] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:89 
+
+21-3-18 08:58:58.1|Info|RefreshSeriesService|Skipping refresh of series: Lovely Complex
+21-3-18 08:58:58.1|Warn|DiskScanService|Series' root folder (/tv) is empty.
+21-3-18 08:58:58.2|Info|RefreshSeriesService|Updating Info for Resident Alien
+21-3-18 08:58:58.2|Info|HousekeepingService|Running housecleaning tasks
+21-3-18 08:58:58.8|Info|Database|Vacuuming Log database
+21-3-18 08:58:58.8|Info|RefreshEpisodeService|Starting episode info refresh for: [368166][Resident Alien]
+21-3-18 08:58:58.8|Info|Database|Log database compressed
+21-3-18 08:58:58.9|Info|Database|Vacuuming Main database
+21-3-18 08:58:58.9|Info|Database|Main database compressed
+21-3-18 08:58:58.9|Info|RssSyncService|Starting RSS Sync
+21-3-18 08:58:59.0|Info|RefreshEpisodeService|Finished episode refresh for series: [368166][Resident Alien].
+21-3-18 08:58:59.1|Warn|DiskScanService|Series' root folder (/tv) is empty.
+21-3-18 08:59:00.7|Warn|Torznab|jackett indexer 2  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+21-3-18 08:59:00.8|Warn|Torznab|Jackett indexer  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+21-3-18 08:59:00.8|Info|DownloadDecisionMaker|No results found
+21-3-18 08:59:00.9|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+21-3-18 08:59:02.9|Info|MetadataService|Series folder does not exist, skipping metadata creation
+21-3-18 09:04:27.6|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Transmission
+
+[v2.0.0.5344] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings ---> System.Net.WebException: Error: ConnectFailure (No route to host): 'http://192.168.186.129:9091/transmission/rpc' ---> System.Net.WebException: Error: ConnectFailure (No route to host) ---> System.Net.Sockets.SocketException: No route to host
+  at System.Net.Sockets.SocketAsyncResult.CheckIfThrowDelayedException () [0x00014] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.Socket.EndConnect (System.IAsyncResult asyncResult) [0x0002c] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.SocketTaskExtensions+<>c.<ConnectAsync>b__2_1 (System.IAsyncResult asyncResult) [0x00006] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Threading.Tasks.TaskFactory`1[TResult].FromAsyncCoreLogic (System.IAsyncResult iar, System.Func`2[T,TResult] endFunction, System.Action`1[T] endAction, System.Threading.Tasks.Task`1[TResult] promise, System.Boolean requiresSynchronization) [0x00019] in <254335e8c4aa42e3923a8ba0d5ce8650>:0 
+--- End of stack trace from previous location where exception was thrown ---
+
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x0019b] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+   --- End of inner exception stack trace ---
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x00217] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebConnection.InitConnection (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x000cc] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebOperation.Run () [0x0009a] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebCompletionSource`1[T].WaitForCompletion () [0x00094] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0011b] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:82 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x001ca] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:113 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000b5] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:53 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:121 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:57 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient (NzbDrone.Common.Http.HttpRequestBuilder requestBuilder, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings, System.Boolean reauthenticate) [0x0004f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:218 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0001f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:255 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00138] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:307 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (System.Collections.Generic.IEnumerable`1[T] hashStrings, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0009e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:187 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:157 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:43 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems () [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:35 
+  at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads (NzbDrone.Core.Download.IDownloadClient downloadClient) [0x0000c] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:89 
+
+21-3-25 09:56:08.4|Info|Bootstrap|Starting Sonarr - /app/sonarr/bin/NzbDrone.exe - Version 2.0.0.5344
+21-3-25 09:56:10.5|Info|AppFolderInfo|Data directory is being overridden to [/config]
+21-3-25 09:56:10.9|Info|Router|Application mode: Interactive
+21-3-25 09:56:12.0|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-25 09:56:13.7|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-25 09:56:13.8|Info|OwinHostController|Listening on the following URLs:
+21-3-25 09:56:13.8|Info|OwinHostController|  http://*:8989/sonarr/
+21-3-25 09:56:13.8|Info|OwinHostController|  http://*:8989/
+21-3-25 09:56:14.4|Info|NancyBootstrapper|Starting Web Server
+21-3-25 09:56:48.3|Info|SceneMappingService|Updating Scene mappings
+21-3-25 09:56:51.0|Info|RefreshSeriesService|Skipping refresh of series: Lovely Complex
+21-3-25 09:56:51.0|Warn|DiskScanService|Series' root folder (/tv) is empty.
+21-3-25 09:56:51.1|Info|RefreshSeriesService|Updating Info for Resident Alien
+21-3-25 09:56:51.4|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Transmission
+
+[v2.0.0.5344] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings ---> System.Net.WebException: Error: ConnectFailure (No route to host): 'http://192.168.186.129:9091/transmission/rpc' ---> System.Net.WebException: Error: ConnectFailure (No route to host) ---> System.Net.Sockets.SocketException: No route to host
+  at System.Net.Sockets.SocketAsyncResult.CheckIfThrowDelayedException () [0x00014] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.Socket.EndConnect (System.IAsyncResult asyncResult) [0x0002c] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.SocketTaskExtensions+<>c.<ConnectAsync>b__2_1 (System.IAsyncResult asyncResult) [0x00006] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Threading.Tasks.TaskFactory`1[TResult].FromAsyncCoreLogic (System.IAsyncResult iar, System.Func`2[T,TResult] endFunction, System.Action`1[T] endAction, System.Threading.Tasks.Task`1[TResult] promise, System.Boolean requiresSynchronization) [0x00019] in <254335e8c4aa42e3923a8ba0d5ce8650>:0 
+--- End of stack trace from previous location where exception was thrown ---
+
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x0019b] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+   --- End of inner exception stack trace ---
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x00217] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebConnection.InitConnection (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x000cc] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebOperation.Run () [0x0009a] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebCompletionSource`1[T].WaitForCompletion () [0x00094] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0011b] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:82 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x001ca] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:113 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000b5] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:53 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:121 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:57 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient (NzbDrone.Common.Http.HttpRequestBuilder requestBuilder, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings, System.Boolean reauthenticate) [0x0004f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:218 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0001f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:255 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00138] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:307 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (System.Collections.Generic.IEnumerable`1[T] hashStrings, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0009e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:187 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:157 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:43 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems () [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:35 
+  at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads (NzbDrone.Core.Download.IDownloadClient downloadClient) [0x0000c] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:89 
+
+21-3-25 09:56:51.7|Info|HousekeepingService|Running housecleaning tasks
+21-3-25 09:56:51.7|Info|RefreshEpisodeService|Starting episode info refresh for: [368166][Resident Alien]
+21-3-25 09:56:51.8|Info|RefreshEpisodeService|Finished episode refresh for series: [368166][Resident Alien].
+21-3-25 09:56:51.8|Warn|DiskScanService|Series' root folder (/tv) is empty.
+21-3-25 09:56:52.0|Info|Database|Vacuuming Log database
+21-3-25 09:56:52.0|Info|Database|Log database compressed
+21-3-25 09:56:52.0|Info|Database|Vacuuming Main database
+21-3-25 09:56:52.1|Info|Database|Main database compressed
+21-3-25 09:56:52.1|Info|BackupService|Starting Backup
+21-3-25 09:56:52.2|Info|RssSyncService|Starting RSS Sync
+21-3-25 09:56:52.9|Info|MetadataService|Series folder does not exist, skipping metadata creation
+21-3-25 09:56:54.5|Warn|Torznab|jackett indexer 2  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 09:56:54.5|Warn|Torznab|Jackett indexer  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 09:56:54.5|Info|DownloadDecisionMaker|No results found
+21-3-25 09:56:54.6|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+21-3-25 10:02:21.7|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Transmission
+
+[v2.0.0.5344] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings ---> System.Net.WebException: Error: ConnectFailure (No route to host): 'http://192.168.186.129:9091/transmission/rpc' ---> System.Net.WebException: Error: ConnectFailure (No route to host) ---> System.Net.Sockets.SocketException: No route to host
+  at System.Net.Sockets.SocketAsyncResult.CheckIfThrowDelayedException () [0x00014] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.Socket.EndConnect (System.IAsyncResult asyncResult) [0x0002c] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.SocketTaskExtensions+<>c.<ConnectAsync>b__2_1 (System.IAsyncResult asyncResult) [0x00006] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Threading.Tasks.TaskFactory`1[TResult].FromAsyncCoreLogic (System.IAsyncResult iar, System.Func`2[T,TResult] endFunction, System.Action`1[T] endAction, System.Threading.Tasks.Task`1[TResult] promise, System.Boolean requiresSynchronization) [0x00019] in <254335e8c4aa42e3923a8ba0d5ce8650>:0 
+--- End of stack trace from previous location where exception was thrown ---
+
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x0019b] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+   --- End of inner exception stack trace ---
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x00217] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebConnection.InitConnection (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x000cc] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebOperation.Run () [0x0009a] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebCompletionSource`1[T].WaitForCompletion () [0x00094] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0011b] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:82 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x001ca] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:113 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000b5] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:53 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:121 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:57 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient (NzbDrone.Common.Http.HttpRequestBuilder requestBuilder, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings, System.Boolean reauthenticate) [0x0004f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:218 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0001f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:255 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00138] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:307 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (System.Collections.Generic.IEnumerable`1[T] hashStrings, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0009e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:187 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:157 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:43 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems () [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:35 
+  at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads (NzbDrone.Core.Download.IDownloadClient downloadClient) [0x0000c] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:89 
+
+21-3-25 10:08:52.0|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Transmission
+
+[v2.0.0.5344] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings ---> System.Net.WebException: Error: ConnectFailure (No route to host): 'http://192.168.186.129:9091/transmission/rpc' ---> System.Net.WebException: Error: ConnectFailure (No route to host) ---> System.Net.Sockets.SocketException: No route to host
+  at System.Net.Sockets.SocketAsyncResult.CheckIfThrowDelayedException () [0x00014] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.Socket.EndConnect (System.IAsyncResult asyncResult) [0x0002c] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.SocketTaskExtensions+<>c.<ConnectAsync>b__2_1 (System.IAsyncResult asyncResult) [0x00006] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Threading.Tasks.TaskFactory`1[TResult].FromAsyncCoreLogic (System.IAsyncResult iar, System.Func`2[T,TResult] endFunction, System.Action`1[T] endAction, System.Threading.Tasks.Task`1[TResult] promise, System.Boolean requiresSynchronization) [0x00019] in <254335e8c4aa42e3923a8ba0d5ce8650>:0 
+--- End of stack trace from previous location where exception was thrown ---
+
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x0019b] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+   --- End of inner exception stack trace ---
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x00217] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebConnection.InitConnection (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x000cc] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebOperation.Run () [0x0009a] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebCompletionSource`1[T].WaitForCompletion () [0x00094] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0011b] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:82 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x001ca] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:113 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000b5] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:53 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:121 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:57 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient (NzbDrone.Common.Http.HttpRequestBuilder requestBuilder, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings, System.Boolean reauthenticate) [0x0004f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:218 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0001f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:255 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00138] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:307 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (System.Collections.Generic.IEnumerable`1[T] hashStrings, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0009e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:187 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:157 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:43 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems () [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:35 
+  at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads (NzbDrone.Core.Download.IDownloadClient downloadClient) [0x0000c] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:89 
+
+21-3-25 10:12:19.0|Info|RssSyncService|Starting RSS Sync
+21-3-25 10:12:22.1|Warn|Torznab|Jackett indexer  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 10:12:22.1|Warn|Torznab|jackett indexer 2  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 10:12:22.1|Info|DownloadDecisionMaker|No results found
+21-3-25 10:12:22.1|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+21-3-25 10:14:22.2|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Transmission
+
+[v2.0.0.5344] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings ---> System.Net.WebException: Error: ConnectFailure (No route to host): 'http://192.168.186.129:9091/transmission/rpc' ---> System.Net.WebException: Error: ConnectFailure (No route to host) ---> System.Net.Sockets.SocketException: No route to host
+  at System.Net.Sockets.SocketAsyncResult.CheckIfThrowDelayedException () [0x00014] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.Socket.EndConnect (System.IAsyncResult asyncResult) [0x0002c] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.SocketTaskExtensions+<>c.<ConnectAsync>b__2_1 (System.IAsyncResult asyncResult) [0x00006] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Threading.Tasks.TaskFactory`1[TResult].FromAsyncCoreLogic (System.IAsyncResult iar, System.Func`2[T,TResult] endFunction, System.Action`1[T] endAction, System.Threading.Tasks.Task`1[TResult] promise, System.Boolean requiresSynchronization) [0x00019] in <254335e8c4aa42e3923a8ba0d5ce8650>:0 
+--- End of stack trace from previous location where exception was thrown ---
+
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x0019b] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+   --- End of inner exception stack trace ---
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x00217] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebConnection.InitConnection (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x000cc] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebOperation.Run () [0x0009a] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebCompletionSource`1[T].WaitForCompletion () [0x00094] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0011b] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:82 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x001ca] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:113 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000b5] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:53 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:121 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:57 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient (NzbDrone.Common.Http.HttpRequestBuilder requestBuilder, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings, System.Boolean reauthenticate) [0x0004f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:218 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0001f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:255 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00138] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:307 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (System.Collections.Generic.IEnumerable`1[T] hashStrings, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0009e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:187 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:157 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:43 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems () [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:35 
+  at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads (NzbDrone.Core.Download.IDownloadClient downloadClient) [0x0000c] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:89 
+
+21-3-25 10:27:49.4|Info|RssSyncService|Starting RSS Sync
+21-3-25 10:27:52.5|Warn|Torznab|Jackett indexer  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 10:27:52.6|Warn|Torznab|jackett indexer 2  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 10:27:52.6|Info|DownloadDecisionMaker|No results found
+21-3-25 10:27:52.6|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+21-3-25 10:43:19.8|Info|RssSyncService|Starting RSS Sync
+21-3-25 10:43:22.9|Warn|Torznab|Jackett indexer  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 10:43:22.9|Warn|Torznab|jackett indexer 2  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 10:43:22.9|Info|DownloadDecisionMaker|No results found
+21-3-25 10:43:22.9|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+21-3-25 10:51:34.2|Info|Bootstrap|Starting Sonarr - /app/sonarr/bin/NzbDrone.exe - Version 2.0.0.5344
+21-3-25 10:51:37.7|Info|AppFolderInfo|Data directory is being overridden to [/config]
+21-3-25 10:51:38.2|Info|Router|Application mode: Interactive
+21-3-25 10:51:39.3|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-25 10:51:40.4|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-25 10:51:40.6|Info|OwinHostController|Listening on the following URLs:
+21-3-25 10:51:40.6|Info|OwinHostController|  http://*:8989/sonarr/
+21-3-25 10:51:40.6|Info|OwinHostController|  http://*:8989/
+21-3-25 10:51:41.3|Info|NancyBootstrapper|Starting Web Server
+21-3-25 10:58:46.8|Info|RssSyncService|Starting RSS Sync
+21-3-25 10:58:50.0|Warn|Torznab|jackett indexer 2  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 10:58:50.0|Warn|Torznab|Jackett indexer  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 10:58:50.1|Info|DownloadDecisionMaker|No results found
+21-3-25 10:58:50.1|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+21-3-25 11:14:17.3|Info|RssSyncService|Starting RSS Sync
+21-3-25 11:14:20.4|Warn|Torznab|Jackett indexer  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 11:14:20.5|Warn|Torznab|jackett indexer 2  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 11:14:20.5|Info|DownloadDecisionMaker|No results found
+21-3-25 11:14:20.5|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+21-3-25 11:29:47.8|Info|RssSyncService|Starting RSS Sync
+21-3-25 11:29:50.9|Warn|Torznab|Jackett indexer  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 11:29:50.9|Warn|Torznab|jackett indexer 2  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 11:29:50.9|Info|DownloadDecisionMaker|No results found
+21-3-25 11:29:50.9|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+21-3-25 11:45:18.3|Info|RssSyncService|Starting RSS Sync
+21-3-25 11:45:21.4|Warn|Torznab|Jackett indexer  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 11:45:21.4|Warn|Torznab|jackett indexer 2  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 11:45:21.4|Info|DownloadDecisionMaker|No results found
+21-3-25 11:45:21.4|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+21-3-25 11:59:29.6|Info|Bootstrap|Starting Sonarr - /app/sonarr/bin/NzbDrone.exe - Version 2.0.0.5344
+21-3-25 11:59:32.6|Info|AppFolderInfo|Data directory is being overridden to [/config]
+21-3-25 11:59:33.2|Info|Router|Application mode: Interactive
+21-3-25 11:59:34.0|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-25 11:59:35.1|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-25 11:59:35.3|Info|OwinHostController|Listening on the following URLs:
+21-3-25 11:59:35.3|Info|OwinHostController|  http://*:8989/sonarr/
+21-3-25 11:59:35.3|Info|OwinHostController|  http://*:8989/
+21-3-25 11:59:36.1|Info|NancyBootstrapper|Starting Web Server
+21-3-25 12:00:40.4|Info|RssSyncService|Starting RSS Sync
+21-3-25 12:00:43.6|Warn|Torznab|jackett indexer 2  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 12:00:43.6|Warn|Torznab|Jackett indexer  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 12:00:43.6|Info|DownloadDecisionMaker|No results found
+21-3-25 12:00:43.7|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+21-3-25 12:02:37.7|Info|Bootstrap|Starting Sonarr - /app/sonarr/bin/NzbDrone.exe - Version 2.0.0.5344
+21-3-25 12:02:39.8|Info|AppFolderInfo|Data directory is being overridden to [/config]
+21-3-25 12:02:40.4|Info|Router|Application mode: Interactive
+21-3-25 12:02:41.1|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-25 12:02:42.0|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-25 12:02:42.1|Info|OwinHostController|Listening on the following URLs:
+21-3-25 12:02:42.1|Info|OwinHostController|  http://*:8989/sonarr/
+21-3-25 12:02:42.1|Info|OwinHostController|  http://*:8989/
+21-3-25 12:02:42.8|Info|NancyBootstrapper|Starting Web Server
+21-3-25 12:11:53.8|Info|Bootstrap|Starting Sonarr - /app/sonarr/bin/NzbDrone.exe - Version 2.0.0.5344
+21-3-25 12:11:55.9|Info|AppFolderInfo|Data directory is being overridden to [/config]
+21-3-25 12:11:56.4|Info|Router|Application mode: Interactive
+21-3-25 12:11:57.0|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-25 12:11:57.7|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-25 12:11:57.8|Info|OwinHostController|Listening on the following URLs:
+21-3-25 12:11:57.8|Info|OwinHostController|  http://*:8989/sonarr/
+21-3-25 12:11:57.8|Info|OwinHostController|  http://*:8989/
+21-3-25 12:11:58.2|Info|NancyBootstrapper|Starting Web Server
+21-3-25 12:16:02.8|Info|RssSyncService|Starting RSS Sync
+21-3-25 12:16:06.0|Warn|Torznab|Jackett indexer  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 12:16:06.0|Warn|Torznab|jackett indexer 2  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 12:16:06.0|Info|DownloadDecisionMaker|No results found
+21-3-25 12:16:06.1|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+21-3-25 12:19:19.2|Info|Bootstrap|Starting Sonarr - /app/sonarr/bin/NzbDrone.exe - Version 2.0.0.5344
+21-3-25 12:19:21.2|Info|AppFolderInfo|Data directory is being overridden to [/config]
+21-3-25 12:19:21.6|Info|Router|Application mode: Interactive
+21-3-25 12:19:22.2|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-25 12:19:22.9|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-25 12:19:23.1|Info|OwinHostController|Listening on the following URLs:
+21-3-25 12:19:23.1|Info|OwinHostController|  http://*:8989/sonarr/
+21-3-25 12:19:23.1|Info|OwinHostController|  http://*:8989/
+21-3-25 12:19:23.7|Info|NancyBootstrapper|Starting Web Server
+21-3-25 12:31:27.6|Info|RssSyncService|Starting RSS Sync
+21-3-25 12:31:30.8|Warn|Torznab|jackett indexer 2  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 12:31:30.7|Warn|Torznab|Jackett indexer  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 12:31:30.8|Info|DownloadDecisionMaker|No results found
+21-3-25 12:31:30.8|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+21-3-25 12:37:41.9|Info|Bootstrap|Starting Sonarr - /app/sonarr/bin/NzbDrone.exe - Version 2.0.0.5344
+21-3-25 12:37:44.8|Info|AppFolderInfo|Data directory is being overridden to [/config]
+21-3-25 12:37:45.4|Info|Router|Application mode: Interactive
+21-3-25 12:37:46.9|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-25 12:37:48.4|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-25 12:37:48.6|Info|OwinHostController|Listening on the following URLs:
+21-3-25 12:37:49.1|Info|OwinHostController|  http://*:8989/sonarr/
+21-3-25 12:37:49.1|Info|OwinHostController|  http://*:8989/
+21-3-25 12:37:49.9|Info|NancyBootstrapper|Starting Web Server
+21-3-25 12:40:59.6|Info|Bootstrap|Starting Sonarr - /app/sonarr/bin/NzbDrone.exe - Version 2.0.0.5344
+21-3-25 12:41:02.3|Info|AppFolderInfo|Data directory is being overridden to [/config]
+21-3-25 12:41:03.0|Info|Router|Application mode: Interactive
+21-3-25 12:41:04.0|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-25 12:41:04.9|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-25 12:41:05.1|Info|OwinHostController|Listening on the following URLs:
+21-3-25 12:41:05.1|Info|OwinHostController|  http://*:8989/sonarr/
+21-3-25 12:41:05.1|Info|OwinHostController|  http://*:8989/
+21-3-25 12:41:05.7|Info|NancyBootstrapper|Starting Web Server
+21-3-25 12:42:47.3|Info|Bootstrap|Starting Sonarr - /app/sonarr/bin/NzbDrone.exe - Version 2.0.0.5344
+21-3-25 12:42:48.8|Info|AppFolderInfo|Data directory is being overridden to [/config]
+21-3-25 12:42:49.1|Info|Router|Application mode: Interactive
+21-3-25 12:42:49.5|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-25 12:42:49.9|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-25 12:42:50.0|Info|OwinHostController|Listening on the following URLs:
+21-3-25 12:42:50.0|Info|OwinHostController|  http://*:8989/sonarr/
+21-3-25 12:42:50.0|Info|OwinHostController|  http://*:8989/
+21-3-25 12:42:50.4|Info|NancyBootstrapper|Starting Web Server
+21-3-25 12:46:23.6|Info|Bootstrap|Starting Sonarr - /app/sonarr/bin/NzbDrone.exe - Version 2.0.0.5344
+21-3-25 12:46:24.8|Info|AppFolderInfo|Data directory is being overridden to [/config]
+21-3-25 12:46:25.2|Info|Router|Application mode: Interactive
+21-3-25 12:46:25.5|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-25 12:46:25.9|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-25 12:46:26.0|Info|OwinHostController|Listening on the following URLs:
+21-3-25 12:46:26.0|Info|OwinHostController|  http://*:8989/sonarr/
+21-3-25 12:46:26.0|Info|OwinHostController|  http://*:8989/
+21-3-25 12:46:26.3|Info|NancyBootstrapper|Starting Web Server
+21-3-25 12:46:58.3|Info|RssSyncService|Starting RSS Sync
+21-3-25 12:47:01.7|Warn|Torznab|Jackett indexer  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 12:47:01.7|Warn|Torznab|jackett indexer 2  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 12:47:01.7|Info|DownloadDecisionMaker|No results found
+21-3-25 12:47:01.7|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+21-3-25 12:56:58.7|Info|SceneMappingService|Updating Scene mappings
+21-3-25 13:02:28.9|Info|RssSyncService|Starting RSS Sync
+21-3-25 13:02:32.0|Warn|Torznab|jackett indexer 2  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 13:02:32.0|Warn|Torznab|Jackett indexer  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 13:02:32.0|Info|DownloadDecisionMaker|No results found
+21-3-25 13:02:32.0|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+21-3-25 13:12:08.7|Info|Bootstrap|Starting Sonarr - /app/sonarr/bin/NzbDrone.exe - Version 2.0.0.5344
+21-3-25 13:12:10.7|Info|AppFolderInfo|Data directory is being overridden to [/config]
+21-3-25 13:12:11.1|Info|Router|Application mode: Interactive
+21-3-25 13:12:11.5|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-25 13:12:12.1|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-25 13:12:12.5|Info|OwinHostController|Listening on the following URLs:
+21-3-25 13:12:12.5|Info|OwinHostController|  http://*:8989/sonarr/
+21-3-25 13:12:12.5|Info|OwinHostController|  http://*:8989/
+21-3-25 13:12:12.9|Info|NancyBootstrapper|Starting Web Server
+21-3-25 13:15:49.6|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Transmission
+
+[v2.0.0.5344] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings ---> System.Net.WebException: Error: ConnectFailure (No route to host): 'http://192.168.186.129:9091/transmission/rpc' ---> System.Net.WebException: Error: ConnectFailure (No route to host) ---> System.Net.Sockets.SocketException: No route to host
+  at System.Net.Sockets.SocketAsyncResult.CheckIfThrowDelayedException () [0x00014] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.Socket.EndConnect (System.IAsyncResult asyncResult) [0x0002c] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.SocketTaskExtensions+<>c.<ConnectAsync>b__2_1 (System.IAsyncResult asyncResult) [0x00006] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Threading.Tasks.TaskFactory`1[TResult].FromAsyncCoreLogic (System.IAsyncResult iar, System.Func`2[T,TResult] endFunction, System.Action`1[T] endAction, System.Threading.Tasks.Task`1[TResult] promise, System.Boolean requiresSynchronization) [0x00019] in <254335e8c4aa42e3923a8ba0d5ce8650>:0 
+--- End of stack trace from previous location where exception was thrown ---
+
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x0019b] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+   --- End of inner exception stack trace ---
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x00217] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebConnection.InitConnection (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x000cc] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebOperation.Run () [0x0009a] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebCompletionSource`1[T].WaitForCompletion () [0x00094] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0011b] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:82 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x001ca] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:113 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000b5] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:53 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:121 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:57 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient (NzbDrone.Common.Http.HttpRequestBuilder requestBuilder, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings, System.Boolean reauthenticate) [0x0004f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:218 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0001f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:255 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00138] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:307 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (System.Collections.Generic.IEnumerable`1[T] hashStrings, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0009e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:187 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:157 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:43 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems () [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:35 
+  at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads (NzbDrone.Core.Download.IDownloadClient downloadClient) [0x0000c] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:89 
+
+21-3-25 13:17:46.4|Info|RssSyncService|Starting RSS Sync
+21-3-25 13:17:49.6|Warn|Torznab|Jackett indexer  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 13:17:49.6|Warn|Torznab|jackett indexer 2  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 13:17:49.6|Info|DownloadDecisionMaker|No results found
+21-3-25 13:17:49.7|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+21-3-25 13:22:19.7|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Transmission
+
+[v2.0.0.5344] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings ---> System.Net.WebException: Error: ConnectFailure (No route to host): 'http://192.168.186.129:9091/transmission/rpc' ---> System.Net.WebException: Error: ConnectFailure (No route to host) ---> System.Net.Sockets.SocketException: No route to host
+  at System.Net.Sockets.SocketAsyncResult.CheckIfThrowDelayedException () [0x00014] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.Socket.EndConnect (System.IAsyncResult asyncResult) [0x0002c] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.SocketTaskExtensions+<>c.<ConnectAsync>b__2_1 (System.IAsyncResult asyncResult) [0x00006] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Threading.Tasks.TaskFactory`1[TResult].FromAsyncCoreLogic (System.IAsyncResult iar, System.Func`2[T,TResult] endFunction, System.Action`1[T] endAction, System.Threading.Tasks.Task`1[TResult] promise, System.Boolean requiresSynchronization) [0x00019] in <254335e8c4aa42e3923a8ba0d5ce8650>:0 
+--- End of stack trace from previous location where exception was thrown ---
+
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x0019b] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+   --- End of inner exception stack trace ---
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x00217] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebConnection.InitConnection (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x000cc] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebOperation.Run () [0x0009a] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebCompletionSource`1[T].WaitForCompletion () [0x00094] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0011b] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:82 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x001ca] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:113 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000b5] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:53 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:121 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:57 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient (NzbDrone.Common.Http.HttpRequestBuilder requestBuilder, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings, System.Boolean reauthenticate) [0x0004f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:218 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0001f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:255 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00138] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:307 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (System.Collections.Generic.IEnumerable`1[T] hashStrings, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0009e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:187 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:157 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:43 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems () [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:35 
+  at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads (NzbDrone.Core.Download.IDownloadClient downloadClient) [0x0000c] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:89 
+
+21-3-25 13:28:12.2|Info|Bootstrap|Starting Sonarr - /app/sonarr/bin/NzbDrone.exe - Version 2.0.0.5344
+21-3-25 13:28:15.4|Info|AppFolderInfo|Data directory is being overridden to [/config]
+21-3-25 13:28:16.0|Info|Router|Application mode: Interactive
+21-3-25 13:28:16.8|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-25 13:28:17.6|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-25 13:28:17.8|Info|OwinHostController|Listening on the following URLs:
+21-3-25 13:28:17.8|Info|OwinHostController|  http://*:8989/sonarr/
+21-3-25 13:28:17.8|Info|OwinHostController|  http://*:8989/
+21-3-25 13:28:18.4|Info|NancyBootstrapper|Starting Web Server
+21-3-25 13:28:55.7|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Transmission
+
+[v2.0.0.5344] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings ---> System.Net.WebException: Error: ConnectFailure (No route to host): 'http://192.168.186.129:9091/transmission/rpc' ---> System.Net.WebException: Error: ConnectFailure (No route to host) ---> System.Net.Sockets.SocketException: No route to host
+  at System.Net.Sockets.SocketAsyncResult.CheckIfThrowDelayedException () [0x00014] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.Socket.EndConnect (System.IAsyncResult asyncResult) [0x0002c] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.SocketTaskExtensions+<>c.<ConnectAsync>b__2_1 (System.IAsyncResult asyncResult) [0x00006] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Threading.Tasks.TaskFactory`1[TResult].FromAsyncCoreLogic (System.IAsyncResult iar, System.Func`2[T,TResult] endFunction, System.Action`1[T] endAction, System.Threading.Tasks.Task`1[TResult] promise, System.Boolean requiresSynchronization) [0x00019] in <254335e8c4aa42e3923a8ba0d5ce8650>:0 
+--- End of stack trace from previous location where exception was thrown ---
+
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x0019b] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+   --- End of inner exception stack trace ---
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x00217] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebConnection.InitConnection (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x000cc] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebOperation.Run () [0x0009a] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebCompletionSource`1[T].WaitForCompletion () [0x00094] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0011b] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:82 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x001ca] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:113 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000b5] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:53 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:121 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:57 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient (NzbDrone.Common.Http.HttpRequestBuilder requestBuilder, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings, System.Boolean reauthenticate) [0x0004f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:218 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0001f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:255 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00138] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:307 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (System.Collections.Generic.IEnumerable`1[T] hashStrings, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0009e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:187 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:157 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:43 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems () [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:35 
+  at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads (NzbDrone.Core.Download.IDownloadClient downloadClient) [0x0000c] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:89 
+
+21-3-25 13:32:52.9|Info|RssSyncService|Starting RSS Sync
+21-3-25 13:32:56.1|Warn|Torznab|jackett indexer 2  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 13:32:56.1|Warn|Torznab|Jackett indexer  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 13:32:56.2|Info|DownloadDecisionMaker|No results found
+21-3-25 13:32:56.2|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+21-3-25 13:35:26.1|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Transmission
+
+[v2.0.0.5344] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings ---> System.Net.WebException: Error: ConnectFailure (No route to host): 'http://192.168.186.129:9091/transmission/rpc' ---> System.Net.WebException: Error: ConnectFailure (No route to host) ---> System.Net.Sockets.SocketException: No route to host
+  at System.Net.Sockets.SocketAsyncResult.CheckIfThrowDelayedException () [0x00014] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.Socket.EndConnect (System.IAsyncResult asyncResult) [0x0002c] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.SocketTaskExtensions+<>c.<ConnectAsync>b__2_1 (System.IAsyncResult asyncResult) [0x00006] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Threading.Tasks.TaskFactory`1[TResult].FromAsyncCoreLogic (System.IAsyncResult iar, System.Func`2[T,TResult] endFunction, System.Action`1[T] endAction, System.Threading.Tasks.Task`1[TResult] promise, System.Boolean requiresSynchronization) [0x00019] in <254335e8c4aa42e3923a8ba0d5ce8650>:0 
+--- End of stack trace from previous location where exception was thrown ---
+
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x0019b] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+   --- End of inner exception stack trace ---
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x00217] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebConnection.InitConnection (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x000cc] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebOperation.Run () [0x0009a] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebCompletionSource`1[T].WaitForCompletion () [0x00094] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0011b] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:82 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x001ca] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:113 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000b5] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:53 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:121 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:57 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient (NzbDrone.Common.Http.HttpRequestBuilder requestBuilder, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings, System.Boolean reauthenticate) [0x0004f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:218 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0001f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:255 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00138] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:307 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (System.Collections.Generic.IEnumerable`1[T] hashStrings, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0009e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:187 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:157 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:43 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems () [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:35 
+  at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads (NzbDrone.Core.Download.IDownloadClient downloadClient) [0x0000c] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:89 
+
+21-3-25 13:40:56.4|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Transmission
+
+[v2.0.0.5344] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings ---> System.Net.WebException: Error: ConnectFailure (No route to host): 'http://192.168.186.129:9091/transmission/rpc' ---> System.Net.WebException: Error: ConnectFailure (No route to host) ---> System.Net.Sockets.SocketException: No route to host
+  at System.Net.Sockets.SocketAsyncResult.CheckIfThrowDelayedException () [0x00014] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.Socket.EndConnect (System.IAsyncResult asyncResult) [0x0002c] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.SocketTaskExtensions+<>c.<ConnectAsync>b__2_1 (System.IAsyncResult asyncResult) [0x00006] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Threading.Tasks.TaskFactory`1[TResult].FromAsyncCoreLogic (System.IAsyncResult iar, System.Func`2[T,TResult] endFunction, System.Action`1[T] endAction, System.Threading.Tasks.Task`1[TResult] promise, System.Boolean requiresSynchronization) [0x00019] in <254335e8c4aa42e3923a8ba0d5ce8650>:0 
+--- End of stack trace from previous location where exception was thrown ---
+
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x0019b] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+   --- End of inner exception stack trace ---
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x00217] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebConnection.InitConnection (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x000cc] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebOperation.Run () [0x0009a] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebCompletionSource`1[T].WaitForCompletion () [0x00094] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0011b] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:82 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x001ca] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:113 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000b5] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:53 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:121 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:57 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient (NzbDrone.Common.Http.HttpRequestBuilder requestBuilder, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings, System.Boolean reauthenticate) [0x0004f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:218 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0001f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:255 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00138] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:307 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (System.Collections.Generic.IEnumerable`1[T] hashStrings, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0009e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:187 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:157 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:43 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems () [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:35 
+  at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads (NzbDrone.Core.Download.IDownloadClient downloadClient) [0x0000c] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:89 
+
+21-3-25 13:46:56.4|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Transmission
+
+[v2.0.0.5344] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings ---> System.Net.WebException: Error: ConnectFailure (No route to host): 'http://192.168.186.129:9091/transmission/rpc' ---> System.Net.WebException: Error: ConnectFailure (No route to host) ---> System.Net.Sockets.SocketException: No route to host
+  at System.Net.Sockets.SocketAsyncResult.CheckIfThrowDelayedException () [0x00014] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.Socket.EndConnect (System.IAsyncResult asyncResult) [0x0002c] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.Sockets.SocketTaskExtensions+<>c.<ConnectAsync>b__2_1 (System.IAsyncResult asyncResult) [0x00006] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Threading.Tasks.TaskFactory`1[TResult].FromAsyncCoreLogic (System.IAsyncResult iar, System.Func`2[T,TResult] endFunction, System.Action`1[T] endAction, System.Threading.Tasks.Task`1[TResult] promise, System.Boolean requiresSynchronization) [0x00019] in <254335e8c4aa42e3923a8ba0d5ce8650>:0 
+--- End of stack trace from previous location where exception was thrown ---
+
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x0019b] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+   --- End of inner exception stack trace ---
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x00217] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebConnection.InitConnection (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x000cc] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebOperation.Run () [0x0009a] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.WebCompletionSource`1[T].WaitForCompletion () [0x00094] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0011b] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:82 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x001ca] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:113 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000b5] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:53 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:121 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:57 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient (NzbDrone.Common.Http.HttpRequestBuilder requestBuilder, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings, System.Boolean reauthenticate) [0x0004f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:218 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0001f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:255 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00138] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:307 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (System.Collections.Generic.IEnumerable`1[T] hashStrings, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0009e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:187 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:157 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:43 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems () [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:35 
+  at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads (NzbDrone.Core.Download.IDownloadClient downloadClient) [0x0000c] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:89 
+
+21-3-25 13:48:23.4|Info|RssSyncService|Starting RSS Sync
+21-3-25 13:48:26.5|Warn|Torznab|Jackett indexer  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 13:48:26.5|Warn|Torznab|jackett indexer 2  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 13:48:26.5|Info|DownloadDecisionMaker|No results found
+21-3-25 13:48:26.5|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+21-3-25 14:02:15.1|Info|Bootstrap|Starting Sonarr - /app/sonarr/bin/NzbDrone.exe - Version 2.0.0.5344
+21-3-25 14:02:16.5|Info|AppFolderInfo|Data directory is being overridden to [/config]
+21-3-25 14:02:16.8|Info|Router|Application mode: Interactive
+21-3-25 14:02:17.2|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-25 14:02:17.6|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-25 14:02:17.7|Info|OwinHostController|Listening on the following URLs:
+21-3-25 14:02:17.7|Info|OwinHostController|  http://*:8989/sonarr/
+21-3-25 14:02:17.7|Info|OwinHostController|  http://*:8989/
+21-3-25 14:02:18.0|Info|NancyBootstrapper|Starting Web Server
+21-3-25 14:03:50.2|Info|RssSyncService|Starting RSS Sync
+21-3-25 14:03:53.4|Warn|Torznab|Jackett indexer  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 14:03:53.4|Warn|Torznab|jackett indexer 2  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 14:03:53.4|Info|DownloadDecisionMaker|No results found
+21-3-25 14:03:53.4|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+21-3-25 14:05:12.0|Info|Bootstrap|Starting Sonarr - /app/sonarr/bin/NzbDrone.exe - Version 2.0.0.5344
+21-3-25 14:05:13.5|Info|AppFolderInfo|Data directory is being overridden to [/config]
+21-3-25 14:05:13.8|Info|Router|Application mode: Interactive
+21-3-25 14:05:14.2|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-25 14:05:14.7|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-25 14:05:14.8|Info|OwinHostController|Listening on the following URLs:
+21-3-25 14:05:14.8|Info|OwinHostController|  http://*:8989/sonarr/
+21-3-25 14:05:14.8|Info|OwinHostController|  http://*:8989/
+21-3-25 14:05:15.2|Info|NancyBootstrapper|Starting Web Server
+21-3-25 14:19:17.7|Info|RssSyncService|Starting RSS Sync
+21-3-25 14:19:20.8|Warn|Torznab|Jackett indexer  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 14:19:20.8|Warn|Torznab|jackett indexer 2  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 14:19:20.9|Info|DownloadDecisionMaker|No results found
+21-3-25 14:19:20.9|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+21-3-25 14:34:48.2|Info|RssSyncService|Starting RSS Sync
+21-3-25 14:34:52.5|Warn|Torznab|jackett indexer 2  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 14:34:52.5|Warn|Torznab|Jackett indexer  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 14:34:52.5|Info|DownloadDecisionMaker|No results found
+21-3-25 14:34:52.5|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+21-3-25 14:48:13.6|Info|Bootstrap|Starting Sonarr - /app/sonarr/bin/NzbDrone.exe - Version 2.0.0.5344
+21-3-25 14:48:14.9|Info|AppFolderInfo|Data directory is being overridden to [/config]
+21-3-25 14:48:15.2|Info|Router|Application mode: Interactive
+21-3-25 14:48:15.6|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-25 14:48:16.2|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+21-3-25 14:48:16.3|Info|OwinHostController|Listening on the following URLs:
+21-3-25 14:48:16.3|Info|OwinHostController|  http://*:8989/sonarr/
+21-3-25 14:48:16.3|Info|OwinHostController|  http://*:8989/
+21-3-25 14:48:16.7|Info|NancyBootstrapper|Starting Web Server
+21-3-25 14:50:19.4|Info|RssSyncService|Starting RSS Sync
+21-3-25 14:50:22.6|Warn|Torznab|jackett indexer 2  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 14:50:22.6|Warn|Torznab|Jackett indexer  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 14:50:22.6|Info|DownloadDecisionMaker|No results found
+21-3-25 14:50:22.7|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+21-3-25 15:05:50.0|Info|RssSyncService|Starting RSS Sync
+21-3-25 15:05:53.2|Warn|Torznab|jackett indexer 2  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 15:05:53.2|Warn|Torznab|Jackett indexer  Error: ConnectFailure (No route to host): 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+21-3-25 15:05:53.2|Info|DownloadDecisionMaker|No results found
+21-3-25 15:05:53.2|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
