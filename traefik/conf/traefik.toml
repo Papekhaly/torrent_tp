@@ -1,8 +1,9 @@
 [entryPoints]
-  [entryPoints.http]
+  [entryPoints.web]
   address = ":80"
+  [entryPoints.web-sercured]
+  adress = ":443"
 
-[retry]
 
 [api]
   dashboard = true
@@ -14,10 +15,10 @@ endpoint = "unix:///var/run/docker.sock"
 watch = true
 exposedbydefault = false
 
-[acme]
-email = "me@example.com"
-storage = "acme.json"
-entryPoint = "http"
-OnHostRule = true
-  [acme.httpChallenge]
-  entryPoint = "http"
+[certificatesResolvers.myresolver.acme]
+  email = "me@example.com" 
+  storage = "acme.json"
+   [certificatesResolvers.myresolver.acme.httpChallenge]
+     entryPoint = "web-secured"
+     OnHostRule = true
+  
