@@ -2,11 +2,15 @@
 
 ## Schéma d'architecture
 
+![Schema1](schéma1.png)
+
 L'architecture est déployée sur Docker et comprend une chaine complète pour le téléchargement et le management de films et séries téléchargés. Sonarr et Radarr sont chargés de rechercher des séries ou des films que l'on requête. Ils envoient ainsi cette requête vers Jackett, qui s'occupe de faire les recherches, et les renvoie vers Sonarr et Radarr. Si un résultat correspond aux attentes, alors le torrent est récupéré, puis renommé et placé dans un dossier /Downloads. Bazarr cherche et télécharge les sous-titres associés au torrent récupéré par Sonarr et Radarr. 
 Transmission, ensuite, s'occupe de récupérer le fichier torrent dans /Downloads et de le télécharger. 
 Enfin, Jellyfin permet d'avoir une bibliothèque des films et séries que l'on possède. Une fois intégré à la bibliothèque Jellyfin, les films, les séries et la musique présents sur l'application sont disponibles à n'importe quelle adresse avec un client Jellyfin (disponible sur Android, navigateurs Web etc.).
 
-Autour de cette architecture, nous retrouvons Traefik, qui sert ici de reverse-proxy. Il permet d'accéder aux interfaces Web de chaque service. Portainer est un service permettant de gérer plus facilement les containers Docker. Watchtower permet l'automatisation des mises à jour des images. 
+![Schema2](schéma2.png)
+
+Autour de cette architecture, nous retrouvons Traefik, qui sert ici de reverse-proxy. Il permet d'accéder aux interfaces Web de chaque service. Portainer, non présent sur le schéma car ne faisant pas réellement parti de l'infrastructure, est un service permettant de gérer plus facilement les containers Docker. Watchtower permet l'automatisation des mises à jour des images. Enfin, une partie monitoring, composée de Prometheus et de Grafana.
 
 ## Déploiement
 
@@ -20,7 +24,7 @@ docker-compose up -d
 
 ### Jackett
 
-Jackett est un service qui agit en tant que proxy. Il reçoit les requêtes venant de Sonarr et Radarr, requêtes contenant un nom de film ou de série, et effectue les recherches concernant cette requête. Ses résultats sont ensuite envoyés vers Sonarr et Radarr. Dans son déploiement, on spécifie les deux 
+Jackett est un service qui agit en tant que proxy. Il reçoit les requêtes venant de Sonarr et Radarr, requêtes contenant un nom de film ou de série, et effectue les recherches concernant cette requête. Ses résultats sont ensuite envoyés vers Sonarr et Radarr. 
 
 ### Transmission
 
@@ -126,3 +130,7 @@ Portainer est un service permettant d'administrer les containers depuis une inte
 ### Watchtower
 
 Watchtower est un service permettant l'automatisation des mises à jour des images. Lorsqu'une nouvelle version est poussée sur le Docker Hub ou sur un autre registe d'images, Watchtower le détecte et télécharge la nouvelle version, éteint le container et le redémarre avec la nouvelle version de l'image. 
+
+### Prometheus & Grafana
+
+Prometheus et Grafana sont deux outils qui fonctionnent ensemble : Prometheus va chercher des métriques sur chaque container et Grafana permet de les afficher sous forme de graphiques. 
