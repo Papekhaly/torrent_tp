@@ -23,13 +23,14 @@ services:
       #- --providers.file.filename=/dynamic.yaml # <== Referring to a dynamic configuration file
       - --providers.docker.network=mynet # <== Operate on the docker network named web
       ## Entrypoints Settings - https://docs.traefik.io/routing/entrypoints/#configuration ##
-      - --entrypoints.web.address=:80 # <== Defining an entrypoint for port :80 named web
+      #- --entrypoints.web.address=:80 # <== Defining an entrypoint for port :80 named web
       - --entrypoints.web-secured.address=:443 # <== Defining an entrypoint for https on port :443 named web-secured
       ## Certificate Settings (Let's Encrypt) -  https://docs.traefik.io/https/acme/#configuration-examples ##
       - --certificatesresolvers.mytlschallenge.acme.tlschallenge=true # <== Enable TLS-ALPN-01 to generate and renew ACME certs
       - --certificatesresolvers.mytlschallenge.acme.email=theafkdeveloper@gmail.com # <== Setting email for certs
       - --certificatesresolvers.mytlschallenge.acme.storage=/letsencrypt/acme.json # <== Defining acme file to store cert information
-      - --certificatesresolvers.mytlschallenge.acme.caserver=https://acme-staging-v02.api.letsencrypt.org/directory   
+      - --certificatesresolvers.mytlschallenge.acme.caserver=https://acme-v02.api.letsencrypt.org/directory   
+      #- --certificatesresolvers.myresolver.acme.dnschallenge.provider=noip
     volumes:
       - ./letsencrypt:/letsencrypt # <== Volume for certs (TLS)
       - /var/run/docker.sock:/var/run/docker.sock # <== Volume for docker admin
@@ -39,9 +40,11 @@ services:
     labels:
     #### Labels define the behavior and rules of the traefik proxy for this container ####
       - "traefik.enable=true" # <== Enable traefik on itself to view dashboard and assign subdomain to view it
-      - "traefik.http.routers.api.rule=Host(`dockermodule21.ddns.net`)" # <== Setting the domain for the dashboard
+      - "traefik.http.routers.api.rule=Host(`dockermodule.ddns.net`)" # <== Setting the domain for the dashboard
       - "traefik.http.routers.api.service=api@internal" # <== Enabling the api to be a service to access
-
+      - "traefik.http.routers.api.entrypoints=web-secured"
+      - "traefik.http.routers.api.tls=true"
+      - "traefik.http.routers.api.tls.certresolver=mytlschallenge"
 
   bazarr:
     image: ghcr.io/linuxserver/bazarr
@@ -58,17 +61,18 @@ services:
    # ports:
     #  - 6767:6767
     labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.bazarr_back.middlewares=bazarr-prefix"
-      - "traefik.http.middlewares.bazarr-prefix.stripprefix.prefixes=/bazarr"
-
-      - "traefik.http.routers.bazarr.rule=PathPrefix(`/bazarr{regex:$$|/.*}`)"
-     
-      - "traefik.http.routers.bazar_back.tls=true" 
-      - "traefik.http.routers.bazarr_back.entrypoints=web-secured"
-      - "traefik.http.routers.bazarr_back.tls.certresolver=mytlschallenge"
-      - "traefik.http.routers.bazarr_back.service=bazarr_back"
-      - "traefik.http.services.bazarr_back.loadbalancer.server.port=6767"
+       - "traefik.enable=true"
+       - "traefik.http.routers.bazarr.entrypoints=web-secured"
+      # - "traefik.http.routers.bazarr.rule=PathPrefix(`/bazarr{regex:$$|/.*}`)"
+      # - "traefik.http.routers.bazarr.middlewares=bazarr-prefix"
+      # - "traefik.http.middlewares.bazarr-prefix.stripprefix.prefixes=/bazarr"
+      
+       - "traefik.http.routers.bazarr.rule=Host(`bazarr.ddns.net`)"
+      # - "traefik.http.routers.bazarr_back.entrypoints=web-secured"
+       - "traefik.http.routers.bazarr.tls=true"
+       - "traefik.http.routers.bazarr.tls.certresolver=mytlschallenge"
+       - "traefik.http.services.bazarr.loadbalancer.server.port=6767"
+    
     networks:
       - mynet
     restart: unless-stopped
@@ -89,14 +93,18 @@ services:
     labels:
     #front
       - "traefik.enable=true"
-      - "traefik.http.routers.portainer.entrypoints=web"
+      - "traefik.http.routers.portainer.entrypoints=web-secured"
       - "traefik.http.routers.portainer.rule=PathPrefix(`/portainer{regex:$$|/.*}`)"
       - "traefik.http.routers.portainer.middlewares=portainer-prefix"
       - "traefik.http.middlewares.portainer-prefix.stripprefix.prefixes=/portainer"
       - "traefik.http.routers.portainer.service=portainer"
+      - "traefik.http.routers.portainer.tls=true"
+      - "traefik.http.routers.portainer.tls.certresolver=mytlschallenge"
       - "traefik.http.services.portainer.loadbalancer.server.port=9000"
       #back
-      - "traefik.http.routers.portainer_back.entrypoints=web"
+      - "traefik.http.routers.portainer_back.entrypoints=web-secured"
+      - "traefik.http.routers.portainer_back.tls=true"
+      - "traefik.http.routers.portainer_back.tls.certresolver=mytlschallenge"
       - "traefik.http.services.portainer_back.loadbalancer.server.port=8000"
       - "traefik.http.routers.portainer_back.service=portainer_back"
     networks:
@@ -122,11 +130,19 @@ services:
     #  - 51413:51413
     #  - 51413:51413/udp
     labels:
-       - "traefik.enable=true"
-       - "traefik.http.routers.transmission.rule=PathPrefix(`/transmission{regex:$$|/.*}`)"
-       - "traefik.http.routers.client_torrents.entrypoints=web"
-       - "traefik.http.routers.client_torrents.tls=true"
-       - "traefik.http.services.client_torrents.loadbalancer.server.port=9091"
+      - "traefik.enable=true"
+      - "traefik.http.routers.transmission.rule=PathPrefix(`/transmission{regex:$$|/.*}`)"
+#      - "traefik.http.routers.transmission.transmission.service=transmission"
+      - "traefik.http.routers.transmission.tls=true"
+      - "traefik.http.routers.transmission.entrypoints=web-secured"
+      - "traefik.http.routers.transmission.tls.certresolver=mytlschallenge"
+
+      - "traefik.http.routers.transmission_back.tls=true"
+      - "traefik.http.routers.transmission_back.entrypoints=web-secured"
+      - "traefik.http.routers.transmission_back.tls.certresolver=mytlschallenge"
+      - "traefik.http.routers.transmission_back.service=transmission_back"
+      - "traefik.http.services.transmission_back.loadbalancer.server.port=9091"
+
     restart: unless-stopped
     networks:
       - mynet
@@ -149,10 +165,15 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.sonarr.rule=PathPrefix(`/sonarr{regex:$$|/.*}`)"
-     
+#      - "traefik.http.routers.sonarr.service=sonarr"
+      - "traefik.http.routers.sonarr.tls=true"
+      - "traefik.http.routers.sonarr.entrypoints=web-secured"
+      - "traefik.http.routers.sonarr.tls.certresolver=mytlschallenge"
+
       - "traefik.http.routers.sonarr_back.tls=true"
-      - "traefik.http.routers.sonarr_back.entrypoints=web"
-      - "traefik.http.routers.sonarr_back.service=sonarr_back"
+      - "traefik.http.routers.sonarr_back.entrypoints=web-secured"
+      - "traefik.http.routers.sonarr_back.tls.certresolver=mytlschallenge"
+#      - "traefik.http.routers.sonarr_back.service=sonarr_back"
       - "traefik.http.services.sonarr_back.loadbalancer.server.port=8989"
 
     networks:
@@ -174,9 +195,14 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.jackett.rule=PathPrefix(`/jackett{regex:$$|/.*}`)"
+#      - "traefik.http.routers.jackett.service=jackett"
+      - "traefik.http.routers.jackett.tls=true"
+      - "traefik.http.routers.jackett.entrypoints=web-secured"
+      - "traefik.http.routers.jackett.tls.certresolver=mytlschallenge"
 
       - "traefik.http.routers.jackett_back.tls=true"
-      - "traefik.http.routers.jackett_back.entrypoints=web"
+      - "traefik.http.routers.jackett_back.entrypoints=web-secured"
+      - "traefik.http.routers.jackett_back.tls.certresolver=mytlschallenge"
       - "traefik.http.routers.jackett_back.service=jackett_back"
       - "traefik.http.services.jackett_back.loadbalancer.server.port=9117"
     networks:
@@ -197,13 +223,18 @@ services:
     #  - 7878:7878
     restart: unless-stopped
     labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.radarr.rule=PathPrefix(`/radarr{regex:$$|/.*}`)"
+       - "traefik.enable=true"
+#       - "traefik.http.routers.radarr.service=radarr"
+       - "traefik.http.routers.radarr_back.rule=PathPrefix(`/radarr{regex:$$|/.*}`)"
+       - "traefik.http.routers.radarr.tls=true"
+       - "traefik.http.routers.radarr.entrypoints=web-secured"
+       - "traefik.http.routers.radarr.tls.certresolver=mytlschallenge"
 
-      - "traefik.http.routers.radarr_back.tls=true"
-      - "traefik.http.routers.radarr_back.entrypoints=web"
-      - "traefik.http.routers.radarr_back.service=radarr_back"
-      - "traefik.http.services.radarr_back.loadbalancer.server.port=7878"
+       - "traefik.http.routers.radarr_back.tls=true"
+       - "traefik.http.routers.radarr_back.entrypoints=web-secured"
+       - "traefik.http.routers.radarr_back.tls.certresolver=mytlschallenge"
+#       - "traefik.http.routers.radarr_back.service=radarr_back"
+       - "traefik.http.services.radarr_back.loadbalancer.server.port=7878"      
     networks:
       - mynet
 
@@ -227,9 +258,14 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.jellyfin.rule=PathPrefix(`/jellyfin{regex:$$|/.*}`)"
+#      - "traefik.http.routers.jellyfin.service=jellyfin"
+      - "traefik.http.routers.jellyfin.tls=true"
+      - "traefik.http.routers.jellyfin.entrypoints=web-secured"
+      - "traefik.http.routers.radarr.tls.certresolver=mytlschallenge"
 
       - "traefik.http.routers.jellyfin_back.tls=true"
-      - "traefik.http.routers.jellyfin_back.entrypoints=web"
+      - "traefik.http.routers.jellyfin_back.entrypoints=web-secured"
+      - "traefik.http.routers.jellyfin_back.tls.certresolver=mytlschallenge"
       - "traefik.http.routers.jellyfin_back.service=jellyfin_back"
       - "traefik.http.services.jellyfin_back.loadbalancer.server.port=8096"
     networks:

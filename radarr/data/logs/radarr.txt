@@ -2978,3 +2978,635 @@ RequestUri: http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/to
 2021-4-1 09:44:04.6|Warn|Torznab|Jackett indexer  No route to host No route to host: 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
 2021-4-1 09:44:04.6|Info|DownloadDecisionMaker|No results found
 2021-4-1 09:44:04.6|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2021-4-1 10:44:32.3|Info|RssSyncService|Starting RSS Sync
+2021-4-1 10:44:32.5|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2021-4-1 10:44:32.5|Info|DownloadDecisionMaker|No results found
+2021-4-1 10:44:32.5|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2021-4-1 10:56:32.5|Info|BackupService|Starting Backup
+2021-4-1 11:44:33.2|Info|RssSyncService|Starting RSS Sync
+2021-4-1 11:44:33.2|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2021-4-1 11:44:33.2|Info|DownloadDecisionMaker|No results found
+2021-4-1 11:44:33.2|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2021-4-1 12:03:06.7|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Tranmission_dowload
+
+[v3.0.2.4552] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings
+ ---> System.Net.WebException: No route to host No route to host: 'http://192.168.186.129:9091/transmission/rpc'
+ ---> System.Net.WebException: No route to host No route to host
+ ---> System.Net.Http.HttpRequestException: No route to host
+ ---> System.Net.Sockets.SocketException (113): No route to host
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at System.Net.HttpWebRequest.SendRequest()
+   at System.Net.HttpWebRequest.GetResponse()
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 81
+   --- End of inner exception stack trace ---
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 111
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequest(HttpRequest request, CookieContainer cookieContainer) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 123
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 57
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient(HttpRequestBuilder requestBuilder, TransmissionSettings settings, Boolean reauthenticate) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 222
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 261
+   --- End of inner exception stack trace ---
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 316
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(IEnumerable`1 hashStrings, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 191
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 155
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 43
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems() in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:line 38
+   at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads(IDownloadClient downloadClient) in D:\a\1\s\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:line 89
+
+
+2021-4-1 12:44:33.9|Info|RssSyncService|Starting RSS Sync
+2021-4-1 12:44:33.9|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2021-4-1 12:44:34.0|Info|DownloadDecisionMaker|No results found
+2021-4-1 12:44:34.0|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2021-4-1 13:25:11.9|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-4-1 13:25:13.6|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-4-1 13:25:14.1|Info|Router|Application mode: Interactive
+2021-4-1 13:25:14.8|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-1 13:25:16.0|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-1 13:25:17.2|Info|WebHostController|Listening on the following URLs:
+2021-4-1 13:25:17.3|Info|WebHostController|  http://*:7878
+2021-4-1 13:25:18.7|Info|RadarrBootstrapper|Starting Web Server
+2021-4-1 13:25:21.9|Info|CommandExecutor|Starting 2 threads for tasks.
+2021-4-1 13:44:52.8|Info|RssSyncService|Starting RSS Sync
+2021-4-1 13:44:52.8|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2021-4-1 13:44:52.8|Info|DownloadDecisionMaker|No results found
+2021-4-1 13:44:52.9|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2021-4-1 14:06:03.3|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-4-1 14:06:04.5|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-4-1 14:06:04.9|Info|Router|Application mode: Interactive
+2021-4-1 14:06:05.2|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-1 14:06:06.0|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-1 14:06:07.0|Info|WebHostController|Listening on the following URLs:
+2021-4-1 14:06:07.0|Info|WebHostController|  http://*:7878
+2021-4-1 14:06:07.8|Info|RadarrBootstrapper|Starting Web Server
+2021-4-1 14:06:12.5|Info|CommandExecutor|Starting 2 threads for tasks.
+2021-4-1 14:08:07.9|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-4-1 14:08:09.1|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-4-1 14:08:09.4|Info|Router|Application mode: Interactive
+2021-4-1 14:08:09.8|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-1 14:08:10.5|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-1 14:08:11.4|Info|WebHostController|Listening on the following URLs:
+2021-4-1 14:08:11.4|Info|WebHostController|  http://*:7878
+2021-4-1 14:08:12.2|Info|RadarrBootstrapper|Starting Web Server
+2021-4-1 14:08:15.8|Info|CommandExecutor|Starting 2 threads for tasks.
+2021-4-1 14:43:16.4|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-4-1 14:43:17.5|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-4-1 14:43:17.9|Info|Router|Application mode: Interactive
+2021-4-1 14:43:18.3|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-1 14:43:19.1|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-1 14:43:20.2|Info|WebHostController|Listening on the following URLs:
+2021-4-1 14:43:20.2|Info|WebHostController|  http://*:7878
+2021-4-1 14:43:21.2|Info|RadarrBootstrapper|Starting Web Server
+2021-4-1 14:43:25.7|Info|CommandExecutor|Starting 2 threads for tasks.
+2021-4-1 14:44:57.3|Info|RssSyncService|Starting RSS Sync
+2021-4-1 14:44:57.4|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2021-4-1 14:44:57.4|Info|DownloadDecisionMaker|No results found
+2021-4-1 14:44:57.4|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2021-4-1 15:06:07.7|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Tranmission_dowload
+
+[v3.0.2.4552] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings
+ ---> System.Net.WebException: The operation has timed out.: 'http://192.168.186.129:9091/transmission/rpc'
+ ---> System.Net.WebException: The operation has timed out.
+   at System.Net.HttpWebRequest.GetResponse()
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 81
+   --- End of inner exception stack trace ---
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 111
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequest(HttpRequest request, CookieContainer cookieContainer) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 123
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 57
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient(HttpRequestBuilder requestBuilder, TransmissionSettings settings, Boolean reauthenticate) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 222
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 261
+   --- End of inner exception stack trace ---
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 316
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(IEnumerable`1 hashStrings, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 191
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 155
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 43
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems() in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:line 38
+   at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads(IDownloadClient downloadClient) in D:\a\1\s\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:line 89
+
+
+2021-4-1 15:22:00.6|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-4-1 15:22:02.1|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-4-1 15:22:02.6|Info|Router|Application mode: Interactive
+2021-4-1 15:22:03.0|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-1 15:22:03.9|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-1 15:22:04.9|Info|WebHostController|Listening on the following URLs:
+2021-4-1 15:22:04.9|Info|WebHostController|  http://*:7878
+2021-4-1 15:22:05.4|Info|RadarrBootstrapper|Starting Web Server
+2021-4-1 15:22:08.8|Info|CommandExecutor|Starting 2 threads for tasks.
+2021-4-1 15:45:09.9|Info|RssSyncService|Starting RSS Sync
+2021-4-1 15:45:09.9|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2021-4-1 15:45:09.9|Info|DownloadDecisionMaker|No results found
+2021-4-1 15:45:09.9|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2021-4-8 11:05:46.7|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-4-8 11:05:52.6|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-4-8 11:05:56.0|Info|Router|Application mode: Interactive
+2021-4-8 11:05:57.2|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-8 11:05:58.9|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-8 11:06:02.0|Info|WebHostController|Listening on the following URLs:
+2021-4-8 11:06:02.0|Info|WebHostController|  http://*:7878
+2021-4-8 11:06:03.8|Info|RadarrBootstrapper|Starting Web Server
+2021-4-8 11:06:07.0|Info|CommandExecutor|Starting 2 threads for tasks.
+2021-4-8 11:06:39.3|Info|HousekeepingService|Running housecleaning tasks
+2021-4-8 11:06:39.6|Info|RefreshMovieService|Updating info for The Lord of the Rings: The Two Towers
+2021-4-8 11:06:39.7|Info|Database|Vacuuming Log database
+2021-4-8 11:06:39.7|Info|Database|Log database compressed
+2021-4-8 11:06:39.7|Info|Database|Vacuuming Main database
+2021-4-8 11:06:39.7|Info|Database|Main database compressed
+2021-4-8 11:06:39.7|Info|RecycleBinProvider|Recycle Bin has not been configured, cannot cleanup.
+2021-4-8 11:06:39.8|Info|BackupService|Starting Backup
+2021-4-8 11:06:41.1|Info|RssSyncService|Starting RSS Sync
+2021-4-8 11:06:41.1|Warn|DiskScanService|Movie's root folder (/movies/) is empty.
+2021-4-8 11:06:41.3|Info|MediaCoverService|Downloading Fanart for [The Lord of the Rings: The Two Towers (2002)][tt0167261, 121] https://image.tmdb.org/t/p/original/kWYfW2Re0rUDE6IHhy4CRuKWeFr.jpg
+2021-4-8 11:06:41.3|Info|ImportListSyncService|No auto enabled lists, skipping sync and cleaning
+2021-4-8 11:06:42.7|Info|MetadataService|Movie folder does not exist, skipping metadata image creation
+2021-4-8 11:08:21.5|Warn|Torznab|jackett indexer 2 server is currently unavailable.  The operation has timed out.: 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+2021-4-8 11:08:21.6|Warn|Torznab|Jackett indexer server is currently unavailable.  The operation has timed out.: 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+2021-4-8 11:08:21.4|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Tranmission_dowload
+
+[v3.0.2.4552] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings
+ ---> System.Net.WebException: The operation has timed out.: 'http://192.168.186.129:9091/transmission/rpc'
+ ---> System.Net.WebException: The operation has timed out.
+   at System.Net.HttpWebRequest.GetResponse()
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 81
+   --- End of inner exception stack trace ---
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 111
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequest(HttpRequest request, CookieContainer cookieContainer) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 123
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 57
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient(HttpRequestBuilder requestBuilder, TransmissionSettings settings, Boolean reauthenticate) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 222
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 261
+   --- End of inner exception stack trace ---
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 316
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(IEnumerable`1 hashStrings, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 191
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 155
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 43
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems() in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:line 38
+   at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads(IDownloadClient downloadClient) in D:\a\1\s\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:line 89
+
+
+2021-4-8 11:08:21.6|Info|DownloadDecisionMaker|No results found
+2021-4-8 11:08:21.7|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2021-4-8 11:15:48.5|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Tranmission_dowload
+
+[v3.0.2.4552] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings
+ ---> System.Net.WebException: The operation has timed out.: 'http://192.168.186.129:9091/transmission/rpc'
+ ---> System.Net.WebException: The operation has timed out.
+   at System.Net.HttpWebRequest.GetResponse()
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 81
+   --- End of inner exception stack trace ---
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 111
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequest(HttpRequest request, CookieContainer cookieContainer) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 123
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 57
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient(HttpRequestBuilder requestBuilder, TransmissionSettings settings, Boolean reauthenticate) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 222
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 261
+   --- End of inner exception stack trace ---
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 316
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(IEnumerable`1 hashStrings, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 191
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 155
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 43
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems() in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:line 38
+   at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads(IDownloadClient downloadClient) in D:\a\1\s\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:line 89
+
+
+2021-4-8 11:23:19.5|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Tranmission_dowload
+
+[v3.0.2.4552] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings
+ ---> System.Net.WebException: The operation has timed out.: 'http://192.168.186.129:9091/transmission/rpc'
+ ---> System.Net.WebException: The operation has timed out.
+   at System.Net.HttpWebRequest.GetResponse()
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 81
+   --- End of inner exception stack trace ---
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 111
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequest(HttpRequest request, CookieContainer cookieContainer) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 123
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 57
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient(HttpRequestBuilder requestBuilder, TransmissionSettings settings, Boolean reauthenticate) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 222
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 261
+   --- End of inner exception stack trace ---
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 316
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(IEnumerable`1 hashStrings, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 191
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 155
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 43
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems() in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:line 38
+   at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads(IDownloadClient downloadClient) in D:\a\1\s\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:line 89
+
+
+2021-4-8 12:08:40.1|Info|RssSyncService|Starting RSS Sync
+2021-4-8 12:10:20.1|Warn|Torznab|Jackett indexer server is currently unavailable.  The operation has timed out.: 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+2021-4-8 12:10:20.1|Warn|Torznab|jackett indexer 2 server is currently unavailable.  The operation has timed out.: 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+2021-4-8 12:10:20.1|Info|DownloadDecisionMaker|No results found
+2021-4-8 12:10:20.1|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2021-4-8 13:10:41.0|Info|RssSyncService|Starting RSS Sync
+2021-4-8 13:10:41.0|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2021-4-8 13:10:41.0|Info|DownloadDecisionMaker|No results found
+2021-4-8 13:10:41.0|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2021-4-8 14:10:41.7|Info|RssSyncService|Starting RSS Sync
+2021-4-8 14:10:41.8|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2021-4-8 14:10:41.8|Info|DownloadDecisionMaker|No results found
+2021-4-8 14:10:41.8|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2021-4-8 14:26:22.0|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Tranmission_dowload
+
+[v3.0.2.4552] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings
+ ---> System.Net.WebException: The operation has timed out.: 'http://192.168.186.129:9091/transmission/rpc'
+ ---> System.Net.WebException: The operation has timed out.
+   at System.Net.HttpWebRequest.GetResponse()
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 81
+   --- End of inner exception stack trace ---
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 111
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequest(HttpRequest request, CookieContainer cookieContainer) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 123
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 57
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient(HttpRequestBuilder requestBuilder, TransmissionSettings settings, Boolean reauthenticate) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 222
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 261
+   --- End of inner exception stack trace ---
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 316
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(IEnumerable`1 hashStrings, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 191
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 155
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 43
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems() in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:line 38
+   at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads(IDownloadClient downloadClient) in D:\a\1\s\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:line 89
+
+
+2021-4-8 15:10:42.5|Info|RssSyncService|Starting RSS Sync
+2021-4-8 15:10:42.5|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2021-4-8 15:10:42.5|Info|DownloadDecisionMaker|No results found
+2021-4-8 15:10:42.5|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2021-4-8 16:10:43.3|Info|RssSyncService|Starting RSS Sync
+2021-4-8 16:10:43.3|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2021-4-8 16:10:43.3|Info|DownloadDecisionMaker|No results found
+2021-4-8 16:10:43.3|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2021-4-8 17:10:44.1|Info|RssSyncService|Starting RSS Sync
+2021-4-8 17:10:44.1|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2021-4-8 17:10:44.1|Info|DownloadDecisionMaker|No results found
+2021-4-8 17:10:44.1|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2021-4-8 17:29:24.3|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Tranmission_dowload
+
+[v3.0.2.4552] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings
+ ---> System.Net.WebException: The operation has timed out.: 'http://192.168.186.129:9091/transmission/rpc'
+ ---> System.Net.WebException: The operation has timed out.
+   at System.Net.HttpWebRequest.GetResponse()
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 81
+   --- End of inner exception stack trace ---
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 111
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequest(HttpRequest request, CookieContainer cookieContainer) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 123
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 57
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient(HttpRequestBuilder requestBuilder, TransmissionSettings settings, Boolean reauthenticate) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 222
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 261
+   --- End of inner exception stack trace ---
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 316
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(IEnumerable`1 hashStrings, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 191
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 155
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 43
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems() in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:line 38
+   at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads(IDownloadClient downloadClient) in D:\a\1\s\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:line 89
+
+
+2021-4-8 18:10:44.8|Info|RssSyncService|Starting RSS Sync
+2021-4-8 18:10:44.8|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2021-4-8 18:10:44.8|Info|DownloadDecisionMaker|No results found
+2021-4-8 18:10:44.8|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2021-4-21 21:48:29.0|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-4-21 21:48:35.2|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-4-21 21:48:39.8|Info|Router|Application mode: Interactive
+2021-4-21 21:48:41.4|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-21 21:48:43.5|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-21 21:48:48.2|Info|WebHostController|Listening on the following URLs:
+2021-4-21 21:48:48.2|Info|WebHostController|  http://*:7878
+2021-4-21 21:48:50.2|Info|RadarrBootstrapper|Starting Web Server
+2021-4-21 21:48:56.0|Info|CommandExecutor|Starting 2 threads for tasks.
+2021-4-21 21:49:28.4|Info|HousekeepingService|Running housecleaning tasks
+2021-4-21 21:49:28.5|Info|Database|Vacuuming Log database
+2021-4-21 21:49:28.5|Info|Database|Log database compressed
+2021-4-21 21:49:28.5|Info|Database|Vacuuming Main database
+2021-4-21 21:49:28.5|Info|Database|Main database compressed
+2021-4-21 21:49:28.6|Info|RecycleBinProvider|Recycle Bin has not been configured, cannot cleanup.
+2021-4-21 21:49:28.6|Info|BackupService|Starting Backup
+2021-4-21 21:49:29.0|Info|RssSyncService|Starting RSS Sync
+2021-4-21 21:49:30.1|Info|RefreshMovieService|Updating info for The Lord of the Rings: The Two Towers
+2021-4-21 21:49:31.3|Warn|DiskScanService|Movie's root folder (/movies/) is empty.
+2021-4-21 21:49:31.4|Info|ImportListSyncService|No auto enabled lists, skipping sync and cleaning
+2021-4-21 21:51:09.2|Warn|Torznab|Jackett indexer server is currently unavailable.  The operation has timed out.: 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+2021-4-21 21:51:09.2|Warn|Torznab|jackett indexer 2 server is currently unavailable.  The operation has timed out.: 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+2021-4-21 21:51:09.2|Info|DownloadDecisionMaker|No results found
+2021-4-21 21:51:09.3|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2021-4-21 21:51:11.6|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Tranmission_dowload
+
+[v3.0.2.4552] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings
+ ---> System.Net.WebException: The operation has timed out.: 'http://192.168.186.129:9091/transmission/rpc'
+ ---> System.Net.WebException: The operation has timed out.
+   at System.Net.HttpWebRequest.GetResponse()
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 81
+   --- End of inner exception stack trace ---
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 111
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequest(HttpRequest request, CookieContainer cookieContainer) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 123
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 57
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient(HttpRequestBuilder requestBuilder, TransmissionSettings settings, Boolean reauthenticate) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 222
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 261
+   --- End of inner exception stack trace ---
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 316
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(IEnumerable`1 hashStrings, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 191
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 155
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 43
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems() in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:line 38
+   at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads(IDownloadClient downloadClient) in D:\a\1\s\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:line 89
+
+
+2021-4-21 21:58:38.1|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Tranmission_dowload
+
+[v3.0.2.4552] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings
+ ---> System.Net.WebException: The operation has timed out.: 'http://192.168.186.129:9091/transmission/rpc'
+ ---> System.Net.WebException: The operation has timed out.
+   at System.Net.HttpWebRequest.GetResponse()
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 81
+   --- End of inner exception stack trace ---
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 111
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequest(HttpRequest request, CookieContainer cookieContainer) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 123
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 57
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient(HttpRequestBuilder requestBuilder, TransmissionSettings settings, Boolean reauthenticate) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 222
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 261
+   --- End of inner exception stack trace ---
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 316
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(IEnumerable`1 hashStrings, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 191
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 155
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 43
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems() in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:line 38
+   at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads(IDownloadClient downloadClient) in D:\a\1\s\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:line 89
+
+
+2021-4-21 21:59:25.2|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-4-21 21:59:25.8|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-4-21 21:59:26.1|Info|Router|Application mode: Interactive
+2021-4-21 21:59:26.3|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-21 21:59:26.8|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-21 21:59:27.5|Info|WebHostController|Listening on the following URLs:
+2021-4-21 21:59:27.5|Info|WebHostController|  http://*:7878
+2021-4-21 21:59:28.0|Info|RadarrBootstrapper|Starting Web Server
+2021-4-21 21:59:31.3|Info|CommandExecutor|Starting 2 threads for tasks.
+2021-4-21 22:02:28.2|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-4-21 22:02:28.9|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-4-21 22:02:29.0|Info|Router|Application mode: Interactive
+2021-4-21 22:02:29.2|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-21 22:02:29.9|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-21 22:02:30.5|Info|WebHostController|Listening on the following URLs:
+2021-4-21 22:02:30.5|Info|WebHostController|  http://*:7878
+2021-4-21 22:02:31.3|Info|RadarrBootstrapper|Starting Web Server
+2021-4-21 22:02:36.2|Info|CommandExecutor|Starting 2 threads for tasks.
+2021-4-21 22:06:16.8|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Tranmission_dowload
+
+[v3.0.2.4552] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings
+ ---> System.Net.WebException: The operation has timed out.: 'http://192.168.186.129:9091/transmission/rpc'
+ ---> System.Net.WebException: The operation has timed out.
+   at System.Net.HttpWebRequest.GetResponse()
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 81
+   --- End of inner exception stack trace ---
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 111
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequest(HttpRequest request, CookieContainer cookieContainer) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 123
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 57
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient(HttpRequestBuilder requestBuilder, TransmissionSettings settings, Boolean reauthenticate) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 222
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 261
+   --- End of inner exception stack trace ---
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 316
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(IEnumerable`1 hashStrings, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 191
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 155
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 43
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems() in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:line 38
+   at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads(IDownloadClient downloadClient) in D:\a\1\s\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:line 89
+
+
+2021-4-21 22:13:22.4|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-4-21 22:13:23.1|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-4-21 22:13:23.2|Info|Router|Application mode: Interactive
+2021-4-21 22:13:23.6|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-21 22:13:24.1|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-21 22:13:24.8|Info|WebHostController|Listening on the following URLs:
+2021-4-21 22:13:24.8|Info|WebHostController|  http://*:7878
+2021-4-21 22:13:25.3|Info|RadarrBootstrapper|Starting Web Server
+2021-4-21 22:13:28.0|Info|CommandExecutor|Starting 2 threads for tasks.
+2021-4-21 22:15:38.4|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Tranmission_dowload
+
+[v3.0.2.4552] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings
+ ---> System.Net.WebException: The operation has timed out.: 'http://192.168.186.129:9091/transmission/rpc'
+ ---> System.Net.WebException: The operation has timed out.
+   at System.Net.HttpWebRequest.GetResponse()
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 81
+   --- End of inner exception stack trace ---
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 111
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequest(HttpRequest request, CookieContainer cookieContainer) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 123
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 57
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient(HttpRequestBuilder requestBuilder, TransmissionSettings settings, Boolean reauthenticate) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 222
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 261
+   --- End of inner exception stack trace ---
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 316
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(IEnumerable`1 hashStrings, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 191
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 155
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 43
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems() in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:line 38
+   at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads(IDownloadClient downloadClient) in D:\a\1\s\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:line 89
+
+
+2021-4-21 22:23:10.1|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Tranmission_dowload
+
+[v3.0.2.4552] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings
+ ---> System.Net.WebException: The operation has timed out.: 'http://192.168.186.129:9091/transmission/rpc'
+ ---> System.Net.WebException: The operation has timed out.
+   at System.Net.HttpWebRequest.GetResponse()
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 81
+   --- End of inner exception stack trace ---
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 111
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequest(HttpRequest request, CookieContainer cookieContainer) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 123
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 57
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient(HttpRequestBuilder requestBuilder, TransmissionSettings settings, Boolean reauthenticate) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 222
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 261
+   --- End of inner exception stack trace ---
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 316
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(IEnumerable`1 hashStrings, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 191
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 155
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 43
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems() in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:line 38
+   at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads(IDownloadClient downloadClient) in D:\a\1\s\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:line 89
+
+
+2021-4-21 22:30:40.3|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Tranmission_dowload
+
+[v3.0.2.4552] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings
+ ---> System.Net.WebException: The operation has timed out.: 'http://192.168.186.129:9091/transmission/rpc'
+ ---> System.Net.WebException: The operation has timed out.
+   at System.Net.HttpWebRequest.GetResponse()
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 81
+   --- End of inner exception stack trace ---
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 111
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequest(HttpRequest request, CookieContainer cookieContainer) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 123
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 57
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient(HttpRequestBuilder requestBuilder, TransmissionSettings settings, Boolean reauthenticate) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 222
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 261
+   --- End of inner exception stack trace ---
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 316
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(IEnumerable`1 hashStrings, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 191
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 155
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 43
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems() in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:line 38
+   at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads(IDownloadClient downloadClient) in D:\a\1\s\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:line 89
+
+
+2021-4-21 22:51:30.8|Info|RssSyncService|Starting RSS Sync
+2021-4-21 22:53:11.0|Warn|Torznab|jackett indexer 2 server is currently unavailable.  The operation has timed out.: 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+2021-4-21 22:53:11.0|Warn|Torznab|Jackett indexer server is currently unavailable.  The operation has timed out.: 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+2021-4-21 22:53:11.0|Info|DownloadDecisionMaker|No results found
+2021-4-21 22:53:11.1|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2021-4-21 23:53:32.2|Info|RssSyncService|Starting RSS Sync
+2021-4-21 23:53:32.2|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2021-4-21 23:53:32.2|Info|DownloadDecisionMaker|No results found
+2021-4-21 23:53:32.2|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2021-4-21 23:54:09.7|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-4-21 23:54:10.6|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-4-21 23:54:10.8|Info|Router|Application mode: Interactive
+2021-4-21 23:54:10.9|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-21 23:54:11.4|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-21 23:54:12.1|Info|WebHostController|Listening on the following URLs:
+2021-4-21 23:54:12.1|Info|WebHostController|  http://*:7878
+2021-4-21 23:54:12.7|Info|RadarrBootstrapper|Starting Web Server
+2021-4-21 23:54:14.8|Info|CommandExecutor|Starting 2 threads for tasks.
+2021-4-21 23:54:59.5|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-4-21 23:55:00.6|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-4-21 23:55:00.8|Info|Router|Application mode: Interactive
+2021-4-21 23:55:00.9|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-21 23:55:01.3|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-21 23:55:01.9|Info|WebHostController|Listening on the following URLs:
+2021-4-21 23:55:01.9|Info|WebHostController|  http://*:7878
+2021-4-21 23:55:02.2|Info|RadarrBootstrapper|Starting Web Server
+2021-4-21 23:55:04.0|Info|CommandExecutor|Starting 2 threads for tasks.
+2021-4-22 00:00:41.7|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-4-22 00:00:42.5|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-4-22 00:00:42.7|Info|Router|Application mode: Interactive
+2021-4-22 00:00:42.9|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-22 00:00:43.4|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-22 00:00:44.1|Info|WebHostController|Listening on the following URLs:
+2021-4-22 00:00:44.1|Info|WebHostController|  http://*:7878
+2021-4-22 00:00:44.5|Info|RadarrBootstrapper|Starting Web Server
+2021-4-22 00:00:46.9|Info|CommandExecutor|Starting 2 threads for tasks.
+2021-4-22 00:01:43.0|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-4-22 00:01:44.0|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-4-22 00:01:44.2|Info|Router|Application mode: Interactive
+2021-4-22 00:01:44.3|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-22 00:01:44.8|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-22 00:01:45.6|Info|WebHostController|Listening on the following URLs:
+2021-4-22 00:01:45.6|Info|WebHostController|  http://*:7878
+2021-4-22 00:01:46.1|Info|RadarrBootstrapper|Starting Web Server
+2021-4-22 00:01:48.2|Info|CommandExecutor|Starting 2 threads for tasks.
+2021-4-22 00:32:09.1|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-4-22 00:32:10.3|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-4-22 00:32:10.6|Info|Router|Application mode: Interactive
+2021-4-22 00:32:11.0|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-22 00:32:11.7|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-22 00:32:12.5|Info|WebHostController|Listening on the following URLs:
+2021-4-22 00:32:12.5|Info|WebHostController|  http://*:7878
+2021-4-22 00:32:13.1|Info|RadarrBootstrapper|Starting Web Server
+2021-4-22 00:32:16.4|Info|CommandExecutor|Starting 2 threads for tasks.
+2021-4-22 00:39:48.8|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-4-22 00:39:49.9|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-4-22 00:39:50.1|Info|Router|Application mode: Interactive
+2021-4-22 00:39:50.8|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-22 00:39:51.9|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-22 00:39:52.8|Info|WebHostController|Listening on the following URLs:
+2021-4-22 00:39:52.8|Info|WebHostController|  http://*:7878
+2021-4-22 00:39:53.7|Info|RadarrBootstrapper|Starting Web Server
+2021-4-22 00:39:57.5|Info|CommandExecutor|Starting 2 threads for tasks.
+2021-4-22 00:47:32.9|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-4-22 00:47:34.4|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-4-22 00:47:34.6|Info|Router|Application mode: Interactive
+2021-4-22 00:47:34.8|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-22 00:47:35.4|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-22 00:47:36.5|Info|WebHostController|Listening on the following URLs:
+2021-4-22 00:47:36.5|Info|WebHostController|  http://*:7878
+2021-4-22 00:47:37.3|Info|RadarrBootstrapper|Starting Web Server
+2021-4-22 00:47:41.8|Info|CommandExecutor|Starting 2 threads for tasks.
+2021-4-22 00:53:42.7|Info|RssSyncService|Starting RSS Sync
+2021-4-22 00:53:42.7|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2021-4-22 00:53:42.7|Info|DownloadDecisionMaker|No results found
+2021-4-22 00:53:42.7|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2021-4-22 00:59:24.7|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-4-22 00:59:25.4|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-4-22 00:59:25.6|Info|Router|Application mode: Interactive
+2021-4-22 00:59:25.8|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-22 00:59:26.3|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-22 00:59:26.8|Info|WebHostController|Listening on the following URLs:
+2021-4-22 00:59:26.8|Info|WebHostController|  http://*:7878
+2021-4-22 00:59:27.3|Info|RadarrBootstrapper|Starting Web Server
+2021-4-22 00:59:29.6|Info|CommandExecutor|Starting 2 threads for tasks.
+2021-4-22 01:03:10.1|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-4-22 01:03:10.8|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-4-22 01:03:11.0|Info|Router|Application mode: Interactive
+2021-4-22 01:03:11.2|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-22 01:03:11.6|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-22 01:03:12.1|Info|WebHostController|Listening on the following URLs:
+2021-4-22 01:03:12.1|Info|WebHostController|  http://*:7878
+2021-4-22 01:03:12.5|Info|RadarrBootstrapper|Starting Web Server
+2021-4-22 01:03:14.4|Info|CommandExecutor|Starting 2 threads for tasks.
+2021-4-22 01:04:23.0|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-4-22 01:04:23.9|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-4-22 01:04:24.1|Info|Router|Application mode: Interactive
+2021-4-22 01:04:24.2|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-22 01:04:24.7|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-22 01:04:25.1|Info|WebHostController|Listening on the following URLs:
+2021-4-22 01:04:25.1|Info|WebHostController|  http://*:7878
+2021-4-22 01:04:25.5|Info|RadarrBootstrapper|Starting Web Server
+2021-4-22 01:04:27.5|Info|CommandExecutor|Starting 2 threads for tasks.
+2021-4-22 01:07:43.6|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-4-22 01:07:44.6|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-4-22 01:07:44.8|Info|Router|Application mode: Interactive
+2021-4-22 01:07:45.0|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-22 01:07:45.4|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-22 01:07:46.2|Info|WebHostController|Listening on the following URLs:
+2021-4-22 01:07:46.2|Info|WebHostController|  http://*:7878
+2021-4-22 01:07:46.7|Info|RadarrBootstrapper|Starting Web Server
+2021-4-22 01:07:48.6|Info|CommandExecutor|Starting 2 threads for tasks.
+2021-4-22 01:08:34.4|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-4-22 01:08:35.3|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-4-22 01:08:35.4|Info|Router|Application mode: Interactive
+2021-4-22 01:08:35.6|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-22 01:08:36.0|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-22 01:08:36.5|Info|WebHostController|Listening on the following URLs:
+2021-4-22 01:08:36.5|Info|WebHostController|  http://*:7878
+2021-4-22 01:08:36.9|Info|RadarrBootstrapper|Starting Web Server
+2021-4-22 01:08:39.2|Info|CommandExecutor|Starting 2 threads for tasks.
+2021-4-22 11:15:26.6|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr.dll - Version 3.0.2.4552
+2021-4-22 11:15:30.4|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2021-4-22 11:15:33.7|Info|Router|Application mode: Interactive
+2021-4-22 11:15:34.5|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-22 11:15:36.6|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2021-4-22 11:15:39.6|Info|WebHostController|Listening on the following URLs:
+2021-4-22 11:15:39.6|Info|WebHostController|  http://*:7878
+2021-4-22 11:15:41.5|Info|RadarrBootstrapper|Starting Web Server
+2021-4-22 11:15:48.0|Info|CommandExecutor|Starting 2 threads for tasks.
+2021-4-22 11:16:20.1|Info|RssSyncService|Starting RSS Sync
+2021-4-22 11:16:21.0|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2021-4-22 11:16:21.3|Info|DownloadDecisionMaker|No results found
+2021-4-22 11:16:21.4|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2021-4-22 11:18:03.0|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Tranmission_dowload
+
+[v3.0.2.4552] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings
+ ---> System.Net.WebException: The operation has timed out.: 'http://192.168.186.129:9091/transmission/rpc'
+ ---> System.Net.WebException: The operation has timed out.
+   at System.Net.HttpWebRequest.GetResponse()
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 81
+   --- End of inner exception stack trace ---
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in D:\a\1\s\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:line 111
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequest(HttpRequest request, CookieContainer cookieContainer) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 123
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in D:\a\1\s\src\NzbDrone.Common\Http\HttpClient.cs:line 57
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient(HttpRequestBuilder requestBuilder, TransmissionSettings settings, Boolean reauthenticate) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 222
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 261
+   --- End of inner exception stack trace ---
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 316
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(IEnumerable`1 hashStrings, TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 191
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 155
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents(TransmissionSettings settings) in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:line 43
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems() in D:\a\1\s\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:line 38
+   at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads(IDownloadClient downloadClient) in D:\a\1\s\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:line 89
+
+
