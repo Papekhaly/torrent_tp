@@ -143,3 +143,7 @@ Watchtower est un service permettant l'automatisation des mises à jour des imag
 ### Prometheus & Grafana
 
 Prometheus et Grafana sont deux outils qui fonctionnent ensemble : Prometheus va chercher des métriques sur chaque container et Grafana permet de les afficher sous forme de graphiques. 
+
+### Haproxy
+
+Le Haproxy est composé de plusieurs containers Apache. Le haproxy redirige les requêtes vers l'un des serveurs Apache, ce qui permet de maintenir le bon fonctionnement de la plateforme même en cas de problème sur l'un des containers Apache.
