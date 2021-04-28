@@ -105,9 +105,9 @@ Traefik est un reverse-proxy. Il permet d'accéder aux interfaces Web des servic
     image: portainer/portainer-ce:latest
     restart: unless-stopped
     command: -H unix:///var/run/docker.sock
-    #ports:
+   # ports:
      # - 9000:9000
-
+     # - 8000:8000
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - /etc/localtime:/etc/localtime:ro
@@ -116,14 +116,18 @@ Traefik est un reverse-proxy. Il permet d'accéder aux interfaces Web des servic
     labels:
     #front
       - "traefik.enable=true"
-      - "traefik.http.routers.portainer.entrypoints=web"
+      - "traefik.http.routers.portainer.entrypoints=web-secured"
       - "traefik.http.routers.portainer.rule=PathPrefix(`/portainer{regex:$$|/.*}`)"
       - "traefik.http.routers.portainer.middlewares=portainer-prefix"
       - "traefik.http.middlewares.portainer-prefix.stripprefix.prefixes=/portainer"
       - "traefik.http.routers.portainer.service=portainer"
+      - "traefik.http.routers.portainer.tls=true"
+      - "traefik.http.routers.portainer.tls.certresolver=mytlschallenge"
       - "traefik.http.services.portainer.loadbalancer.server.port=9000"
       #back
-      - "traefik.http.routers.portainer_back.entrypoints=web"
+      - "traefik.http.routers.portainer_back.entrypoints=web-secured"
+      - "traefik.http.routers.portainer_back.tls=true"
+      - "traefik.http.routers.portainer_back.tls.certresolver=mytlschallenge"
       - "traefik.http.services.portainer_back.loadbalancer.server.port=8000"
       - "traefik.http.routers.portainer_back.service=portainer_back"
     networks:
