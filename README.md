@@ -71,14 +71,16 @@ Jellyfin permet la création d'une bibliothèque de fichiers (films, séries, mu
       #- --providers.file.filename=/dynamic.yaml # <== Referring to a dynamic configuration file
       - --providers.docker.network=mynet # <== Operate on the docker network named web
       ## Entrypoints Settings - https://docs.traefik.io/routing/entrypoints/#configuration ##
-      - --entrypoints.web.address=:80 # <== Defining an entrypoint for port :80 named web
-      #- --entrypoints.web-secured.address=:443 # <== Defining an entrypoint for https on port :443 named web-secured
+      #- --entrypoints.web.address=:80 # <== Defining an entrypoint for port :80 named web
+      - --entrypoints.web-secured.address=:443 # <== Defining an entrypoint for https on port :443 named web-secured
       ## Certificate Settings (Let's Encrypt) -  https://docs.traefik.io/https/acme/#configuration-examples ##
-      #- --certificatesresolvers.mytlschallenge.acme.tlschallenge=true # <== Enable TLS-ALPN-01 to generate and renew ACME certs
-      #- --certificatesresolvers.mytlschallenge.acme.email=theafkdeveloper@gmail.com # <== Setting email for certs
-      #- --certificatesresolvers.mytlschallenge.acme.storage=/letsencrypt/acme.json # <== Defining acme file to store cert information
+      - --certificatesresolvers.mytlschallenge.acme.tlschallenge=true # <== Enable TLS-ALPN-01 to generate and renew ACME certs
+      - --certificatesresolvers.mytlschallenge.acme.email=theafkdeveloper@gmail.com # <== Setting email for certs
+      - --certificatesresolvers.mytlschallenge.acme.storage=/letsencrypt/acme.json # <== Defining acme file to store cert information
+      - --certificatesresolvers.mytlschallenge.acme.caserver=https://acme-v02.api.letsencrypt.org/directory   
+      #- --certificatesresolvers.myresolver.acme.dnschallenge.provider=noip
     volumes:
-      #- ./letsencrypt:/letsencrypt # <== Volume for certs (TLS)
+      - ./letsencrypt:/letsencrypt # <== Volume for certs (TLS)
       - /var/run/docker.sock:/var/run/docker.sock # <== Volume for docker admin
       #- ./dynamic.yaml:/dynamic.yaml # <== Volume for dynamic conf file, **ref: line 27
     networks:
@@ -86,11 +88,14 @@ Jellyfin permet la création d'une bibliothèque de fichiers (films, séries, mu
     labels:
     #### Labels define the behavior and rules of the traefik proxy for this container ####
       - "traefik.enable=true" # <== Enable traefik on itself to view dashboard and assign subdomain to view it
-      - "traefik.http.routers.api.rule=Host(`dockermodule21.ddns.net`)" # <== Setting the domain for the dashboard
+      - "traefik.http.routers.api.rule=Host(`dockermodule.ddns.net`)" # <== Setting the domain for the dashboard
       - "traefik.http.routers.api.service=api@internal" # <== Enabling the api to be a service to access
+      - "traefik.http.routers.api.entrypoints=web-secured"
+      - "traefik.http.routers.api.tls=true"
+      - "traefik.http.routers.api.tls.certresolver=mytlschallenge"
 ```
 
-Traefik est un reverse-proxy. Il permet d'accéder aux interfaces Web des services de l'architecture. Pour ajouter un service à Traefik, il faudra d'abord spécifier plusieurs labels dans le docker-compose (Exemple présent dans la catégorie suivante, pour Portainer).
+Traefik est un reverse-proxy. Il permet d'accéder aux interfaces Web des services de l'architecture. Pour ajouter un service à Traefik, il faudra d'abord spécifier plusieurs labels dans le docker-compose (Exemple présent dans la catégorie suivante, pour Portainer). Traefik ici utilise Letsencrypt pour la sécurisation de la plateforme.
 
 ## Portainer
 
