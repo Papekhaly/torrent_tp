@@ -4536,3 +4536,42 @@ database or disk is full
 21-4-28 19:08:51.7|Info|OwinHostController|  http://*:8989/sonarr/
 21-4-28 19:08:51.7|Info|OwinHostController|  http://*:8989/
 21-4-28 19:08:53.6|Info|NancyBootstrapper|Starting Web Server
+21-4-28 19:09:28.2|Info|SceneMappingService|Updating Scene mappings
+21-4-28 19:09:32.2|Info|RefreshSeriesService|Skipping refresh of series: Lovely Complex
+21-4-28 19:09:32.2|Warn|DiskScanService|Series' root folder (/tv) is empty.
+21-4-28 19:09:32.2|Info|RefreshSeriesService|Updating Info for Resident Alien
+21-4-28 19:09:32.7|Info|RefreshEpisodeService|Starting episode info refresh for: [368166][Resident Alien]
+21-4-28 19:09:32.8|Info|RefreshEpisodeService|Finished episode refresh for series: [368166][Resident Alien].
+21-4-28 19:09:32.8|Warn|DiskScanService|Series' root folder (/tv) is empty.
+21-4-28 19:09:33.5|Info|HousekeepingService|Running housecleaning tasks
+21-4-28 19:09:33.6|Info|Database|Vacuuming Log database
+21-4-28 19:09:33.6|Info|Database|Log database compressed
+21-4-28 19:09:33.7|Info|Database|Vacuuming Main database
+21-4-28 19:09:33.7|Info|Database|Main database compressed
+21-4-28 19:09:33.7|Info|RssSyncService|Starting RSS Sync
+21-4-28 19:09:37.6|Info|MetadataService|Series folder does not exist, skipping metadata creation
+21-4-28 19:11:08.3|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Transmission
+
+[v2.0.0.5344] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings ---> System.Net.WebException: The operation has timed out.: 'http://192.168.186.129:9091/transmission/rpc' ---> System.Net.WebException: The operation has timed out.
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <91935ad653254a93b9d73a9f8f2f7a2d>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0011b] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:82 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x001ca] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:113 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000b5] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:53 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:121 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:57 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient (NzbDrone.Common.Http.HttpRequestBuilder requestBuilder, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings, System.Boolean reauthenticate) [0x0004f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:218 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0001f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:255 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00138] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:307 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (System.Collections.Generic.IEnumerable`1[T] hashStrings, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0009e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:187 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:157 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:43 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems () [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:35 
+  at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads (NzbDrone.Core.Download.IDownloadClient downloadClient) [0x0000c] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:89 
+
+21-4-28 19:11:16.9|Warn|Torznab|Jackett indexer server is currently unavailable.  The operation has timed out.: 'http://192.168.186.129:9117/api/v2.0/indexers/oxtorrent/results/torznab/api?t=caps&apikey=(removed)
+21-4-28 19:11:16.9|Warn|Torznab|jackett indexer 2 server is currently unavailable.  The operation has timed out.: 'http://192.168.186.129:9117/api/v2.0/indexers/bigfangroup/results/torznab/api?t=caps&apikey=(removed)
+21-4-28 19:11:16.9|Info|DownloadDecisionMaker|No results found
+21-4-28 19:11:17.0|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
